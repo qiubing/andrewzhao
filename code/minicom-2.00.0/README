@@ -1,0 +1,47 @@
+$Id: README,v 1.4 2001/02/22 21:43:54 kloczek Exp $
+			=== README ===
+
+Quick instructions for installing:
+
+1. Change to the minicom-*/src directory (where minicom should
+   be the directory where this file was unpacked)
+2. ./configure (see ./configure --help for options)
+3. make
+4. make install    (this should be done as root, or if you are logged in as
+		   somebody else, do "su -c 'make install'")
+5. as root, do 'minicom -s' to enter the configuration mode. Check all the
+   settings, change what should be changed on your system, and choose
+   'Save setup as dfl' from the configuration menu to save the changed
+   settings as system defaults.
+   Edit /etc/minicom.users, adding the usernames which should be allowed
+   to use minicom.
+
+Now you should have minicom compiled, installed and ready to use.
+
+For more information, have a look at the next files:
+
+WWW:
+For information about the newest version, what has changed since 
+the previous version, and sometimes possibly the newest beta version 
+(if there is one available), look at 
+http://www.netsonic.fi/~walker/minicom.html
+
+CVS:
+Current development version of minicom is in PLD GNU/Linux CVS repository.
+To get latest source:
+	CVSROOT=":pserver:cvs@anoncvs.pld.org.pl:/cvsroot"
+	export CVSROOT
+	cvs login (password is "cvs")
+	cvs -z7 co minicom
+
+You can browse source tree under
+http://cvsweb.pld.org.pl/index.cgi/minicom/ or
+http://cvs.pld.org.pl/minicom/
+
+If you want to use minicom with network-modem software, have a look
+at "modem-0.1b", sunsite:/pub/Linux/apps/comm/modem-0.1b.tar.gz by
+Merijn de Jonge <mdejonge@fwi.uva.nl>.
+
+miquels@cistron.nl
+jukkal@despammed.com
+misiek@pld.org.pl

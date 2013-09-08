@@ -1,0 +1,1 @@
+cmd_/home/andrewzhao/code/xxx/ch341.ko := ld -r -m elf_i386 -T /home/andrewzhao/vanet/linux-3.2.4/scripts/module-common.lds --build-id  -o /home/andrewzhao/code/xxx/ch341.ko /home/andrewzhao/code/xxx/ch341.o /home/andrewzhao/code/xxx/ch341.mod.o

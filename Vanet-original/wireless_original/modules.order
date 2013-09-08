@@ -1,0 +1,5 @@
+kernel//home/andrewzhao/kernel/wireless_mod/cfg80211.ko
+kernel//home/andrewzhao/kernel/wireless_mod/lib80211.ko
+kernel//home/andrewzhao/kernel/wireless_mod/lib80211_crypt_wep.ko
+kernel//home/andrewzhao/kernel/wireless_mod/lib80211_crypt_ccmp.ko
+kernel//home/andrewzhao/kernel/wireless_mod/lib80211_crypt_tkip.ko

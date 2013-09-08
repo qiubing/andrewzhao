@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-01-05T16:44:16+08:00
+
+====== bash manual note ======
+Created Thursday 05 January 2012
+
+===== 1 Basic Shell Features =====
+* Escape Character
+
+===== 2 特殊字符 =====
+* ,：逗号链接了一系列的算术操作，虽然里边所有的内容都被运行了，但只有最后一项被返回。
+* :：空命令,等价于"NOP"(no op,一个什么也不干的命令).也可以被认为与shell的内建命令(true)作用相同.":"命令是一个bash的内建命令,它的返回值为0,就是shell返回的true。 在一个2元命令中提供一个占位符，例如  : ${username=`whoami`}，如果没有:，那么会报错。
+* ! 用于反操作。
+* () 命令组，例如(a=hello;echo $a)，在()中的命令列表,将作为一个子shell来运行。a=123;(a=321);echo $a将返回123.

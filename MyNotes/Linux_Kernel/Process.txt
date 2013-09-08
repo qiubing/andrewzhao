@@ -1,0 +1,242 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-26T19:55:27+08:00
+
+====== Process ======
+Created Wednesday 26 October 2011
+
+== ============================= ==
+
+== ============================= ==
+
+== ============================= ==
+
+== ============================= ==
+
+== ============================= ==
+Below from: http://www.linuxquestions.org/linux/articles/Technical/Linux_Kernel_Thread
+
+**LINUX KERNEL SERIES**
+**Author: **Dinesh Ahuja
+**Title: Linux Kernel Series: Linux Kernel Threads**
+The purpose of this article is to cover Linux implementation of kernel threads and how these kernel threads can be used in kernel modules. This article will show how a kernel thread can be put to use for a monitoring purpose.
+Most of today's operating systems provide multi-threading support and linux is not different from these operating systems. Linux support threads as they provide concurrency or parallelism on multiple processor systems. Most of the operating systems like Microsoft Windows or Sun Solaris differentiate between a process and a thread i.e. they have an explicit support for threads which means different data structures are used in the kernel to represent a thread and a process.
+Linux implementation of threads is totally different as compared to the above-mentioned operating systems. Linux implements threads as a process that shares resources among themselves. Linux does not have a separate data structure to represent a thread. Each thread is represented with task_struct and the scheduling of these is the same as that of a process. It means the scheduler does not differentiate between a thread and a process.
+**KERNEL THREADS**
+Kernels can attain parallelism by spawning some operations in the background. The kernel achieves this by delegating these operations to the kernel threads. A kernel thread is a process that exists only in kernel space and does not have access to user address space i.e. mm pointer is NULL. Being an integral part of a kernel and running in a kernel address space, they have an access to kernel data structures. A Kernel thread does not have a privilege over other processes and hence they are also as schedulable and pre-emptable as any other process.
+The kernel symbol table contains the addresses of global kernel items – functions and variables that can be accessed by modules. The symbols exported by statically linked kernels and all linked-in modules can be retrieved by reading the /proc/ksyms file. Even kernel modules can export their respective symbols so that they can be accessed by other kernel modules.
+**The interface to create a kernel thread is as below:**
+int kernel_thread(int (*fn)(void *), void * arg, unsigned long flags)
+This is defined in arch/i386/kernel/process.c. In this, a new process executes a function specified by fn argument and arg is passed as an argument to this function.
+kernel_thread() function is exported by a kernel and hence it can be accessed from kernel modules. To export a symbol from kernel or a module, use EXPORT_SYMBOL(symbol) macro.This macro causes symbol to be added into a kernel symbol table i.e. __ksymtab section of kernel code.
+**IMPLEMENTATION DETAILS**
+The implementation of kernel_thread() function is available in arch/i386/kernel/process.c. The new task is created via do_fork() system call. A kernel_thread() system call is invoked with a special flag CLONE_KERNEL as an argument. This is defined in include/linux/sched.h as below in define CLONE_KERNEL (CLONE_FS | CLONE_FILES | CLONE_SIGHAND)
+Internally, kernel_thread() passes another two flags CLONE_VM and CLONE_UNTRACED to do_fork() system call. It means a newly created process will share following resources with its parent process.
+File System Information.
+File Descriptor Table.
+Signal Handlers.
+Memory space.
+A do_fork() is responsible to create a new task structure on the basis of the flags passed to it, to set a state of newly created task to TASK_RUNNING and put this task structure on a runqueue list. It depends upon scheduler when this task is being picked up for execution.
+**SAMPLE CODE**
+A sample code will create a kernel thread whose job is to iterate over a tasklist associated with a CPU and prints all its details using printk() function. A kernel thread will be responsible to see whether a process is a zombie process. A Zombie process blocks the memory in a process table and this memory should be released as it blocks resources. A schedule_timeout() function makes a current task sleep until timeout jiffies have expired. On return, the task is guaranteed to be in a TASK_RUNNING state. A following code will cause a current task to get removed from runqueue.
+set_current_state(TASK_INTERRUPTIBLE);
+schedule_timeout(30*HZ);
+A schedule_timeout() will be internally invoke schedule() which will cause a current task to be removed from a runqueue, if there is no pending signals for the current process. Each call to schedule_timeout will cause timer_list to get added into a global list of timers on FIFO basis.
+struct timer_list {
+	struct list_head list;
+	unsigned long expires;
+	unsigned long data;
+	void (*function)(unsigned long);
+};
+For every timer_list, the function pointer is set to an address of process_timeout() whose implementation is given below:
+static void process_timeout(unsigned long __data)
+{
+	wake_up_process((task_t *)__data);
+}
+The purpose of this function is to put a task back into a runqueue and set its state to TASK_RUNNING before returning. The TIMER_BH bottom half is responsible to invoke a run_timer_list() function which internally invokes process_timeout() with timer_list->data as an argument.
+**Note:** Invoking schedule_timeout() without setting task state to TASK_INTERRUPTIBLE would not cause it to get removed from a runqueue and therefore will have no impact on process's scheduling.
+To spawn a kernel thread, we need to define a thread function which is defined as below:
+static int print_taskinfo(void * data)
+{
+	printk("<1>::Inside Thread Function::\n");
+	printk("Kernel Thread::Current Process is \"%s \" (pid: %i) \n",
+	current->comm,current->pid);
+	sprintf(current->comm,"MyTask" );
+	set_current_state(TASK_INTERRUPTIBLE);
+	void * sZombie = kmalloc(10 * sizeof(char), GFP_KERNEL);
+	memset(sZombie,'\0', 10 * sizeof(char));
+	// Not very clear who will clean up a temporary memory allocated for
+	// string literals "ZOMBIE" & "NON-ZOMBIE"...
+	memcpy(sZombie, "ZOMBIE", 7);
+	void * sNonZombie = kmalloc(15 * sizeof(char), GFP_KERNEL);
+	memset(sNonZombie,'\0', 15 * sizeof(char));
+	memcpy(sNonZombie, "NON-ZOMBIE", 12);
+	struct task_struct *p ;
+	printk("<1>Starting Iteration\n");
+	for (;;)
+	{
+		for_each_process(p) {
+		// Iterating each element of task list.
+			printk ("Task List::Process PID = %i,::PPID = %i,::State = %ld ::Zombie=%s\n",
+					p->pid,p->parent->pid,p->state, (p->state == TASK_ZOMBIE)? (char*)sZombie :
+					(char*)sNonZombie);
+		}
+		schedule_timeout(30*HZ); // sleep for 30 seconds.
+	}
+	// Release memory allocated via kmalloc.
+	kfree(sZombie);
+	kfree(sNonZombie);
+	printk("<1> Exiting Thread Function::");
+}
+To create a new thread, use kernel_thread() function and pass an address of thread function as an argument to this.
+kernel_thread((int (*)(void *))print_taskinfo,NULL, 0);
+To test this module, just create a simple program to create a zombie process.
+int main()
+{
+	pid_t pid;
+	if ((pid = fork()) < 0)
+	exit(1);
+	else if (pid == 0)
+	exit(0);
+	sleep(120);
+	exit(0);
+}
+Execute above code and just see an output of ps command which depicts that child process had died before a parent process. And as parent process has not waited on a child process, so we have a zombie process also called &lt defunct &gt . Output of ps command:
+dahuja 2099 1998 6 11:33 pts/3 00:00:01 ./Example10_3
+dahuja 2100 2099 0 11:33 pts/3 00:00:00 [Example10_3 &lt defunct &gt]
+dahuja 2108 1835 0 11:33 pts/0 00:00:00 grep Example10
+Output of dmesg command:
+Task List::Process PID = 2078,::PPID = 2076,::State = 1 ::Zombie=NON-ZOMBIE
+Task List::Process PID = 2082,::PPID = 2076,::State = 1 ::Zombie=NON-ZOMBIE
+Task List::Process PID = 2083,::PPID = 2076,::State = 1 ::Zombie=NON-ZOMBIE
+Task List::Process PID = 2099,::PPID = 1998,::State = 1 ::Zombie=NON-ZOMBIE
+Task List::Process PID = 2100,::PPID = 2099,::State = 8 ::Zombie=ZOMBIE
+Task List::Process PID = 2109,::PPID = 1924,::State = 0 ::Zombie=NON-ZOMBIE
+Task List::Process PID = 2110,::PPID = 2109,::State = 0 ::Zombie=NON-ZOMBIE
+We could see that our module has shown us that a zombie process exists i.e. PID=2100.
+
+== ==================================== ==
+Below from: http://ru.kernelnewbies.org/node/44
+
+* Every process has a dedicated kernel stack. In this context,
+'process' includes user space processes and threads, plus those
+processes that only exist inside the kernel (e.g. kswapd, xfslogd).
+
+* When a process is sleeping, there is some state in its kernel stack
+to let the scheduler wake it up, that stack does not change until the
+scheduler assigns the task to a cpu. When a processing is running
+and is scheduled on a cpu, it is actively reading and writing its
+stack.
+
+* Kernel stacks are a fixed size. Unlike user space stacks, they do
+not expand as required. Also unlike user space stacks, kernel stacks
+are not swappable.
+
+* Each architecture uses different size kernel stacks (defined by
+THREAD_SIZE). THREAD_SIZE is typically (always?) a multiple of the
+kernel page size.
+
+* When a kernel stack occupies multiple pages, the pages assigned to
+that stack must be physically contiguous and in memory.
+
+* Kernel stacks are typically aligned on a THREAD_SIZE boundary so
+(stack_pointer & ~(THREAD_SIZE - 1)) gives you the start of the
+stack.
+
+* If you overflow the kernel stack for a process then you corrupt the
+next page, with undefined results. This usually causes very strange
+kernel oops.
+
+* Historically (up to 2.4/2.5 kernels), 'struct task' for a process was
+embedded in the kernel stack for that process, reducing the usable
+amount of stack space. Variable 'current' pointed to both the
+'struct task' and the kernel stack.
+
+* In more recent kernels, almost all architectures separate 'struct
+task' from the stack. 'struct task' is created via a slab allocator,
+the stack is created from a page allocator. 'current' now points to
+'struct task' which in turn points to the active kernel stack.
+
+* Separating 'struct task' from the stack means that a single 'struct
+task' can point to different kernel stacks throughout its lifetime.
+This makes it possible to use additional kernel stacks for special
+processing like interrupt handling.
+
+* IA64 is different (isn't it always?). It is the only architecture
+that still embeds 'struct task' within the kernel stack. I wish that
+it separated the two, it would make MCA/INIT handling so much easier.
+Alas David Mosberger vetoed that approach for IA64. On IA64,
+'current' still points to both 'struct task' and the kernel stack,
+making it impossible to use specialized kernel stacks on IA64.
+
+* On i386, kernel stacks were historically 8K in size, with all
+processing being done on that single 8K stack (no additional
+specialized stacks). On i386 boxes with large numbers of processes,
+it became difficult to kmalloc() a kernel stack when forking a new
+process. Each new process required two physically contiguous pages,
+starting on an 8K boundary. i386 boxes would often get into a state
+where there were enough free pages, but they were not contiguous and
+8K aligned.
+
+* Interrupt processing can be separated into hard and soft IRQ
+contexts. Hard IRQ context is when the kernel is servicing the
+hardware, e.g. talking to a disk controller. To minimize the amount
+of time that the hardware is disabled, most drivers will grab some
+data from the hardware, store the data in a kernel structure,
+schedule some work to be done later then re-enable the hardware. When
+the kernel returns from a hard interrupt it checks for any scheduled
+work then runs that work in a soft IRQ context.
+
+* Even when an 8K kernel stack could be allocated, 8K was not always
+enough room to cope with an interrupt arriving while a process was
+active. Normal processing could be interrupted by a hard IRQ which
+could schedule a soft IRQ which could in turn be interrupted by
+another hard IRQ. Those three levels of processing all had to fit
+into 8K.
+
+* Enter CONFIG_4KSTACKS for i386. It recognizes that activity on the
+kernel stack only occurs while the process is running, and that much
+of that activity occurs in response to an interrupt, either in hard
+or soft IRQ context.
+
+* By reducing the per-process stack to 4K, CONFIG_4KSTACKS makes it
+easier to allocate the kernel stack for a new process when the system
+is under heavy memory pressure.
+
+* If an interrupt occurs while a CONFIG_4KSTACKS process is running,
+the kernel retains the current task but switches the stack to a
+separate specialized stack. There are two additional 4K stacks on
+each cpu, for soft and hard IRQ processing. The combination of the
+normal process stack plus the soft and hard IRQ stacks gives up to
+12K of stack for an active process, instead of the previous total of
+8K.
+
+* By definition, processes cannot sleep in interrupt context.
+Therefore when a process does sleep, it is guaranteed that the soft
+and hard IRQ stacks on that cpu are not in use. The process state is
+saved in its dedicated 4K stack and the per cpu IRQ stacks are now
+free for the next process which runs on that cpu.
+
+* The downside of CONFIG_4KSTACKS is that the available space for
+normal (non-interrupt) work is now only 4K, down from the 5K to 7.5K
+that was available under the 8K stacks. Into that 4K space we have
+to fit _ALL_ of the non-interrupt processing, including the VFS
+common code, XFS and the I/O subsystem.
+
+* The block device targeted by the I/O subsystem can be a raw device,
+such as a disk partition or a hardware RAID, in which case the I/O
+path is fairly short. OTOH, the block device can be network based or
+it can using a device mapper of some kind (including loopback, DM,
+LVM, XVM and software RAID), in which case the kernel has to do more
+work to process the I/O. That extra work all needs more stack space,
+and it still has to fit into 4K.
+
+* Rule of thumb: somebody will always build an I/O configuration that
+requires multiple levels of nested I/O processing and eventually
+overflows the kernel stack, no matter how big the kernel stack is.
+
+* XFS on 4K stacks on i386 is not the only problem, it is just the most
+prominent outcrop of a very large iceberg. x86_64 always has an 8K
+normal stack plus separate interrupt stacks (not a config option) but
+even on x86_64, XFS can use up to 55% of the normal stack before it
+submits the I/O.

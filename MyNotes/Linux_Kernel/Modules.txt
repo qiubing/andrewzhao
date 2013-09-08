@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-11-24T21:45:54+08:00
+
+====== Modules ======
+Created Thursday 24 November 2011
+
+==== Kbuild ====
+obj-m := <module_name>.o
+<module_name>-y := <src1>.o <src2>.o ...
+
+==== Makefile ====
+KERNELDIR := /lib/modules/$(shell uname -r)/build
+# The current directory is passed to sub-makes as argument
+PWD := $(shell pwd)
+INSTALLDIR = /home/andrewzhao/kernel/module-lib
+CC = gcc
+#obj-m := <module_name>.o
+modules:
+$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
+modules_install:
+cp ath5k.ko $(INSTALLDIR)
+clean:
+rm -rf *.o *.ko *~ core .depend .*.cmd *.mod.c .tmp_versions *.order *.symvers
+.PHONY: modules modules_install clean
+
+
+==== module_init_tools v.s. kmod ====
+* kmod的depmod，为什么有时在/sbin/目录下有时却又在/usr/bin/目录下？这难道是在VANET项目中在Test电脑上编译安装linux-3.2.4时没有modules.dep.bin的原因吗？
+
+
+==== Make modules_install ====
+* 会在/lib/modules/xxx/中安装modules，那里面的module.builtin.bin是来自哪里，里面的文件又有什么用？
+
+==== Make modules ====
+from [[/Documentation/kbuild/modules.txt]]
+
+* linux-headers, linux-docs可以用于内核模块开发。
+* make M=dir: The following are the only valid targets when building。
+
+==== Misc ====
+* modparam 提供用户向module传输参数的可能，其例子如下:
+	#include<module.h>
+	static bool modparam_fastchanswitch;
+	module_param_named(fastchanswitch, modparam_fastchanswitch, bool, S_IRUGO);
+	MODULE_PARM_DESC(fastchanswitch, "Enable fast channel switching for AR2413/AR5413 radios.");

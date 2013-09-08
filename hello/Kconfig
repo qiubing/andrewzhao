@@ -1,0 +1,6 @@
+config HELLO
+tristate "Hello Driver added by bing"
+default n
+help
+    test for adding driver to menuconfig.
+

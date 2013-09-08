@@ -1,0 +1,129 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-01-04T14:27:41+08:00
+
+====== Programming ======
+Created Wednesday 04 January 2012
+
+==== $ ====
+$? 表示返回值；
+$# 表示参数数目；
+$0 表示可执行文件的文件名；
+
+
+==== 从command line中获取输入 ====
+* **read**
+#!/bin/bash
+                echo Please, enter your firstname and lastname
+                read FN LN 
+                echo "Hi! $LN, $FN !"
+
+==== 逻辑判断 ====
+-lt (<)
+-gt (>)
+-le (<=)
+-ge (>=)
+-eq (==)
+-ne (!=)
+-z
+-n
+-a 且
+-o 或
+-d
+-f
+[参见bash manual]
+
+==== user interface ====
+* **select**
+#!/bin/bash
+           OPTIONS="Hello Quit"
+           select opt in $OPTIONS; do
+               if [ "$opt" = "Quit" ]; then
+                echo done
+                exit
+               elif [ "$opt" = "Hello" ]; then
+                echo Hello World
+               else
+                clear
+                echo bad option
+               fi
+           done
+
+* **command line**
+#!/bin/bash        
+          if [ -z "$1" ]; then 
+              echo usage: $0 directory
+              exit
+          fi
+          SRCD=$1
+          TGTD="/var/backups/"
+          OF=home-$(date +%Y%m%d).tgz
+          tar -cZf $TGTD$OF $SRCD
+
+==== 函数 ====
+* 关键字function用于定义函数，
+#!/bin/bash 
+   **function** quit {
+                   exit
+                }  
+                function e {
+                    echo $1 
+                }  
+                e Hello
+                e World
+                quit
+                echo foo
+
+==== 数值运算 ====
+* let x=100*1000;
+* echo $((1+1));能够在命令行中执行整数计算
+* echo$[1+1];什么意思啊？
+* echo 3/4|bc -l；借助bc，能够完成高精度的计算，相见man bc
+
+==== quote ====
+$(ls)等价于“``”，其中“``”来自Tab键之上的按键；
+例如for i in `seq 1 10`; do echo $i; done和for i in $(seq 1 10); do echo $i; done等效；
+
+==== loop ====
+
+=== (for, while, util) ===
+* The //for// loop is a little bit different from other programming languages. Basically, it let's you iterate over a series of 'words' within a string.
+* The //while// executes a piece of code if the control expression is true, and only stops when it is false (or a explicit break is found within the executed code.
+* The //until// loop is almost equal to the while loop, except that the code is executed while the control expression evaluates to false.
+* **for**
+#!/bin/bash
+        for i in $( ls ); do
+            echo item: $i
+        done
+* **while**
+#!/bin/bash 
+         COUNTER=0
+         while [  $COUNTER -lt 10 ]; do
+             echo The counter is $COUNTER
+             let COUNTER=COUNTER+1 
+         done
+
+
+==== local variables ====
+Local variables can be created by using the keyword local.
+
+                 #!/bin/bash
+                HELLO=Hello 
+                function hello {
+                        **local** HELLO=World
+                        echo $HELLO
+                }
+                echo $HELLO
+                hello
+                echo $HELLO
+        
+This example should be enought to show how to use a local variable.
+
+==== Conditionals ====
+* The base for the 'if' constructions in bash is this:
+if [expression];
+then
+code if 'expression' is true.
+fi
+* 条件语句中，所有的word之间都应有空格，例如if [ STR1 = STR2 ]; then echo "STR1 = STR2"; else echo "STR1:"$STR1; echo "STR2:"$STR2; fi
+* 否则会出现语法错误或者是逻辑运行错误，例如去掉“[]”中的“=”两边的空格，则STR1=STR2变成了一个赋值语句，例如if [ STR1=STR2 ]; then echo "STR1 = STR2"; else echo "STR1:"$STR1; echo "STR2:"$STR2; fi。那么if判断中就为真了

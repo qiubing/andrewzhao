@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-14T09:24:15+08:00
+
+====== Awesome ======
+Created Friday 14 October 2011
+
+===== 1 使用技巧 =====
+* 解决Audio快捷键问题
+      为了能使用"Fn+Arrow"完成对mocp的控制，以此播放上一首歌、下一首歌、暂停播放等功能。刚开始以为是Thinkpad自己的hotkey驱动支持，于是看了看thinkpac_acpi驱动，发现吭不动而且里面没有AudioNext有关的任何东东，于是我立即转向Google，在http://www.thinkwiki.org/wiki/How_to_get_special_keys_to_work网页的帮助下我认识到Thinkpad上面hot键并不是全靠thinkpad_acpi驱动管理的，比如我想要的AudioNext就是依靠//xmodmap//的。
+       查看xmodmap的介绍，得知在X中keycode和keysym的概念，它们之间有一一对应的关系，keycode是底层得知的按键的id代码，需要翻译为对应keysym才有具体意思，例如Fn+Right，keycode是一串0x代码但其对应的keysym为XF86AudioNext。X已经识别到按键操作，这时Awesome自己去作出相应操作，这是需要配置的。在rc.lua中添加awful.key({}, "XF86AudioNext", function () awful.util.spawn("mocp -f") end),即可对该时间执行操作。
+* pkill X，关闭X

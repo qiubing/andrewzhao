@@ -1,0 +1,8 @@
+#
+# Makefile for the RF switch subsystem.
+#
+
+rfkill-y			+= core.o
+rfkill-y			+= input.o
+obj-m				+= rfkill.o
+obj-m				+= rfkill-regulator.o

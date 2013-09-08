@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-28T14:08:51+08:00
+
+====== Python ======
+Created Friday 28 October 2011
+
+kerl = Person('kernel')
+kerl.sayHi()
+kerl.howMany()
+为什么会错，相见~/study/python/objvar.py

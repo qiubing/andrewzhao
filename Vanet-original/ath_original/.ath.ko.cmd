@@ -1,0 +1,1 @@
+cmd_/home/andrewzhao/Vanet-original/ath_original/ath.ko := ld -r -m elf_i386 -T /home/andrewzhao/vanet/linux-3.2.4/scripts/module-common.lds --build-id  -o /home/andrewzhao/Vanet-original/ath_original/ath.ko /home/andrewzhao/Vanet-original/ath_original/ath.o /home/andrewzhao/Vanet-original/ath_original/ath.mod.o

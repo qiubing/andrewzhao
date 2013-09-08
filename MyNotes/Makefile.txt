@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-09-27T17:57:36+08:00
+
+====== Makefile ======
+Created 星期二 27 九月 2011
+
+===== 1 Makefile规则 =====
+target ... : prerequisites ...
+        command
+        ...
+        ...
+        target 也就是一个目标文件,可以是 Object File,也可以是执行文件。还可以是一个标签(Label)，对于标签这种特性,在后续的“伪目标”章节中会有叙述。prerequisites 就是,要生成那个 target 所需要的文件或是目标。command 也就是 make 需要执行的命令。(任意的 Shell 命令)
+
+===== 2 Makefile中使用变量 =====
+objects=xxx //声明和赋值
+$(objects) //引用
+
+
+===== 3 各种链接库啊？ =====

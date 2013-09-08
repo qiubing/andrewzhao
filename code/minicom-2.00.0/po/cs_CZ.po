@@ -1,0 +1,1891 @@
+# Czech translation of minicom
+# Jiøí Pavlovský <pavlovsk@ff.cuni.cz>, 1999, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: minicom-1.90\n"
+"POT-Creation-Date: 2001-10-01 17:22+0300\n"
+"PO-Revision-Date: 2001-02-26 11:00+0100\n"
+"Last-Translator: Jiøí Pavlovský  <pavlovsk@ff.cuni.cz>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/config.c:54
+msgid "minicom: WARNING: configuration file not found, using defaults\n"
+msgstr ""
+"minicom: VAROVÁNÍ: konfiguraèní soubor nenalezen, pou¾ívám implicitní\n"
+"hodnoty\n"
+
+#: src/config.c:59
+#, c-format
+msgid "minicom: there is no global configuration file %s\n"
+msgstr "minicom: globální konfiguraèní soubor %s neexistuje\n"
+
+#: src/config.c:60
+msgid "Ask your sysadm to create one (with minicom -s).\n"
+msgstr ""
+"Po¾ádejte administrátora systému o jeho vytvoøení (pomocí minicom -s).\n"
+
+#: src/config.c:82
+#, c-format
+msgid "minicom: cannot open macro file %s\n"
+msgstr "minicom: soubor %s s makry nelze otevøít\n"
+
+#: src/config.c:186 src/config.c:209 src/config.c:237
+msgid "You are not allowed to change this parameter"
+msgstr "Nemáte oprávnìní mìnit tuto volbu"
+
+#: src/config.c:263
+msgid " A - File name (empty=disable) :"
+msgstr " A - Název souboru (¾ádný=vypnuto) :"
+
+#: src/config.c:264
+msgid " B - Log connects and hangups  :"
+msgstr " B - Zaznamenávat spojení a zavì¹ení :"
+
+#: src/config.c:265
+msgid " C - Log file transfers        :"
+msgstr " C - Zaznamenávat pøenosy souborù :"
+
+#: src/config.c:266 src/config.c:318 src/config.c:545 src/config.c:643
+#: src/config.c:1142 src/dial.c:1019
+msgid "Change which setting?"
+msgstr "Vyberte písmeno:"
+
+#: src/config.c:270
+msgid "Logging options"
+msgstr "Nastavení zaznamenávání"
+
+#: src/config.c:312
+msgid " A - Download directory :"
+msgstr " A - Adresáø pro sta¾ené soubory  :"
+
+#: src/config.c:313
+msgid " B - Upload directory   :"
+msgstr " B - Adresáø s posílanými soubory :"
+
+#: src/config.c:314
+msgid " C - Script directory   :"
+msgstr " C - Adresáø se skripty           :"
+
+#: src/config.c:315
+msgid " D - Script program     :"
+msgstr " D - Interpret skriptù            :"
+
+#: src/config.c:316
+msgid " E - Kermit program     :"
+msgstr " E - Kermit                       :"
+
+#: src/config.c:317
+msgid " F - Logging options"
+msgstr " F - Nastavení zaznamenávání"
+
+#: src/config.c:372 src/rwconf.c:118 src/rwconf.c:151 src/rwconf.c:152
+msgid "Yes"
+msgstr "Ano"
+
+#: src/config.c:372
+msgid "No "
+msgstr "Ne "
+
+#: src/config.c:439
+msgid "M  Zmodem download string activates..."
+msgstr "M  Stahování Zmodemem aktivuje øetìzec......."
+
+#: src/config.c:440
+msgid "N  Use filename selection window......"
+msgstr "N  Pou¾ít okna pro výbìr souborù............."
+
+#: src/config.c:441
+msgid "O  Prompt for download directory......"
+msgstr "O  Ptát se na adresáø pro ukládání souborù..."
+
+#: src/config.c:442
+msgid "Change which setting? (SPACE to delete)"
+msgstr "Vyberte písmeno: (MEZERNÍK pro mazání)"
+
+#: src/config.c:445
+msgid "     Name             Program"
+msgstr "     Jméno            Program"
+
+#: src/config.c:447
+msgid "Name U/D FullScr IO-Red. Multi"
+msgstr "Jméno U/D CelObr IO-pøes Multi"
+
+#: src/config.c:477
+msgid "Delete which protocol? "
+msgstr "Smazat protokol? "
+
+#: src/config.c:538
+msgid " A -    Serial Device      :"
+msgstr " A - Sériové zaøízení           :"
+
+#: src/config.c:539
+msgid " B - Lockfile Location     :"
+msgstr " B - Umístìní zámku             :"
+
+#: src/config.c:540
+msgid " C -   Callin Program      :"
+msgstr " C - Program pro pøíchozí volání:"
+
+#: src/config.c:541
+msgid " D -  Callout Program      :"
+msgstr " D - Program pro odchozí volání :"
+
+#: src/config.c:542
+msgid " E -    Bps/Par/Bits       :"
+msgstr " E - Bps/Par/Bity               :"
+
+#: src/config.c:543
+msgid " F - Hardware Flow Control :"
+msgstr " F - Hardwarová kontrola toku   :"
+
+#: src/config.c:544
+msgid " G - Software Flow Control :"
+msgstr " G - Softwarová kontrola toku   :"
+
+#: src/config.c:613
+msgid "DTE speed "
+msgstr "DTE rychlost"
+
+#: src/config.c:615
+msgid "line speed"
+msgstr "rychlost linky"
+
+#: src/config.c:623
+msgid " A - Init string ........."
+msgstr " A - Inicializace ..............."
+
+#: src/config.c:624
+msgid " B - Reset string ........"
+msgstr " B - Pøíkaz pro reset ..........."
+
+#: src/config.c:625
+msgid " C - Dialing prefix #1...."
+msgstr " C - Prefix pro volání #1 ......."
+
+#: src/config.c:626
+msgid " D - Dialing suffix #1...."
+msgstr " D - Sufix pro volání #1 ........"
+
+#: src/config.c:627
+msgid " E - Dialing prefix #2...."
+msgstr " E - Prefix pro volání #2 ......."
+
+#: src/config.c:628
+msgid " F - Dialing suffix #2...."
+msgstr " F - Sufix pro volání #2 ........"
+
+#: src/config.c:629
+msgid " G - Dialing prefix #3...."
+msgstr " G - Prefix pro volání #3 ......."
+
+#: src/config.c:630
+msgid " H - Dialing suffix #3...."
+msgstr " H - Sufix pro volání #3 ........"
+
+#: src/config.c:631
+msgid " I - Connect string ......"
+msgstr " I - Indikace navázání spojení .."
+
+#: src/config.c:632
+msgid " J - No connect strings .."
+msgstr " J - Indikace pøeru¹ení spojení ."
+
+#: src/config.c:633
+msgid " K - Hang-up string ......"
+msgstr " K - Pøíkaz pro zavì¹ení ........"
+
+#: src/config.c:634
+msgid " L - Dial cancel string .."
+msgstr " L - Pøíkaz ukonèující vytáèení ."
+
+#: src/config.c:635
+msgid " M - Dial time ..........."
+msgstr " M - Doba vytáèení .............."
+
+#: src/config.c:636
+msgid " N - Delay before redial ."
+msgstr " N - Pauza mezi vytáèeními ......"
+
+#: src/config.c:637
+msgid " O - Number of tries ....."
+msgstr " O - Poèet pokusù ..............."
+
+#: src/config.c:638
+msgid " P - DTR drop time (0=no)."
+msgstr " P - DTR drop time (0=ne) ......."
+
+#: src/config.c:639
+msgid " Q - Auto bps detect ....."
+msgstr " Q - Automatická detekce bps "
+
+#: src/config.c:640
+msgid " R - Modem has DCD line .."
+msgstr " R - Modem má DCD linku ....."
+
+#: src/config.c:641
+msgid " S - Status line shows ..."
+msgstr " S - Stavová linka ukazuje .."
+
+#: src/config.c:642
+msgid " T - Multi-line untag ...."
+msgstr " T - Odznaèení multilinkové.."
+
+#: src/config.c:648
+msgid "Modem and dialing parameter setup"
+msgstr "Nastavení modemu a parametrù vytáèení"
+
+#: src/config.c:681
+msgid "      (Return or Esc to exit)"
+msgstr "      (Return èi Esc pro ukonèení)"
+
+#: src/config.c:803
+msgid " A - Command key is         :"
+msgstr " A - Pøíkazová klávesa         :"
+
+#: src/config.c:804
+msgid " B - Backspace key sends    :"
+msgstr " B - Backspace posílá          :"
+
+#: src/config.c:805
+msgid " C - Status line is         :"
+msgstr " C - Stavová linka             :"
+
+#: src/config.c:806
+msgid " D - Alarm sound            :"
+msgstr " D - Zvonek pro upozornìní     :"
+
+#: src/config.c:807
+msgid " E - Foreground Color (menu):"
+msgstr " E - Barva popøedí (menu)      :"
+
+#: src/config.c:808
+msgid " F - Background Color (menu):"
+msgstr " F - Barva pozadí (menu)       :"
+
+#: src/config.c:809
+msgid " G - Foreground Color (term):"
+msgstr " G - Barva popøedí (term)      :"
+
+#: src/config.c:810
+msgid " H - Background Color (term):"
+msgstr " H - Barva pozadí (term)       :"
+
+#: src/config.c:811
+msgid " I - Foreground Color (stat):"
+msgstr " I - Barva popøedí (stat)      :"
+
+#: src/config.c:812
+msgid " J - Background Color (stat):"
+msgstr " J - Barva pozadí (stat)       :"
+
+#: src/config.c:813
+msgid " K - History Buffer Size    :"
+msgstr " K - Velikost záznamu historie :"
+
+#. fmg - ok, so I was lazy..
+#: src/config.c:814 src/config.c:1527
+msgid "Change which setting?  (Esc to exit)"
+msgstr "Vyberte písmeno: (Esc pro ukonèení)"
+
+#: src/config.c:816
+msgid " L - Macros file            :"
+msgstr " L - Soubor s makry            :"
+
+#: src/config.c:817
+msgid " N - Macros enabled         :"
+msgstr " N - Makra zapnuta             :"
+
+#: src/config.c:818
+msgid " O - Character conversion   :"
+msgstr " O - Pøevod znakù              :"
+
+#: src/config.c:828 src/config.c:1329
+msgid "Screen and keyboard"
+msgstr "Obrazovka a klávesnice"
+
+#: src/config.c:848
+msgid " M - Edit Macros\n"
+msgstr " M - Editovat makra\n"
+
+#: src/config.c:870
+msgid "You can't change colors in black and white mode"
+msgstr "V èernobílém re¾imu barvy nelze mìnit."
+
+#: src/config.c:883
+msgid "Menu foreground == background color, change!"
+msgstr "Barva popøedí menu je stejná jako barva pozadí!"
+
+#: src/config.c:893
+msgid "Terminal foreground == background color, change!"
+msgstr "Barva popøedí terminálu je stejná jako barva pozadí!"
+
+#: src/config.c:905
+msgid "History Buffer Size"
+msgstr "Velikost záznamu historie"
+
+#: src/config.c:906
+msgid ""
+"\n"
+"  You have changed the history buffer size.\n"
+"  You will need to save the configuration file and\n"
+"  restart minicom for the change to take effect.\n"
+"\n"
+"  Hit a key to Continue... "
+msgstr ""
+"\n"
+"  Zmìnil jste velikost záznamu historie.\n"
+"  Musíte ulo¾it konfiguraci a znovu spustit\n"
+"  Minicom, aby zmìny ve¹ly v platnost.\n"
+"\n"
+"  Pokraèujte stiskem jakékoli platnosti..."
+
+#: src/config.c:923
+msgid "Program new command key"
+msgstr "Nová pøíkazová klávesa"
+
+#: src/config.c:924
+msgid ""
+"\n"
+" Press the new command key. If you want to use\n"
+msgstr ""
+"\n"
+"Stisknìte novou pøíkazovou klávesu. Pokud chcete pou¾ít\n"
+
+#: src/config.c:925
+msgid ""
+" the META or ALT key enter:\n"
+"\n"
+msgstr ""
+"META èi ALT klávesu zadejte:\n"
+"\n"
+
+#: src/config.c:926
+msgid "  o SPACE if your meta key sets the 8th bit high\n"
+msgstr "  o MEZERNÍK pokud Va¹e meta klávesa nastavuje osmý bit\n"
+
+#: src/config.c:927
+msgid "  o ESC   if your meta key sends the ESCAPE prefix (standard)\n"
+msgstr "  o ESC pokud Va¹e meta klávesa posílá ESCAPE prefix (implicitní)\n"
+
+#: src/config.c:928
+msgid ""
+"\n"
+"\n"
+" Press new command key: "
+msgstr ""
+"\n"
+"\n"
+"Stisknìte novou pøíkazovou klávesu: "
+
+#: src/config.c:933
+msgid "Meta-8th bit "
+msgstr "Meta-osmý bit "
+
+#: src/config.c:935
+msgid "Escape (Meta)"
+msgstr "Escape (Meta)"
+
+#: src/config.c:968 src/config.c:1192
+msgid "disabled"
+msgstr "vypnuta"
+
+#: src/config.c:971 src/config.c:1195 src/rwconf.c:150
+msgid "enabled"
+msgstr "zapnuta"
+
+#: src/config.c:1078
+msgid "This system does not support history"
+msgstr "Tento systém nepodporuje historii"
+
+#. Permission denied, hacker!
+#: src/config.c:1090
+msgid "ERROR: you do not have permission to create a file there!"
+msgstr "CHYBA: nemáte oprávnìní vytvoøit zde soubor!"
+
+#. File does exist, but cannot be opened.
+#: src/config.c:1096
+#, c-format
+msgid "ERROR: cannot open macro file %s"
+msgstr "CHYBA: soubor %s s makry nelze otevøít!"
+
+#. Read macros from the file.
+#: src/config.c:1102
+msgid "Reading macros"
+msgstr "Ètu makra"
+
+#: src/config.c:1138
+msgid " A - Terminal emulation  :"
+msgstr " A - Emulace terminálu  :"
+
+#: src/config.c:1139
+msgid " B - Backspace key sends :"
+msgstr " B - Backspace posílá   :"
+
+#: src/config.c:1140
+msgid " C -      Status line is :"
+msgstr " C - Stavová linka      :"
+
+#: src/config.c:1141
+msgid " D -  Newline delay (ms) :"
+msgstr " D - Prodleva po nové øádce (ms) :"
+
+#: src/config.c:1145
+msgid "Terminal settings"
+msgstr "Nastavení terminálu"
+
+#: src/config.c:1236 src/config.c:1245
+#, c-format
+msgid "Cannot write to %s"
+msgstr "Do %s nelze zapisovat"
+
+#: src/config.c:1241 src/config.c:1250
+msgid "Configuration saved"
+msgstr "Konfigurace ulo¾ena"
+
+#. fmg - they might want to know...
+#: src/config.c:1270
+msgid "ERROR: Macros have changed but no filename is set!"
+msgstr "CHYBA: Makra byla zamìnìna, ale není zadán ¾ádný soubor!"
+
+#: src/config.c:1274
+#, c-format
+msgid "Cannot write macros file %s"
+msgstr "Makra nelze do souboru %s ulo¾it"
+
+#: src/config.c:1280
+msgid "Macros saved"
+msgstr "Makra ulo¾ena"
+
+#: src/config.c:1298
+msgid "You are not allowed to create a configuration"
+msgstr "Nemáte oprávnìní konfigurovat Minicom"
+
+#: src/config.c:1303
+msgid "Give name to save this configuration?"
+msgstr "Zadejte soubor pro ulo¾ení této konfigurace:"
+
+#: src/config.c:1325
+msgid "Filenames and paths"
+msgstr "Jména a cesty k souborùm"
+
+#: src/config.c:1326
+msgid "File transfer protocols"
+msgstr "Pøenosové protokoly"
+
+#: src/config.c:1327
+msgid "Serial port setup"
+msgstr "Nastavení sériového portu"
+
+#: src/config.c:1328
+msgid "Modem and dialing"
+msgstr "Modem a vytáèení"
+
+#: src/config.c:1331
+msgid "Save setup as.."
+msgstr "Ulo¾it nastavení jako.."
+
+#: src/config.c:1332
+msgid "Exit"
+msgstr "Konec"
+
+#: src/config.c:1333
+msgid "Exit from Minicom"
+msgstr "Ukonèit Minicom"
+
+#: src/config.c:1346
+#, c-format
+msgid "Save setup as %s"
+msgstr "Ulo¾it nastavení jako %s"
+
+#: src/config.c:1350
+msgid "configuration"
+msgstr "konfigurace"
+
+#: src/config.c:1358
+msgid "BLACK"
+msgstr "ÈERNÁ"
+
+#: src/config.c:1358
+msgid "RED"
+msgstr "ÈERVENÁ"
+
+#: src/config.c:1358
+msgid "GREEN"
+msgstr "ZELENÁ"
+
+#: src/config.c:1358
+msgid "YELLOW"
+msgstr "®LUTÁ"
+
+#: src/config.c:1359
+msgid "BLUE"
+msgstr "MODRÁ"
+
+#: src/config.c:1359
+msgid "MAGENTA"
+msgstr "FUCHSINOVÂ"
+
+#: src/config.c:1359
+msgid "CYAN"
+msgstr "MODROZELENÁ"
+
+#: src/config.c:1359
+msgid "WHITE"
+msgstr "BÍLÁ"
+
+#: src/config.c:1381
+msgid "Comm Parameters"
+msgstr "Nastavení sériového portu"
+
+#: src/config.c:1386
+msgid ""
+"   Speed          Parity          Data\n"
+"\n"
+msgstr ""
+"   Rychlost        Parita          Data\n"
+"\n"
+
+#: src/config.c:1387
+msgid " A: 300           L: None         S: 5\n"
+msgstr " A: 300           L: ®ádná        S: 5\n"
+
+#: src/config.c:1388
+msgid " B: 1200          M: Even         T: 6\n"
+msgstr " B: 1200          M: Sudá         T: 6\n"
+
+#: src/config.c:1389
+msgid " C: 2400          N: Odd          U: 7\n"
+msgstr " C: 2400          N: Lichá        U: 7\n"
+
+#: src/config.c:1390
+msgid " D: 4800          O: Mark         V: 8\n"
+msgstr " D: 4800          O: Znaèka       V: 8\n"
+
+#: src/config.c:1391
+msgid " E: 9600          P: Space\n"
+msgstr " E: 9600          P: Mezera\n"
+
+#: src/config.c:1393
+msgid " F: 19200                      Stopbits\n"
+msgstr " F: 19200                      Stopbity\n"
+
+#: src/config.c:1397
+msgid " G: 38400                         W: 1\n"
+msgstr " G: 38400                         W: 1\n"
+
+#: src/config.c:1399
+msgid "                                    W: 1\n"
+msgstr "                                  W: 1\n"
+
+#: src/config.c:1401
+msgid " H: 57600                         X: 2\n"
+msgstr " H: 300                           X: 2\n"
+
+#: src/config.c:1405
+msgid " I: 115200        Q: 8-N-1\n"
+msgstr " I: 115200        Q: 8-N-1\n"
+
+#: src/config.c:1407
+msgid "                  Q: 8-N-1\n"
+msgstr "                  Q: 8-N-1\n"
+
+#: src/config.c:1409
+msgid " J: 230400        R: 7-E-1\n"
+msgstr " J: 115200        P: 8-N-1\n"
+
+#: src/config.c:1411
+msgid "                  R: 7-E-1\n"
+msgstr "                  R: 7-E-1\n"
+
+#: src/config.c:1413
+msgid " K: Current\n"
+msgstr " K: Aktuální\n"
+
+#: src/config.c:1416
+msgid ""
+"\n"
+" Choice, or <Enter> to exit? "
+msgstr ""
+"\n"
+" Vyberte písmeno: (Enter pro ukonèení)"
+
+#: src/config.c:1427
+#, c-format
+msgid "Current: %5s %s%s%s  "
+msgstr "Aktuální: %5s %s%s%s "
+
+#: src/config.c:1530
+msgid "F1 to F10 Macros"
+msgstr "Makra F1 a¾ F10"
+
+#: src/config.c:1549
+msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
+msgstr ""
+" (LEGENDA: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pauza 1 vteøinu,"
+
+#: src/config.c:1551
+msgid "  \\u = username, \\p = password, \\\\ = \\)"
+msgstr "  \\u = u¾ivatelské jméno, \\p = heslo, \\\\ = \\)"
+
+#: src/config.c:1563
+msgid "CHANGED"
+msgstr "ZMÌNÌNO"
+
+#: src/config.c:1651
+msgid "Character conversion"
+msgstr "PØEVOD ZNAKÙ"
+
+#: src/config.c:1656
+msgid " char    in out    char    in out    char    in out    char    in out\n"
+msgstr ""
+" znak    dov ven   znak    dov ven   znak    dov ven   znak    dov ven\n"
+
+#: src/config.c:1677
+msgid ""
+"\n"
+" A - load table\tB - save table"
+msgstr ""
+"\n"
+" A - nahrát tabulku\tB - ulo¾it tabulku"
+
+#: src/config.c:1679
+#, c-format
+msgid "\tfile:%s"
+msgstr "\tsoubor:%s"
+
+#: src/config.c:1680
+msgid ""
+"\n"
+" C - edit char\tD - next screen\tE - prev screen\n"
+msgstr ""
+"\n"
+" C - editovat znak\tD - dal¹í obrazovka\tE - pøedchozí obrazovka\n"
+
+#: src/config.c:1681
+#, c-format
+msgid " F - convert capture: %s\n"
+msgstr "F - protokol pøevodu: %s\n"
+
+#: src/config.c:1696
+#, c-format
+msgid "Load file: %s"
+msgstr "Nahrát soubor: %s"
+
+#: src/config.c:1708
+#, c-format
+msgid "Save as file: %s"
+msgstr "Ulo¾it jako: %s"
+
+#: src/config.c:1719
+msgid "Character to be edited: "
+msgstr "Editovat znak: "
+
+#: src/config.c:1726 src/config.c:1738 src/config.c:1750
+msgid "Input character ascii value 0-255"
+msgstr "ASCII hodnota vstupního znaku 0-255"
+
+#: src/config.c:1732
+#, c-format
+msgid "Change input to: %s"
+msgstr "Zmìnit vstup na: %s"
+
+#: src/config.c:1744
+#, c-format
+msgid "Change output to: %s"
+msgstr "Zmìnit výstup na: %s"
+
+#: src/config.c:1782
+#, c-format
+msgid "Cannot open conversion table %s"
+msgstr "Pøevodní tabulku %s nelze otevøít"
+
+#: src/config.c:1796
+#, c-format
+msgid "Cannot write conversion table %s"
+msgstr "Pøevodní tabulku %s nelze ulo¾it"
+
+#: src/dial.c:203
+msgid "Initializing Modem"
+msgstr "Inicializuji modem"
+
+#: src/dial.c:218
+msgid "Resetting Modem"
+msgstr "Resetuji modem"
+
+#: src/dial.c:233
+msgid "Hanging up"
+msgstr "Zavì¹uji"
+
+#: src/dial.c:237
+#, c-format
+msgid "Hangup (%ld:%02ld:%02ld)"
+msgstr "Zavì¹eno (%ld:%02ld:%02ld)"
+
+#: src/dial.c:270
+msgid "Sending BREAK"
+msgstr "Posílám 'BREAK'"
+
+#: src/dial.c:336
+#, c-format
+msgid "    No connection: %s.      \n"
+msgstr "    ®ádné spojení: %s       \n"
+
+#: src/dial.c:338
+msgid "   Press any key to continue..    "
+msgstr "   Pokraèujte stiskem jakékoli klávesy"
+
+#: src/dial.c:343 src/dial.c:354
+#, c-format
+msgid "     Retry in %2d seconds             "
+msgstr "     Do dal¹ího pokusu zbývá vteøin: %2d"
+
+#: src/dial.c:380
+msgid "Max retries"
+msgstr "Maximální poèet pokusù"
+
+#: src/dial.c:390
+msgid "You are already online! Hang up first."
+msgstr "Ji¾ jste spojen! Nejprve zavìste."
+
+#: src/dial.c:395
+msgid "Autodial"
+msgstr "Automatické vytáèení"
+
+#: src/dial.c:399
+msgid "Dialing"
+msgstr "Vytáèím"
+
+#: src/dial.c:400
+#, c-format
+msgid "      At : %s\n"
+msgstr "      V : %s\n"
+
+#. jl 26.01.98
+#: src/dial.c:402
+#, c-format
+msgid " Last on : %s at %s\n"
+msgstr " Poslední spojení : %s v %s\n"
+
+#: src/dial.c:426
+#, c-format
+msgid " Dialing : %s"
+msgstr " Vytáèím : %s"
+
+#: src/dial.c:428
+#, c-format
+msgid ""
+"\n"
+"      At : %s"
+msgstr ""
+"\n"
+"      V : %s"
+
+#: src/dial.c:431
+#, c-format
+msgid ""
+"\n"
+" Last on : %s at %s"
+msgstr ""
+"\n"
+" Poslední spojení : %s v %s"
+
+#: src/dial.c:445
+#, c-format
+msgid "    Time : %-3d"
+msgstr "    Èas : %-3d"
+
+#: src/dial.c:446
+#, c-format
+msgid "     Attempt #%d"
+msgstr "     Pokus #%d"
+
+#: src/dial.c:447
+msgid ""
+"\n"
+"\n"
+"\n"
+" Escape to cancel, space to retry."
+msgstr ""
+"\n"
+"\n"
+"\n"
+" Escape pro zru¹ení, mezerník pro opìtovný pokus."
+
+#: src/dial.c:487
+msgid "Cancelled"
+msgstr "Zru¹eno"
+
+#: src/dial.c:544
+msgid "Connected. Press any key to continue"
+msgstr "Spojen. Pokraèujte stiskem jakékoli klávesy."
+
+#: src/dial.c:621
+msgid "Timeout"
+msgstr "Vypr¹el èas"
+
+#: src/dial.c:780
+msgid "Manually entered number"
+msgstr "Ruènì zadané èíslo"
+
+#: src/dial.c:788
+msgid "Cannot open ~/.dialdir: permission denied"
+msgstr "~/.dialdir nelze otevøít: pøístup odmítnut"
+
+#: src/dial.c:838
+msgid "Phonelist garbled (unknown version?)"
+msgstr "Telefonní seznam je poru¹en (neznámá verze?)"
+
+#: src/dial.c:845
+msgid "Unknown dialing directory version"
+msgstr "Neznámá verze telefonního seznamu"
+
+#: src/dial.c:852
+msgid "Phonelist garbled (?)"
+msgstr "Telefonní seznam je poru¹en (?)"
+
+#: src/dial.c:875
+msgid "Out of memory while reading dialing directory"
+msgstr "Pøi ètení telefonního seznamu do¹la pamì»"
+
+#: src/dial.c:914
+#, c-format
+msgid "Old dialdir copied as %s.%hd"
+msgstr "Starý telefonní seznam zkopírován jako %s.%hd"
+
+#: src/dial.c:947
+msgid "Can't write to ~/.dialdir"
+msgstr "Do ~/.dialdir nelze zapisovat"
+
+#: src/dial.c:969
+msgid "Error writing ~/.dialdir!"
+msgstr "Pøi ukládání do ~./.dialdir nastala chyba!"
+
+#: src/dial.c:1007
+msgid " A -  Name                :"
+msgstr " A - Jméno               :"
+
+#: src/dial.c:1008
+msgid " B -  Number              :"
+msgstr " B - Èíslo               :"
+
+#: src/dial.c:1009
+msgid " C -  Dial string #       :"
+msgstr " C - Pøíkaz pro vytáèení :"
+
+#: src/dial.c:1010
+msgid " D -  Local echo          :"
+msgstr " D - Místní echo         :"
+
+#: src/dial.c:1011
+msgid " E -  Script              :"
+msgstr " E - Skript              :"
+
+#: src/dial.c:1012
+msgid " F -  Username            :"
+msgstr " F - U¾ivatelské jméno   :"
+
+#: src/dial.c:1013
+msgid " G -  Password            :"
+msgstr " G - Heslo               :"
+
+#: src/dial.c:1014
+msgid " H -  Terminal Emulation  :"
+msgstr " H - Emulace terminálu   :"
+
+#: src/dial.c:1015
+msgid " I -  Backspace key sends :"
+msgstr " I - Backspace posílá    :"
+
+#: src/dial.c:1016
+msgid " J -  Linewrap            :"
+msgstr " J - Zalamování øádkù    :"
+
+#: src/dial.c:1017
+msgid " K -  Line Settings       :"
+msgstr " K - Nastavení linky     :"
+
+#: src/dial.c:1018
+msgid " L -  Conversion table    :"
+msgstr " L - Pøevodní tabulky    :"
+
+#: src/dial.c:1031
+msgid "Delete"
+msgstr "Smazat"
+
+#: src/dial.c:1031 src/dial.c:1101 src/dial.c:1108
+msgid "Backspace"
+msgstr "Backspace"
+
+#: src/dial.c:1033
+msgid "On"
+msgstr "Zapnuto"
+
+#: src/dial.c:1033 src/dial.c:1103 src/dial.c:1113
+msgid "Off"
+msgstr "Vypnuto"
+
+#: src/dial.c:1037
+#, c-format
+msgid "      Last dialed         : %s %s\n"
+msgstr "      Naposledy vytoèeno : %s %s\n"
+
+#: src/dial.c:1038
+#, c-format
+msgid "      Times on            : %d"
+msgstr "      Poèet spojení      : %d"
+
+#: src/dial.c:1101 src/dial.c:1108
+msgid "Delete   "
+msgstr "Smazat   "
+
+#: src/dial.c:1103 src/dial.c:1113
+msgid "On "
+msgstr "Zapnuto"
+
+#: src/dial.c:1133
+#, fuzzy
+msgid "  Dial    Find    Add     Edit   Remove   moVe   Manual "
+msgstr "  Vytoèit Hledat  Pøidat  Edit   Smazat   Pøesun Ruènì "
+
+#. Little menu.
+#: src/dial.c:1277 src/file.c:79 src/minicom.c:60 src/minicom.c:63
+msgid "   Yes  "
+msgstr "   Ano  "
+
+#: src/dial.c:1277 src/file.c:79 src/minicom.c:60 src/minicom.c:63
+msgid "   No   "
+msgstr "   Ne   "
+
+#: src/dial.c:1372
+#, c-format
+msgid "Entry \"%s\" not found. Enter dialdir?"
+msgstr "Polo¾ka \"%s\" nenalezena. Otevøít telefonní seznam?"
+
+#: src/dial.c:1401 src/file.c:405
+msgid "( Escape to exit, Space to tag )"
+msgstr "( Escape pro ukonèení, mezerník pro oznaèení )"
+
+#: src/dial.c:1402
+msgid " Move entry up/down, Escape to exit"
+msgstr " Pøesuòte polo¾ku nahoru/dolù, Escape pro ukonèení"
+
+#: src/dial.c:1421
+msgid "Dialing Directory"
+msgstr "Telefonní seznam"
+
+#: src/dial.c:1423
+msgid "     Name            Number            Last on      Times Script\n"
+msgstr "     Jméno           Èíslo             Naposledy    Poèet Skript\n"
+
+#: src/dial.c:1596
+msgid "Find an entry"
+msgstr "Hledat polo¾ku"
+
+#. Delete an entry from the list
+#: src/dial.c:1654
+msgid "Remove entry?"
+msgstr "Smazat polo¾ku?"
+
+#: src/dial.c:1697
+msgid "Enter number"
+msgstr "Zadejte èíslo"
+
+#: src/file.c:73
+#, fuzzy
+msgid " [Goto]  [Prev]  [Show]  [Tag]  [Untag]  [Okay] "
+msgstr "[Jít] [Pøed] [Zobr] [Ozn] [Odznaè] [Ok] "
+
+#. select <a file|one or more files|a directory> for <upload|download>
+#: src/file.c:363
+#, c-format
+msgid "Select %s for %s"
+msgstr "Vyberte %s pro %s"
+
+#: src/file.c:364
+msgid "one or more files"
+msgstr "jeden èi více"
+
+#: src/file.c:364
+msgid "a file"
+msgstr "souborù"
+
+#: src/file.c:365
+msgid "a directory"
+msgstr "adresáø"
+
+#: src/file.c:366 src/updown.c:250
+msgid "download"
+msgstr "sta¾ení"
+
+#: src/file.c:366 src/updown.c:250
+msgid "upload"
+msgstr "poslání"
+
+#: src/file.c:371
+msgid "Directory: %%-%ds"
+msgstr "Adresáø: %%-%ds"
+
+#: src/file.c:434
+msgid "Can't back up!"
+msgstr "Nemohu se vrátit!"
+
+#: src/file.c:536
+msgid "Too many files tagged - buffer would overflow"
+msgstr "Je oznaèeno pøíli¹ mnoho souborù - do¹lo by k pøeteèení bufferu"
+
+#: src/file.c:650 src/file.c:802
+msgid "Can select only one!"
+msgstr "Mù¾ete vybrat pouze jeden!"
+
+#: src/file.c:777
+msgid "Goto directory:"
+msgstr "Pøejít do adresáøe:"
+
+#: src/file.c:791
+msgid "Filename pattern:"
+msgstr "Souborová maska:"
+
+#: src/file.c:808
+msgid "Tag pattern:"
+msgstr "Oznaèit soubory vyhovující:"
+
+#: src/file.c:812
+msgid "No file(s) tagged"
+msgstr "Nebyly oznaèeny ¾ádné soubory"
+
+#: src/file.c:829
+msgid "Untag pattern:"
+msgstr "Odznaèit soubory vyhovující:"
+
+#: src/file.c:833
+msgid "No file(s) untagged"
+msgstr "Nebyly odznaèeny ¾ádné soubory"
+
+#: src/file.c:849
+msgid "No file selected - enter filename:"
+msgstr "Nejsou vybrány ¾ádné soubory - zadejte název souboru:"
+
+#: src/file.c:859
+#, c-format
+msgid "File: \"%s\" exists!. Over-write?"
+msgstr "Soubor \"%s\" ji¾ existuje! Chcete jej pøepsat?"
+
+#: src/file.c:873
+msgid "no such file!"
+msgstr "Takový soubor neexistuje!"
+
+#: src/getsdir.c:166
+#, c-format
+msgid "DBUG: initial readdir() failed (errno == %d)\n"
+msgstr "DBUG: volání readdir() selhalo (errno == %d)\n"
+
+#: src/getsdir.c:435
+#, c-format
+msgid "%d files:\n"
+msgstr "poèet souborù: %d\n"
+
+#: src/help.c:43
+msgid "Minicom Command Summary"
+msgstr "Pøehled pøíkazù Minicomu"
+
+#: src/help.c:46
+#, c-format
+msgid "Commands can be called by %s<key>"
+msgstr "Pøíkazy mohou být volány klávesou %s"
+
+#: src/help.c:49
+msgid "Main Functions"
+msgstr "Hlavní funkce"
+
+#: src/help.c:51
+msgid "Other Functions"
+msgstr "Dal¹í funkce"
+
+#: src/help.c:53
+msgid " Dialing directory..D  run script (Go)....G | Clear Screen.......C\n"
+msgstr " Telefonní seznam...D  Spustit skript ....G | Smazat obrazovku...C\n"
+
+#: src/help.c:54
+msgid " Send files.........S  Receive files......R | cOnfigure Minicom..O\n"
+msgstr " Poslat soubory.....S  Stáhnout soubory...R | Konfigurace........O\n"
+
+#: src/help.c:55
+msgid " comm Parameters....P  Add linefeed.......A | "
+msgstr " Nastavení portu....P  Pøidávat linefeed..A | "
+
+#: src/help.c:57
+msgid "Suspend minicom....J\n"
+msgstr "Pozastavit minicom.J\n"
+
+#: src/help.c:59
+msgid "Jump to a shell....J\n"
+msgstr "Spustit shell........J\n"
+
+#: src/help.c:61
+msgid " Capture on/off.....L  Hangup.............H | eXit and reset.....X\n"
+msgstr " Protokol...........L  Zavìsit............H | Ukonèit s resetem..X\n"
+
+#: src/help.c:62
+msgid " send break.........F  initialize Modem...M | Quit with no reset.Q\n"
+msgstr " Poslat break.......F  Inicializuj modem..M | Ukonèit bez resetu.Q\n"
+
+#: src/help.c:63
+msgid " Terminal settings..T  run Kermit.........K | Cursor key mode....I\n"
+msgstr " Nastavení termu....T  Spustit kermit.....K | Kurzorové klávesy..I\n"
+
+#: src/help.c:64
+msgid " lineWrap on/off....W"
+msgstr " Zalamování øádkù...W"
+
+#: src/help.c:66
+msgid "  local Echo on/off..E | Help screen........Z"
+msgstr "  Místní echo........E | Nápovìda...........Z"
+
+#: src/help.c:68
+msgid "                       | Help screen........Z"
+msgstr "                       | Nápovìda..........Z"
+
+#: src/help.c:72
+msgid "| scroll Back........B"
+msgstr "| Rolovat zpìt.......B"
+
+#: src/help.c:76
+msgid "Written by Miquel van Smoorenburg 1991-1995"
+msgstr "Napsal Miquel van Smoorenburg 1991-1995"
+
+#: src/help.c:78
+msgid "Some additions by Jukka Lahtinen 1997-2000"
+msgstr "Nìkterá roz¹íøení Jukka Lahtinen 1997-2000"
+
+#: src/help.c:80
+msgid "i18n by Arnaldo Carvalho de Melo 1998"
+msgstr "i18n Arnaldo Carvalho de Melo 1998"
+
+#: src/help.c:82
+msgid "Select function or press Enter for none."
+msgstr "Vyberte funkci èi stisknìte Enter."
+
+#: src/ipc.c:64
+msgid "sigack: unexpected ACK signal &^%%$!! (pardon my French)%c\n"
+msgstr ""
+"sigack: neoèekávaný ACK signál &^%%$!! (omluvte moji francouz¹tinu)%c\n"
+
+#: src/ipc.c:80
+msgid "minicom: out of file descriptors\n"
+msgstr "minicom: nejsou volné ¾ádné deskriptory souborù\n"
+
+#: src/ipc.c:92
+msgid "minicom: could not fork.\n"
+msgstr "Volání fork selhalo\n"
+
+#: src/ipc.c:122
+msgid "minicom: could not exec keyserv\n"
+msgstr "minicom: nelze spustit keyserv\n"
+
+#: src/main.c:155
+msgid "Lockfile is stale. Overriding it..\n"
+msgstr "Zamykací soubor je zastaralý. Pøepisuji jej...\n"
+
+#: src/main.c:163
+#, c-format
+msgid "Device %s is locked.\n"
+msgstr "Zaøízení %s je zamèeno.\n"
+
+#: src/main.c:178
+msgid "Cannot create lockfile. Sorry.\n"
+msgstr "Zámek nelze vytvoøit.\n"
+
+#: src/main.c:193
+msgid "Could not setup for dial out.\n"
+msgstr "Nelze zmìnit nastavení pro odchozí volání.\n"
+
+#: src/main.c:229
+#, c-format
+msgid "minicom: cannot open %s: %s\n"
+msgstr "minicom: %s nelze otevøít: %s\n"
+
+#: src/main.c:232
+#, c-format
+msgid "minicom: cannot open %s. Sorry.\n"
+msgstr "minicom: %s nelze otevøít.\n"
+
+#: src/main.c:239
+#, c-format
+msgid "Cannot open %s!"
+msgstr "%s nelze otevøít!"
+
+#: src/main.c:398
+msgid "Offline"
+msgstr "Nespojen"
+
+#: src/main.c:398
+msgid "OFFLINE"
+msgstr "NESPOJEN"
+
+#: src/main.c:400
+msgid "Online"
+msgstr "Spojen"
+
+#: src/main.c:400
+msgid "ONLINE"
+msgstr "SPOJEN"
+
+#: src/main.c:426
+#, c-format
+msgid "Gone offline (%ld:%02ld:%02ld)"
+msgstr "Spojení navázáno (%ld:%02ld:%02ld)"
+
+#: src/main.c:495
+#, c-format
+msgid " %7.7sZ for help |           |     | Minicom %-6.6s |       | "
+msgstr " Nápovìda: %7.7sZ |           |     | Minicom %-6.6s |       | "
+
+#: src/main.c:593
+msgid "Could not re-initialize window system."
+msgstr "Systém oken nelze inicializovat."
+
+#: src/main.c:596
+msgid "Resize not supported, screen may be messed up!"
+msgstr "Zmìna velikosti není podporována. Na obrazovce mù¾e být zmatek!"
+
+#: src/minicom.c:50 src/minicom.c:52
+#, c-format
+msgid "Got signal %d"
+msgstr "Obdr¾en signál %d"
+
+#: src/minicom.c:61 src/minicom.c:62
+msgid "  Close "
+msgstr "  Zavøít "
+
+#: src/minicom.c:61
+msgid " Pause  "
+msgstr " Pozastavit  "
+
+#: src/minicom.c:61 src/minicom.c:62
+msgid "  Exit  "
+msgstr "  Konec "
+
+#: src/minicom.c:62
+msgid " Unpause"
+msgstr " Pokraèovat "
+
+#: src/minicom.c:77
+msgid "Hang-up line?"
+msgstr "Zavìsit?"
+
+#: src/minicom.c:88
+#, c-format
+msgid "Killed by signal %d !\n"
+msgstr "Zabit signálem %d!\n"
+
+#: src/minicom.c:108
+msgid "Suspended. Type \"fg\" to resume.\n"
+msgstr "Minicom pøeru¹en. Napi¹te \"fg\" pro pokraèování.\n"
+
+#: src/minicom.c:128
+msgid "SHELL variable not set"
+msgstr "Promìnná SHELL není nastavena"
+
+#: src/minicom.c:132 src/updown.c:258 src/updown.c:391 src/updown.c:596
+msgid "Out of memory: could not fork()"
+msgstr "Volání fork selhalo: do¹la pamì»"
+
+#: src/minicom.c:142
+msgid "Shelled out. Type \"exit\" to return.\n"
+msgstr "Spou¹tím shell. Napi¹te \"exit\" pro návrat do programu.\n"
+
+#: src/minicom.c:264
+msgid "SEARCH FOR (ESC=Exit)"
+msgstr "VYHLEDAT (ESC=Konec)"
+
+#: src/minicom.c:316 src/minicom.c:339
+msgid "Search Wrapping Around to Start!"
+msgstr "Hledání pokraèuje znovu od zaèátku!"
+
+#.
+#. * fmg 8/20/97
+#. * added /=Srch, \=CaseLess, and N=Next and changed rest of line...
+#. * Hope you like it :-)
+#.
+#: src/minicom.c:476
+msgid ""
+"HISTORY: U=Up D=Down F=PgDn B=PgUp s=Srch S=CaseLess N=Next C=Cite ESC=Exit "
+msgstr ""
+"HISTORIE: U=Nah D=Dol F=PgDn B=PgUp s=Hled S=CaseLess N=Dal¹í C=Cit "
+"ESC=Konec "
+
+#: src/minicom.c:478
+msgid ""
+"  SCROLL MODE    U=up D=down F=page-forward B=page-backward C=Cite ESC=exit "
+msgstr "  ROLOVACÍ RE®IM   U=nahoru D=dolù F=PgDn B=PgUp C=Citovat ESC=Konec "
+
+#: src/minicom.c:518
+msgid "History buffer Disabled!"
+msgstr "Zaznamenávání historie vypnuto!"
+
+#: src/minicom.c:520
+msgid "History buffer empty!"
+msgstr "Záznam historie je prázdný!"
+
+#: src/minicom.c:567
+msgid ""
+"No previous search!\n"
+"  Please 's' or 'S' first!"
+msgstr ""
+"®ádná pøedchozí hledání!\n"
+"  Nejdøíve pou¾ijte 's' èi 'S'!"
+
+#: src/minicom.c:736 src/minicom.c:772
+msgid ""
+"  CITATION: ENTER=select start line ESC=exit                               "
+msgstr ""
+"  CITACE: ENTER=vybrat poèáteèní øádek ESC=konec                           "
+
+#: src/minicom.c:751
+msgid ""
+"  CITATION: ENTER=select end line ESC=exit                                 "
+msgstr ""
+"  CITACE: ENTER=vybrat koncový øádek ESC=konec                             "
+
+#: src/minicom.c:832
+#, c-format
+msgid "Wrong option in environment MINICOM=\"%s\"\n"
+msgstr "Chybná volba v promìnné prostøedí MINICOM=\"%s\"\n"
+
+#: src/minicom.c:833
+#, c-format
+msgid "Type \"minicom %s\" for help.\n"
+msgstr "Napi¹te \"minicom %s\" pro nápovìdu.\n"
+
+#: src/minicom.c:842
+#, c-format
+msgid "Usage: %s [OPTION]... [configuration]\n"
+msgstr "Pou¾ití: %s [PØEPÍNAÈ]... [nastavení]\n"
+
+#: src/minicom.c:843
+msgid ""
+"A terminal program for Linux and other unix-like systems.\n"
+"\n"
+msgstr ""
+"Terminálový program pro Linux a jiné unixové operaèní systémy.\n"
+"\n"
+
+#: src/minicom.c:844
+msgid "  -s, --setup            : enter setup mode (only as root)\n"
+msgstr "  -s, --setup            : konfiguraèní re¾im (pouze superu¾ivatel)\n"
+
+#: src/minicom.c:845
+msgid ""
+"  -o, --noinit           : do not initialize modem & lockfiles at startup\n"
+msgstr ""
+"  -o, --noinit           : pøi spu¹tìní nebude inicializovat modem a zámky\n"
+
+#: src/minicom.c:846
+msgid "  -m, --metakey          : use meta or alt key for commands\n"
+msgstr "  -m, --metakey          : pro pøíkazy pou¾ije klávesy meta èi alt\n"
+
+#: src/minicom.c:847
+msgid "  -M, --metakey8         : use 8bit meta key for commands\n"
+msgstr ""
+"  -M, --metakey8         : pro pøíkazy pou¾ije osmibitové klávesy meta\n"
+
+#: src/minicom.c:848
+msgid ""
+"  -l, --ansi             : literal; assume screen uses the IBM-PC character "
+"set\n"
+msgstr ""
+"  -l, --ansi             : bude pøedpokládat, ¾e obrazovka pou¾ívá znakovou "
+"sadu IBM-PC\n"
+
+#: src/minicom.c:849
+msgid "  -L, --iso              : Ditto, but assume screen uses ISO8859\n"
+msgstr "  -L, --iso              : Toté¾, ale se znakovou sadou ISO8859\n"
+
+#: src/minicom.c:850
+msgid "  -w, --wrap             : Linewrap on\n"
+msgstr "  -w, --wrap             : Zalamování øádkù\n"
+
+#: src/minicom.c:851
+msgid "  -z, --statline         : try to use terminal's status line\n"
+msgstr "  -z, --statline         : pokusí se pou¾ít stavovou linku terminálu\n"
+
+#: src/minicom.c:852
+msgid "  -8, --8bit             : 8bit clean mode (for Japanese, etc)\n"
+msgstr "  -8, --8bit             : 8bitový re¾im (pro Japon¹tinu atd.)\n"
+
+#: src/minicom.c:853
+msgid "  -c, --color=on/off     : ANSI style color usage on or off\n"
+msgstr "  -c, --color=on/off     : zapnutí/vypnutí ANSI barev\n"
+
+#: src/minicom.c:854
+msgid ""
+"  -a, --attrib=on/off    : use reverse or highlight attributes on or off\n"
+msgstr ""
+"  -a, --attrib=on/off    : zapnutí/vypnutí reverzních a zvýrazòovacích "
+"atributù\n"
+
+#: src/minicom.c:855
+msgid "  -t, --term=TERM        : override TERM environment variable\n"
+msgstr ""
+"  -t, --term=TERMINÁL    : pou¾ije TERMINÁL místo hodnoty promìnné prostøedí "
+"TERM\n"
+
+#: src/minicom.c:856
+msgid "  -S, --script=SCRIPT    : run SCRIPT at startup\n"
+msgstr "  -S, --script=SKRIPT    : pøi spu¹tìní provede SKRIPT\n"
+
+#: src/minicom.c:857
+msgid "  -d, --dial=ENTRY       : dial ENTRY from the dialing directory\n"
+msgstr "  -d, --dial=POLO®KA     : zavolá POLO®KU z telefonního seznamu\n"
+
+#: src/minicom.c:858
+msgid "  -p, --ptty=TTYP        : connect to pseudo terminal\n"
+msgstr "  -p, --ptty=TTYP        : pou¾ije pseudoterminál TTYP..\n"
+
+#: src/minicom.c:859
+msgid "  -C, --capturefile=FILE : start capturing to FILE\n"
+msgstr "  -C, --capturing=SOUBOR : zapí¹e protokol o èinnosti do SOUBORU\n"
+
+#: src/minicom.c:860
+msgid "  -v, --version          : output version information and exit\n"
+msgstr "  -v, --version          : vypí¹e informaci o verzi a skonèí\n"
+
+#: src/minicom.c:861
+msgid ""
+"  configuration          : configuration file to use\n"
+"\n"
+msgstr ""
+"  nastavení              : pou¾ije toto nastavení\n"
+"\n"
+
+#: src/minicom.c:862
+msgid ""
+"These options can also be specified in the MINICOM environment variable.\n"
+msgstr "Tyto pøepínaèe mohou také být uvedeny v promìnné prostøedí MINICOM.\n"
+
+#: src/minicom.c:863
+#, c-format
+msgid "This variable is currently %s\"%s\".\n"
+msgstr "Tato promìnná nyní %s\"%s\".\n"
+
+#: src/minicom.c:863
+msgid "set to "
+msgstr "má hodnotu"
+
+#: src/minicom.c:863
+msgid "unset"
+msgstr "není nastavena"
+
+#: src/minicom.c:865
+msgid "The LIBDIR to find the configuration files and the access file\n"
+msgstr "Promìnná LIBDIR, která urèuje umístìní konfiguraèních souborù\n"
+
+#: src/minicom.c:866
+#, c-format
+msgid ""
+"minicom.users is compiled as %s.\n"
+"\n"
+msgstr ""
+"byla pøi pøekladu programu nastavena na %s.\n"
+"\n"
+
+#: src/minicom.c:867
+msgid "Report bugs to <minicom-devel@bazar.conectiva.com.br>.\n"
+msgstr ""
+"Chyby v programu oznamujte na adrese "
+"<minicom-devel@bazar.conectiva.com.br>i\n"
+"(pouze anglicky)\n"
+"Pøipomínky k pøekladu zasílejte na adresu <cs@li.org> (èesky)\n"
+
+#: src/minicom.c:1024
+#, c-format
+msgid "%s version %s"
+msgstr "%s verze %s"
+
+#: src/minicom.c:1026
+#, c-format
+msgid " (compiled %s)"
+msgstr " (datum pøekladu: %s)"
+
+#: src/minicom.c:1029
+msgid ""
+"Copyright (C) Miquel van Smoorenburg.\n"
+"\n"
+msgstr ""
+"Copyright (C) Miquel van Smoorenburg.\n"
+"\n"
+
+#: src/minicom.c:1038
+msgid "minicom: -s switch needs root privilige\n"
+msgstr "minicom: pøepínaè -s mù¾e zadat pouze superu¾ivatel\n"
+
+#: src/minicom.c:1056
+msgid "minicom: argument to -p must be a pty\n"
+msgstr "minicom: argumentem pøepínaèe -p musí být pty\n"
+
+#: src/minicom.c:1123 src/minicom.c:1418
+msgid "Cannot open capture file"
+msgstr "Soubor s protokolem o èinnosti nelze otevøít"
+
+#: src/minicom.c:1154
+msgid ""
+"minicom: WARNING: please don't run minicom as root when not maintaining\n"
+"                  it (with the -s switch) since all changes to the\n"
+"                  configuration will be GLOBAL !.\n"
+msgstr ""
+"minicom: VAROVÁNÍ: pokud minicom nekonfigurujete (pøepínaèem -s), tak jej\n"
+"                   nespu¹tìjte s právy superu¾ivatele, proto¾e pak budou "
+"mít\n"
+"                   v¹echny zmìny GLOBÁLNÍ platnost!\n"
+
+#: src/minicom.c:1167
+msgid "You don't exist. Go away.\n"
+msgstr "Tento u¾ivatel neexistuje.\n"
+
+#: src/minicom.c:1205
+#, c-format
+msgid "Sorry %s. You are not allowed to use configuration %s.\n"
+msgstr "U¾ivatel %s nemá oprávnìní pro pou¾ití konfigurace %s.\n"
+
+#: src/minicom.c:1208
+#, c-format
+msgid "Ask your sysadm to add your name to %s\n"
+msgstr "Po¾ádejte administrátora systému o pøidání Va¹eho jména do %s.\n"
+
+#: src/minicom.c:1246
+msgid "Sorry. Your screen is too small.\n"
+msgstr "Lituji. Va¹e obrazovka je pøíli¹ malá.\n"
+
+#: src/minicom.c:1314
+msgid "Welcome to minicom"
+msgstr "Vítejte v programu minicom"
+
+#: src/minicom.c:1315
+msgid "OPTIONS"
+msgstr "VOLBY"
+
+#: src/minicom.c:1318
+msgid "Compiled on"
+msgstr "Datum pøekladu programu:"
+
+#: src/minicom.c:1320
+#, c-format
+msgid ""
+"\n"
+"Press %sZ for help on special keys%c\n"
+"\n"
+msgstr ""
+"\n"
+"Stisknìte %sZ pro nápovìdu o klávesách se zvlá¹tním významem%c\n"
+"\n"
+
+#: src/minicom.c:1340
+msgid "Add linefeed ON"
+msgstr "Pøidávání linefeed ZAPNUTO"
+
+#: src/minicom.c:1340
+msgid "Add linefeed OFF"
+msgstr "Pøidávání linefeed VYPNUTO"
+
+#: src/minicom.c:1348
+msgid "Local echo ON"
+msgstr "Místní echo ZAPNUTO"
+
+#: src/minicom.c:1348
+msgid "Local echo OFF"
+msgstr "Místní echo VYPNUTO"
+
+#: src/minicom.c:1369
+msgid "You are online. Really initialize?"
+msgstr "Právì jste spojen. Opravdu mám provést inicializaci?"
+
+#. Exit without resetting
+#: src/minicom.c:1376
+msgid "Leave without reset?"
+msgstr "Ukonèit bez resetu?"
+
+#: src/minicom.c:1380 src/minicom.c:1401
+msgid "Save macros?"
+msgstr "Ulo¾it makra?"
+
+#. Exit Minicom
+#: src/minicom.c:1392
+msgid "Leave Minicom?"
+msgstr "Ukonèit Minicom?"
+
+#: src/minicom.c:1414
+msgid "Capture to which file? "
+msgstr "Protokol o èinnosti zapisovat do souboru"
+
+#: src/minicom.c:1423 src/minicom.c:1431
+msgid "Capture file"
+msgstr "Soubor s protokolem"
+
+#: src/minicom.c:1463
+msgid "Linewrap ON"
+msgstr "Zalamování øádek ZAPNUTO"
+
+#: src/minicom.c:1463
+msgid "Linewrap OFF"
+msgstr "Zalamování øádek VYPNUTO"
+
+#: src/minicom.c:1496
+msgid "Quit without reset while online."
+msgstr "Ukonèení bez resetu v prùbìhu aktivního spojení"
+
+#: src/rwconf.c:119 src/rwconf.c:153
+msgid "No"
+msgstr "Ne"
+
+#: src/rwconf.c:229
+msgid "# Machine-generated file - use \"minicom -s\" to change parameters.\n"
+msgstr ""
+"# Automaticky vytvoøený soubor - pro zmìnu nastavení pou¾ijte \"minicom "
+"-s\".\n"
+
+#: src/rwconf.c:231
+msgid ""
+"# Machine-generated file - use setup menu in minicom to change parameters.\n"
+msgstr ""
+"# Automaticky vytvoøený soubor - pro zmìnu nastavení pou¾ijte konfiguraèní "
+"menu.\n"
+
+#: src/rwconf.c:283
+#, c-format
+msgid "** Parameter %s is %s, but is marked %s in %s config file\n"
+msgstr ""
+"** Parametr $1%s je $2%s, ale v $4%s konfiguraèním souboru je oznaèen jako "
+"$3%s\n"
+
+#: src/rwconf.c:285 src/rwconf.c:286
+msgid "private"
+msgstr "soukromé"
+
+#: src/rwconf.c:285 src/rwconf.c:286
+msgid "public"
+msgstr "veøejné"
+
+#: src/rwconf.c:287
+msgid "global"
+msgstr "globální"
+
+#: src/rwconf.c:287
+msgid "personal"
+msgstr "osobní"
+
+#: src/rwconf.c:293
+#, c-format
+msgid "== Attempt to change private parameter %s - denied.\n"
+msgstr "== Pokus o zmìnu soukromého nastavení %s zamítnut.\n"
+
+#: src/script.c:145
+#, c-format
+msgid "script \"%s\": syntax error in line %d %s%s\n"
+msgstr "skript \"%s\": syntaktická chyba na øádku %d %s%s\n"
+
+#: src/script.c:171
+#, c-format
+msgid "script \"%s\": global timeout%s\n"
+msgstr "skript \"%s\": vypr¹el èas%s\n"
+
+#: src/script.c:267
+msgid "(word contains ESC or quote)"
+msgstr "(slovo obsahuje ESC èi uvozovky)"
+
+#: src/script.c:320
+#, c-format
+msgid "runscript: couldn't open %s%s\n"
+msgstr "runscript: %s nelze otevøít: %s\n"
+
+#: src/script.c:331
+#, c-format
+msgid "script %s: out of memory%s\n"
+msgstr "skript %s: nedostatek pamìti%s\n"
+
+#: src/script.c:429
+#, c-format
+msgid "script \"%s\" line %d: unknown variable \"%s\"%s\n"
+msgstr "skript \"%s\" øádek %d: neznámá promìnná \"%s\"%s\n"
+
+#: src/script.c:435
+#, c-format
+msgid "script \"%s\": out of memory%s\n"
+msgstr "skript \"%s\": nedostatek pamìti%s\n"
+
+#: src/script.c:473
+#, c-format
+msgid "script \"%s\": unexpected end of file%s\n"
+msgstr "skript \"%s\": neoèekávaný konec souboru%s\n"
+
+#: src/script.c:480
+msgid "(garbage after })"
+msgstr "(chyba za })"
+
+#: src/script.c:487
+msgid "(too many arguments)"
+msgstr "(pøíli¹ mnoho argumentù)"
+
+#: src/script.c:506
+#, c-format
+msgid "script \"%s\" line %d: nested expect%s\n"
+msgstr "skript \"%s\" øádek %d: oèekáváno vnoøení%s\n"
+
+#: src/script.c:515
+msgid "(garbage after {)"
+msgstr "(zmatek po {)"
+
+#: src/script.c:534 src/script.c:791 src/script.c:858
+msgid "(argument expected)"
+msgstr "(oèekáván argument)"
+
+#: src/script.c:536 src/script.c:792
+msgid "(invalid argument)"
+msgstr "(chybný argument)"
+
+#: src/script.c:631
+msgid "(in goto/gosub label)"
+msgstr "(v goto/gosub návì¹tí)"
+
+#: src/script.c:636
+#, c-format
+msgid "script \"%s\" line %d: label \"%s\" not found%s\n"
+msgstr "skript \"%s\" øádek %d: návì¹tí \"%s\" nenalezeno%s\n"
+
+#: src/script.c:659
+#, c-format
+msgid "script \"%s\": no return from gosub%s\n"
+msgstr "skript \"%s\": podprogram gosub neobsahuje return%s\n"
+
+#: src/script.c:705
+msgid "(missing var name)"
+msgstr "(chybí název promìnné)"
+
+#: src/script.c:721 src/script.c:737
+msgid "(expected variable)"
+msgstr "(oèekávána promìnná)"
+
+#: src/script.c:765
+msgid "(expected command after if)"
+msgstr "(po if oèekáván pøíkaz)"
+
+#: src/script.c:776
+msgid "(unknown operator)"
+msgstr "(neznámý operátor)"
+
+#: src/script.c:814
+msgid "(unexpected argument)"
+msgstr "(neoèekávaný argument)"
+
+#: src/script.c:841
+#, c-format
+msgid "script \"%s\" line %d: break outside of expect%s\n"
+msgstr "skript \"%s\" øádek %d: break mimo expect%s\n"
+
+#: src/script.c:861
+#, c-format
+msgid "script \"%s\" line %d: call inside expect%s\n"
+msgstr "skript \"%s\" øádek %d: expect obsahuje call%s\n"
+
+#: src/script.c:922
+#, c-format
+msgid "script \"%s\" line %d: unknown command \"%s\"%s\n"
+msgstr "skript \"%s\" øádek %d: pøíkaz \"%s\" je neznámý%s\n"
+
+#: src/script.c:979
+#, c-format
+msgid "Usage: runscript <scriptfile> [logfile [homedir]]%s\n"
+msgstr ""
+"Pou¾ití: runscript <skript> [soubor_pro_záznam_èinnosti [domácí_adresáø]]%s\n"
+
+#. This may look safe but you might I8N change the string! so
+#. snprintf it
+#: src/updown.c:68
+#, c-format
+msgid "Cannot chdir to %.30s"
+msgstr "Aktuální adresáø nelze nastavit na %.30s"
+
+#: src/updown.c:178
+msgid "Upload"
+msgstr "Poslat"
+
+#: src/updown.c:178
+msgid "Download"
+msgstr "Stáhnout"
+
+#: src/updown.c:234
+msgid "Please enter file names"
+msgstr "Zadejte jméno souboru"
+
+#: src/updown.c:249
+#, c-format
+msgid "%.30s %s - Press CTRL-C to quit"
+msgstr "%.30s %s - Stisknìte CTRL-C pro ukonèení"
+
+#: src/updown.c:359
+msgid ""
+"\n"
+" READY: press any key to continue..."
+msgstr ""
+"\n"
+"  PØIPRAVEN: pokraèujte stiskem jakékoli klávesy..."
+
+#: src/updown.c:419
+msgid "Cannot re-create lockfile!"
+msgstr "Nelze znovu vytvoøit zámek!"
+
+#: src/updown.c:517
+msgid "Same as last"
+msgstr "stejnì jako poslednì"
+
+#: src/updown.c:518
+msgid " A -   Username        :"
+msgstr " A - U¾ivatelské jméno:"
+
+#: src/updown.c:519
+msgid " B -   Password        :"
+msgstr " B - Heslo            :"
+
+#: src/updown.c:520
+msgid " C -   Name of script  :"
+msgstr " C - Název skriptu    :"
+
+#: src/updown.c:521
+msgid "Change which setting?     (Return to run, ESC to stop)"
+msgstr "Vyberte písmeno: (Return pro spu¹tìní, ESC pro ukonèení)"
+
+#: src/updown.c:526
+msgid "Run a script"
+msgstr "Spustit skript"
+
+#: src/windiv.c:202
+msgid "Select File(s) to Upload"
+msgstr "Vybrat soubory pro poslání"
+
+#: src/window.c:1855
+msgid "Environment variable TERM not set\n"
+msgstr "Promìnná TERM není nastavena\n"
+
+#: src/window.c:1861
+#, c-format
+msgid "No termcap entry for %s\n"
+msgstr "Termcap neobsahuje ¾ádnou polo¾ku pro %s\n"
+
+#: src/window.c:1864
+msgid "No termcap database present!\n"
+msgstr "Nebyla nalezena ¾ádná termcap databáze!\n"
+
+#: src/window.c:1872
+msgid "No cursor motion capability (cm)\n"
+msgstr "Terminál nemá schopnost pohybu kurzoru (cm)\n"
+
+#: src/window.c:1881
+msgid "Number of terminal lines unknown\n"
+msgstr "Poèet øádkù terminálu není znám\n"
+
+#: src/window.c:1885
+msgid "Number of terminal columns unknown\n"
+msgstr "Poèet sloupcù terminálu není znám\n"

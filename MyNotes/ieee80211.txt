@@ -1,0 +1,58 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-12-21T22:23:12+08:00
+
+====== ieee80211 ======
+Created Wednesday 21 December 2011
+
+==== 1 join_ibss@iw ====
+
+* NLA_PUT(msg, NL80211_ATTR_SSID, strlen("ssid"), "ssid");
+* NLA_PUT_U32(msg, NL80211_ATTR_WIPHY_FREQ, freq);
+* NLA_PUT_FLAG(msg, NL80211_ATTR_FREQ_FIXED); （固定freq）
+
+
+==== 2 nl80211_join_ibss@net/wireless/nl80211.c ====
+
+==== 3 cfg80211_join_ibss@net/wireless/ibss.c ====
+
+==== 4 ieee80211_join_ibss@net/mac80211/cfg.c ====
+
+==== 5 ieee80211_ibss_join@net/mac80211/ibss.c ====
+
+==== 6 ieee80211_iface_work@net/mac80211/iface.c ====
+
+==== 7 ieee80211_ibss_work@net/mac80211/ibss.c ====
+
+==== 8 ieee80211_sta_find_ibss@net/mac80211/ibss.c ====
+
+==== 9 ieee80211_sta_create_ibss@net/mac80211/ibss.c ====
+
+==== 10 __ieee80211_sta_join_ibss@net/mac80211/ibss.c ====
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------
+[soar@sky mac80211]$ **grep -rn '\<bssid\>' * | grep memcmp**
+ibss.c:94:	if (memcmp(ifibss->bssid, bssid, ETH_ALEN))
+ibss.c:282:	    memcmp(mgmt->bssid, sdata->u.ibss.bssid, ETH_ALEN) == 0) {
+ibss.c:353:	if (memcmp(cbss->bssid, sdata->u.ibss.bssid, ETH_ALEN) == 0)
+ibss.c:689:	if (memcmp(mgmt->bssid, ifibss->bssid, ETH_ALEN) != 0 &&
+ibss.c:690:	    memcmp(mgmt->bssid, "\xff\xff\xff\xff\xff\xff", ETH_ALEN) != 0)
+mlme.c:1412:	if (WARN_ON(memcmp(ifmgd->associated->bssid, mgmt->sa, ETH_ALEN)))
+mlme.c:1641:	    (memcmp(mgmt->bssid, sdata->u.mgd.associated->bssid,
+mlme.c:1677:	    memcmp(mgmt->bssid, ifmgd->associated->bssid, ETH_ALEN) == 0)
+mlme.c:1741:	if (memcmp(bssid, mgmt->bssid, ETH_ALEN) != 0)
+mlme.c:1913:	    memcmp(ifmgd->associated->bssid, mgmt->bssid, ETH_ALEN) == 0) {
+mlme.c:1972:			if (memcmp(mgmt->bssid, wk->filter_ta, ETH_ALEN))
+mlme.c:2421:		    memcmp(req->prev_bssid, ifmgd->associated->bssid,
+mlme.c:2567:			if (memcmp(req->bss->bssid, wk->filter_ta, ETH_ALEN))
+rx.c:2194:			if (memcmp(mgmt->bssid, sdata->u.mgd.bssid, ETH_ALEN))

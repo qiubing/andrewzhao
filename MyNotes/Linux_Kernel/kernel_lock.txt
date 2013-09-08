@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-12-22T20:07:31+08:00
+
+====== kernel lock ======
+Created Thursday 22 December 2011
+
+===== RCU =====
+* 适用于读多写少的情况，如网络路由表的查询更新、设备状态表的维护、数据结构的延迟释放以及多径I/O设备的维护等；
+
+
+==== MISC ====
+* lockdep_assert_held()

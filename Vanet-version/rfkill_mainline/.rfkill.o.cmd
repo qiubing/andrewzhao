@@ -1,0 +1,1 @@
+cmd_/home/andrewzhao/kernel/rfkill_mainline/rfkill.o := ld -m elf_i386   -r -o /home/andrewzhao/kernel/rfkill_mainline/rfkill.o /home/andrewzhao/kernel/rfkill_mainline/core.o /home/andrewzhao/kernel/rfkill_mainline/input.o 

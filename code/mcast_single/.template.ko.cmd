@@ -1,0 +1,1 @@
+cmd_/home/andrewzhao/code/mcast_single/template.ko := ld -r -m elf_i386 -T /home/andrewzhao/vanet/linux-3.2.4/scripts/module-common.lds --build-id  -o /home/andrewzhao/code/mcast_single/template.ko /home/andrewzhao/code/mcast_single/template.o /home/andrewzhao/code/mcast_single/template.mod.o

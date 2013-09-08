@@ -1,0 +1,44 @@
+$Id: AUTHORS,v 1.5 2001/03/25 10:43:33 walker Exp $
+
+Miquel van Smoorenburg <miquels@cistron.nl>, <miquels@drinkel.ow.org>,
+                       <miquels@xs4all.nl>, <miquels@htsa.hva.nl>
+	- author (no longer works on minicom)
+
+If you find any bugs in the software in this packet or have some contribution
+for the next version, please inform some of the following people:
+
+Jukka Lahtinen <jukkal@despammed.com>
+	- maintainer
+
+Arnaldo Carvalho de Melo <acme@conectiva.com.br>
+	- internationalization stuff
+	- the Portuguese translations
+	
+Tomohiro Kubota <kubota@debian.or.jp>
+	- Japanese translations
+	
+Jeff Garzik <jgarzik@pretzel.normnet.org>
+	- base of autoconf/automake support
+	
+Gaël Quéri <gqueri@mail.dotcom.fr>
+	- French translation
+	
+Arkadiusz Miskiewicz <misiek@pld.org.pl>
+	- Polish translation
+	- finished autoconf/automake support
+	- CVS repository for minicom
+	
+Kim Soyoung <nexti@chollian.net>
+	- Korean translation
+
+Andrea Mara Pimenta Alonso <pimenta@conectiva.com.br>
+	- Spanish translation
+
+Jiri Pavlovsky  <pavlovsk@ff.cuni.cz>
+	- Czech translation
+
+Dmitry Artamonow <mad_soft@inbox.ru>
+	- Russian translation
+
+.. or send mail to minicom-devel@bazar.conectiva.com.br to reach all the
+people involved. NOTICE THE ADDRESS. It has changed on January 1999.

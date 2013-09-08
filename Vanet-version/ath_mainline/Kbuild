@@ -1,0 +1,3 @@
+obj-m := ath.o
+
+ath-y := main.o regd.o hw.o key.o debug.o

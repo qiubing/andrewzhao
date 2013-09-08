@@ -1,0 +1,71 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-09-27T19:06:20+08:00
+
+====== Bash Shell ======
+Created 星期二 27 九月 2011
+
+===== 1 快捷键 =====
+	Ctrl + l： 清屏
+	Ctrl + a：返回line的首
+	Ctrl + e：返回line的尾
+	Ctrl + u：清除整行命令
+	Ctrl + w：清除一个word
+	!!：重复上一次操作
+	Ctrl + '-':把terminal缩小
+	Ctrl + '+':把terminal增大
+	Ctrl + p: 重复上一次操作
+
+
+
+===== 2 配置文件 =====
+[[/etc/profile]]
+/etc/profile is sourced by all Bourne-compatible shells upon login. It sets up an environment upon login and loads application-specific (/etc/profile.d/*.sh) settings.
+
+[[~/.bash_profile]]
+[[~/.bash_login]]
+[[~/.profile]]
+/etc/bash.bashrc (Non-standard: only some distros, Arch included)
+[[~/.bashrc]]
+[[~/.bash_logout]]
+
+.profile
+This file is read and sourced by bash when an interactive login shell is started.
+.bashrc
+The file ~/.bashrc is read and sourced by bash when a non-login interactive shell is started, for example, when you open a virtual console from the desktop environment. This file is useful for setting up a user-specific shell environment.
+? profile和bashrc之间的区别 ?
+
+
+===== 3 bash_completion.d =====
+* 在配置文件~/.bashrc中加入complete -cf your_command，例如complete -cf man，就能在man时自动填充了。
+* Faster completion：By appending the following into the readline initialization file (~/.inputrc or /etc/inputrc by default):
+	set show-all-if-ambiguous on doop是一个顶级Apache
+
+
+===== 4 MISC =====
+* 关于为什么要用#! (Sha-Bang) 开头，可以参看man magic
+
+===== 5 不适合用bash的地方 =====
+* 资源密集型的任务,尤其在需要考虑效率时(比如,排序,hash等等)
+* 需要处理大任务的数学操作,尤其是浮点运算,精确运算,或者复杂的算术运算
+* (这种情况一般使用C++或FORTRAN来处理)
+* 有跨平台移植需求(一般使用C或Java)
+* 复杂的应用,在必须使用结构化编程的时候(需要变量的类型检查,函数原型,等等)
+* 对于影响系统全局性的关键任务应用
+* 对于安全有很高要求的任务,比如你需要一个健壮的系统来防止入侵,破解,恶意破坏等等
+* 项目由连串的依赖的各个部分组成
+* 需要大规模的文件操作
+* 需要多维数组的支持
+* 需要数据结构的支持,比如链表或数等数据结构
+* 需要产生或操作图形化界面GUI
+* 需要直接操作系统硬件
+* 需要I/O或socket接口
+* 需要使用库或者遗留下来的老代码的接口
+* 私人的,闭源的应用(shell脚本把代码就放在文本文件中,全世界都能看到)
+
+
+
+
+
+
+

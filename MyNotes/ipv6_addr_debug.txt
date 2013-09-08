@@ -1,0 +1,120 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-09-15T19:02:02+08:00
+
+====== ipv6 addr debug ======
+Created Saturday 15 September 2012
+
+Sep 15 18:56:08 Work kernel: [   88.465679] VANET-DEBUG: ath5k_setup_bands AR5K_MODE_11G
+Sep 15 18:56:08 Work kernel: [   88.468607] VANET-debug: ieee80211_register_hw
+Sep 15 18:56:08 Work kernel: [   88.523957] VANET-debug: ieee80211_rate_control_ops_get select minstrel_ht
+Sep 15 18:56:08 Work kernel: [   88.524092] VANET-debug: ieee80211_register_hw register vanet network interface a5k%d
+Sep 15 18:56:08 Work kernel: [   88.524095] VANET-debug: ieee80211_if_add, name: a5k%d
+Sep 15 18:56:08 Work kernel: [   88.532917] VANET-DEBUG: RADIO: 0x4, EE: 0x5003
+Sep 15 18:56:22 Work kernel: [  102.739016] VANET-debug: addrconf_notify dev->name is lo
+Sep 15 18:56:22 Work kernel: [  102.741064] VANET-debug: vanet_ipv6_init
+Sep 15 18:56:22 Work kernel: [  102.741067] VANET-debug: vanet_mc_grp address is ff 5 0 0 0 0 0 0 0 0 0 0 0 0 037
+Sep 15 18:56:23 Work kernel: [  103.800726] VANET-debug: ieee80211_ibss_setup_sdata set ibss->bssid to wildcard
+Sep 15 18:56:23 Work kernel: [  103.800841] VANET-debug: ieee80211_mandatory_rates set mandatory_rates to 0xff, which support all rates
+Sep 15 18:56:23 Work kernel: [  103.804194] VANET-debug: ath5k_start
+Sep 15 18:56:23 Work kernel: [  103.804902] VANET-debug: ath5k_reset
+Sep 15 18:56:23 Work kernel: [  103.807510] VANET-debug: ath5k_setup_rate_powertable 48 48 48 48 48 46 41 38 
+Sep 15 18:56:23 Work kernel: [  103.807521] VANET-debug: ah_txpower txp_offset=0
+Sep 15 18:56:23 Work kernel: [  103.808676] VANET-DEBUG: ath5k_hw_rf5112_channel Writing freq = 5040 to registers
+Sep 15 18:56:23 Work kernel: [  103.813193] VANET-DEBUG: ath5k_config CHANNEL_SWITCH_START
+Sep 15 18:56:23 Work kernel: [  103.813196] VANET-debug: ath5k_chan_set resetting (5040 -> 5040 MHz)
+Sep 15 18:56:23 Work kernel: [  103.813198] VANET-debug: ath5k_reset
+Sep 15 18:56:23 Work kernel: [  103.818340] VANET-debug: ath5k_setup_rate_powertable 48 48 48 48 48 46 41 38 
+Sep 15 18:56:23 Work kernel: [  103.818353] VANET-debug: ah_txpower txp_offset=0
+Sep 15 18:56:23 Work kernel: [  103.819485] VANET-DEBUG: ath5k_hw_rf5112_channel Writing freq = 5040 to registers
+Sep 15 18:56:23 Work kernel: [  103.821819] VANET-DEBUG: ath5k_config CHANNEL_SWITCH_FINISHED
+Sep 15 18:56:23 Work kernel: [  103.822707] VANET-debug: addrconf_notify dev->name is a5k0
+Sep 15 18:56:23 Work kernel: [  103.822710] VANET-debug: addrconf_notify find vanet interface
+Sep 15 18:56:23 Work kernel: [  103.822712] VANET-debug: addrconf_notify set mc_forwarding up
+Sep 15 18:56:23 Work kernel: [  103.822715] VANET-debug: ipv6_get_lladdr dev->name a5k0
+Sep 15 18:56:23 Work kernel: [  103.822718] VANET-debug: ipv6_get_lladdr return 0
+Sep 15 18:56:23 Work kernel: [  103.822720] VANET-debug: vanet_self_lladdr is fe80 0 0 0 0 0 0 21bb1fffeb18b8f
+Sep 15 18:56:23 Work kernel: [  103.822735] VANET-debug: vanet wlan's HW addr is  0:1b:b1:b1:8b:8f
+Sep 15 18:56:23 Work kernel: [  103.822742] VANET-debug: ip6 vanet forward data inital completed
+Sep 15 18:56:23 Work kernel: [  103.826694] VANET-debug: ipv6_get_lladdr dev->name a5k0
+Sep 15 18:56:23 Work kernel: [  103.826700] VANET-debug: ipv6_get_lladdr -------EADDRNOTAVAIL
+Sep 15 18:56:23 Work kernel: [  103.826703] VANET-debug: mld_newpack get_lladdr failed
+Sep 15 18:56:23 Work kernel: [  103.827938] VANET-DEBUG: ath5k_config CHANNEL_SWITCH_START
+Sep 15 18:56:23 Work kernel: [  103.827942] VANET-debug: ath5k_chan_set resetting (5040 -> 5890 MHz)
+Sep 15 18:56:23 Work kernel: [  103.827945] VANET-debug: ath5k_reset
+Sep 15 18:56:23 Work kernel: [  103.829479] VANET-debug: ath5k_setup_rate_powertable 48 48 48 48 48 46 41 38 
+Sep 15 18:56:23 Work kernel: [  103.829489] VANET-debug: ah_txpower txp_offset=0
+Sep 15 18:56:23 Work kernel: [  103.840061] VANET-DEBUG: ath5k_hw_rf5112_channel Writing freq = 5890 to registers
+Sep 15 18:56:23 Work kernel: [  103.841654] VANET-DEBUG: ath5k_config CHANNEL_SWITCH_FINISHED
+Sep 15 18:56:23 Work kernel: [  103.841685] VANET-debug: ath5k_setup_rate_powertable 48 48 48 48 48 46 41 38 
+Sep 15 18:56:23 Work kernel: [  103.841695] VANET-debug: ah_txpower txp_offset=0
+Sep 15 18:56:24 Work kernel: [  104.886711] VANET-debug: ipv6_get_lladdr dev->name a5k0
+Sep 15 18:56:24 Work kernel: [  104.886718] VANET-debug: ipv6_get_lladdr -------EADDRNOTAVAIL
+Sep 15 18:56:24 Work kernel: [  104.886721] VANET-debug: mld_newpack get_lladdr failed
+Sep 15 18:56:25 Work kernel: [  105.464144] VANET-DEBUG: ipv6_dev_get_saddr MULTICAST/SCOPE_LINKLOCAL
+Sep 15 18:56:25 Work kernel: [  105.464151] VANET-DEBUG: ipv6_dev_get_saddr MULTICAST/SCOPE_LINKLOCAL
+Sep 15 18:56:25 Work kernel: [  105.464154] VANET-DEBUG: ipv6_dev_get_saddr IFA_F_TENTATIVE/OPTIMISIC
+Sep 15 18:56:25 Work kernel: [  105.464157] VANET-debug: ipv6_dev_get_saddr -------EADDRNOTAVAIL
+Sep 15 18:56:25 Work kernel: [  105.464159] VANET-debug: ip6_route_get_saddr get_lladdr failed
+Sep 15 18:56:28 Work kernel: [  109.053379] VANET-debug: ipv6_get_lladdr dev->name a5k0
+Sep 15 18:56:28 Work kernel: [  109.053385] VANET-debug: ipv6_get_lladdr return 0
+
+
+== =============================================== ==
+
+
+Sep 15 19:02:45 Work kernel: [  486.236042] VANET-DEBUG: ath5k_setup_bands AR5K_MODE_11G
+Sep 15 19:02:45 Work kernel: [  486.239001] VANET-debug: ieee80211_register_hw
+Sep 15 19:02:45 Work kernel: [  486.255101] VANET-debug: ieee80211_rate_control_ops_get select minstrel_ht
+Sep 15 19:02:45 Work kernel: [  486.255213] VANET-debug: ieee80211_register_hw register vanet network interface a5k%d
+Sep 15 19:02:45 Work kernel: [  486.255217] VANET-debug: ieee80211_if_add, name: a5k%d
+Sep 15 19:02:51 Work kernel: [  486.272045] VANET-DEBUG: RADIO: 0x4, EE: 0x5003VANET-debug: ieee80211_ibss_setup_sdata set ibss->bssid to wildcard
+Sep 15 19:02:51 Work kernel: [  491.682151] VANET-debug: ieee80211_mandatory_rates set mandatory_rates to 0xff, which support all rates
+Sep 15 19:02:51 Work kernel: [  491.685881] VANET-debug: ath5k_start
+Sep 15 19:02:51 Work kernel: [  491.686589] VANET-debug: ath5k_reset
+Sep 15 19:02:51 Work kernel: [  491.689058] VANET-debug: ath5k_setup_rate_powertable 48 48 48 48 48 46 41 38 
+Sep 15 19:02:51 Work kernel: [  491.689069] VANET-debug: ah_txpower txp_offset=0
+Sep 15 19:02:51 Work kernel: [  491.690580] VANET-DEBUG: ath5k_hw_rf5112_channel Writing freq = 5040 to registers
+Sep 15 19:02:51 Work kernel: [  491.701255] VANET-DEBUG: ath5k_config CHANNEL_SWITCH_START
+Sep 15 19:02:51 Work kernel: [  491.701259] VANET-debug: ath5k_chan_set resetting (5040 -> 5040 MHz)
+Sep 15 19:02:51 Work kernel: [  491.701262] VANET-debug: ath5k_reset
+Sep 15 19:02:51 Work kernel: [  491.702784] VANET-debug: ath5k_setup_rate_powertable 48 48 48 48 48 46 41 38 
+Sep 15 19:02:51 Work kernel: [  491.702794] VANET-debug: ah_txpower txp_offset=0
+Sep 15 19:02:51 Work kernel: [  491.704678] VANET-DEBUG: ath5k_hw_rf5112_channel Writing freq = 5040 to registers
+Sep 15 19:02:51 Work kernel: [  491.706300] VANET-DEBUG: ath5k_config CHANNEL_SWITCH_FINISHED
+Sep 15 19:02:51 Work kernel: [  491.707745] VANET-debug: addrconf_notify dev->name is a5k0
+Sep 15 19:02:51 Work kernel: [  491.707748] VANET-debug: addrconf_notify find vanet interface
+Sep 15 19:02:51 Work kernel: [  491.707751] VANET-debug: addrconf_notify set mc_forwarding up
+Sep 15 19:02:51 Work kernel: [  491.707753] VANET-debug: ipv6_get_lladdr dev->name a5k0
+Sep 15 19:02:51 Work kernel: [  491.707756] VANET-debug: ipv6_get_lladdr return 0
+Sep 15 19:02:51 Work kernel: [  491.707758] VANET-debug: vanet_self_lladdr is fe80 0 0 0 0 0 0 21bb1fffeb18b8f
+Sep 15 19:02:51 Work kernel: [  491.707774] VANET-debug: vanet wlan's HW addr is  0:1b:b1:b1:8b:8f
+Sep 15 19:02:51 Work kernel: [  491.707781] VANET-debug: ip6 vanet forward data inital completed
+Sep 15 19:02:51 Work kernel: [  491.713327] VANET-debug: ipv6_get_lladdr dev->name a5k0
+Sep 15 19:02:51 Work kernel: [  491.713333] VANET-debug: ipv6_get_lladdr -------EADDRNOTAVAIL
+Sep 15 19:02:51 Work kernel: [  491.713336] VANET-debug: mld_newpack get_lladdr failed
+Sep 15 19:02:51 Work kernel: [  491.722297] VANET-DEBUG: ath5k_config CHANNEL_SWITCH_START
+Sep 15 19:02:51 Work kernel: [  491.722304] VANET-debug: ath5k_chan_set resetting (5040 -> 5890 MHz)
+Sep 15 19:02:51 Work kernel: [  491.722307] VANET-debug: ath5k_reset
+Sep 15 19:02:51 Work kernel: [  491.727460] VANET-debug: ath5k_setup_rate_powertable 48 48 48 48 48 46 41 38 
+Sep 15 19:02:51 Work kernel: [  491.727472] VANET-debug: ah_txpower txp_offset=0
+Sep 15 19:02:51 Work kernel: [  491.728605] VANET-DEBUG: ath5k_hw_rf5112_channel Writing freq = 5890 to registers
+Sep 15 19:02:51 Work kernel: [  491.733753] VANET-DEBUG: ath5k_config CHANNEL_SWITCH_FINISHED
+Sep 15 19:02:51 Work kernel: [  491.733783] VANET-debug: ath5k_setup_rate_powertable 48 48 48 48 48 46 41 38 
+Sep 15 19:02:51 Work kernel: [  491.733793] VANET-debug: ah_txpower txp_offset=0
+Sep 15 19:02:52 Work kernel: [  493.300148] VANET-DEBUG: ipv6_dev_get_saddr MULTICAST/SCOPE_LINKLOCAL
+Sep 15 19:02:52 Work kernel: [  493.300156] VANET-DEBUG: ipv6_dev_get_saddr MULTICAST/SCOPE_LINKLOCAL
+Sep 15 19:02:52 Work kernel: [  493.300163] VANET-DEBUG: ipv6_get_saddr_eval IPV6_SADDR_RULE_INIT ret=0
+Sep 15 19:02:52 Work kernel: [  493.300168] VANET-DEBUG: ipv6_get_saddr_eval IPV6_SADDR_RULE_INIT ret=1
+Sep 15 19:02:53 Work kernel: [  493.800378] VANET-DEBUG: ipv6_dev_get_saddr MULTICAST/SCOPE_LINKLOCAL
+Sep 15 19:02:53 Work kernel: [  493.800385] VANET-DEBUG: ipv6_dev_get_saddr MULTICAST/SCOPE_LINKLOCAL
+Sep 15 19:02:53 Work kernel: [  493.800392] VANET-DEBUG: ipv6_get_saddr_eval IPV6_SADDR_RULE_INIT ret=0
+Sep 15 19:02:53 Work kernel: [  493.800398] VANET-DEBUG: ipv6_get_saddr_eval IPV6_SADDR_RULE_INIT ret=1
+Sep 15 19:02:53 Work kernel: [  494.300611] VANET-DEBUG: ipv6_dev_get_saddr MULTICAST/SCOPE_LINKLOCAL
+Sep 15 19:02:53 Work kernel: [  494.300617] VANET-DEBUG: ipv6_dev_get_saddr MULTICAST/SCOPE_LINKLOCAL
+Sep 15 19:02:53 Work kernel: [  494.300624] VANET-DEBUG: ipv6_get_saddr_eval IPV6_SADDR_RULE_INIT ret=0
+Sep 15 19:02:53 Work kernel: [  494.300630] VANET-DEBUG: ipv6_get_saddr_eval IPV6_SADDR_RULE_INIT ret=1
+Sep 15 19:02:54 Work kernel: [  494.800844] VANET-DEBUG: ipv6_dev_get_saddr MULTICAST/SCOPE_LINKLOCAL
+Sep 15 19:02:54 Work kernel: [  494.800850] VANET-DEBUG: ipv6_dev_get_saddr MULTICAST/SCOPE_LINKLOCAL
+Sep 15 19:02:54 Work kernel: [  494.800857] VANET-DEBUG: ipv6_get_saddr_eval IPV6_SADDR_RULE_INIT ret=0
+Sep 15 19:02:54 Work kernel: [  494.800862] VANET-DEBUG: ipv6_get_saddr_eval IPV6_SADDR_RULE_INIT ret=1

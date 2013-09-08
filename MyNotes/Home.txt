@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-09-19T16:23:25+08:00
+
+====== Home ======
+Created 星期一 19 九月 2011
+
+* VIM notes
+* [[Git]]
+* [[Linux Kernel]]
+* [[MISC]]
+* [[vsFTPd]]
+* [[Makefile]]

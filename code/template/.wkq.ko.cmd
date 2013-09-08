@@ -1,0 +1,1 @@
+cmd_/home/andrewzhao/code/workqueue/wkq.ko := ld -r -m elf_i386 -T /usr/src/linux-3.1.5-1-ARCH/scripts/module-common.lds --build-id  -o /home/andrewzhao/code/workqueue/wkq.ko /home/andrewzhao/code/workqueue/wkq.o /home/andrewzhao/code/workqueue/wkq.mod.o

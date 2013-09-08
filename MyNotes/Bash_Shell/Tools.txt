@@ -1,0 +1,120 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-01-04T14:27:54+08:00
+
+====== Tools ======
+Created Wednesday 04 January 2012
+
+==== luit ====
+alias bbs='luit -encoding gbk telnet bbs.ustc.edu.cn'
+
+==== shutdown, poweroff, halt, reboot, init ====
+
+==== hwclock, date, ntp ====
+* To set the hardware clock directly (the argument must be in local time, even if you keep your hardware clock in UTC.):
+	# hwclock --set --date="YYYY-MM-DD hh:mm:ss"
+* To set the system clock:
+	# date MMDDhhmmYYYY
+* The hardware clock can be set from the system clock and vice versa:
+	# hwclock --systohc
+	# hwclock --hctosys
+* [[/usr/share/zoneinfo/]] 里面有各种时区信息，要设置时区可以通过以下两种方式：
+	1. 修改/etc/rc.conf中TIMEZONE，TIMEZONE="America/Chicago"，会在系统reboot后生效；
+	2. 如果要让修改立即生效，可以链接或者复制/usr/share/zoneinfo/ 中的时区信息到/etc/localtime
+		# cp /usr/share/zoneinfo/America/Chicago [[/etc/localtime]]
+* 硬件时钟既可设置为UTC，也可设置为localtime，不过linux中偏向UTC因为它支持自动调整夏令时设置，设置硬件始终类型可以通过以下两种方式实现：
+	1. 修改/etc/rc.conf中HARDWARECLOCK，将其设置为"UTC"或者"localtime"，需reboot后生效；
+	2. 通过hwclock命令，可立即修改设置
+		# hwclock --localtime
+		# hwclock --utc
+* 通过sudo hwclock --set --date="`date +"%G-%m-%d %H:%M:%S"`"，能够用date命令的信息来配置hwclock
+
+
+==== tee, echo, cat ====
+
+==== scp, wget ====
+
+==== users, whoami ====
+
+
+==== whatis, which, whereis ====
+
+
+==== ldd, objdump, nm, od, size, strings, strace ====
+
+==== pkill, killall, kill ====
+
+==== id, logname ====
+* 显示当前用户的uid和gid，以及其他groups的id
+
+==== grep, fgrep, pgrep, pidof ====
+
+==== dialog ====
+
+==== lsof, stat, du, df, netstat ====
+netstat -lpn
+
+==== openssh ====
+* SSH client configuration file can be found and edited in [[/etc/ssh/ssh_config.]]
+* SSH daemon configuration file can be found and edited in [[/etc/ssh/sshd_config.]]
+* 在sshd的配置文件中添加AllowUsers user1 user2，就能只让这两个user通过ssh client连接到本机。
+* Could also uncomment the BANNER option and edit /etc/issue for a nice welcome message.
+* 启动sshd可以通过以下两种途径：
+	Just add sshd to the "DAEMONS" array of your /etc/rc.conf:
+		DAEMONS=(... ... sshd ... ...)
+	To start/restart/stop the daemon, use the following:
+		# rc.d {start|stop|restart} sshd
+* ssh中各种key是咋个管理的啊。。。。。。？？？？？
+* $HOME/.ssh/authorized_keys文件中，可以放置远程连接client的public key，sshd从而只会让pub key在authorized_keys文件中的client进行ssh连接，但有个问题如下：？？？？？？为什么还是不行呢
+	I copied my public key to authorized_keys but public-key authentication still doesn't work.
+    Typically this is caused by the file permissions on $HOME, $HOME/.ssh or $HOME/.ssh/authorized_keys being more permissive than sshd allows by default.
+     In this case, it can be solved by executing the following on the server.
+	$ chmod go-w $HOME $HOME/.ssh
+	$ chmod 600 $HOME/.ssh/authorized_keys $ chown `whoami` $HOME/.ssh/authorized_keys
+     If this is not possible for some reason, an alternative is to set StrictModes no in sshd_config, however this is not recommended.
+
+==== basename, dirname ====
+* 获取一个文件的全局地址中中最后的文件名称和路径名称
+
+==== tar ====
+* Create archive.tar from files foo and bar.
+           tar -cf archive.tar foo bar
+* List all files in archive.tar verbosely.
+           tar -tvf archive.tar
+* Extract all files from archive.tar.
+           tar -xf archive.tar
+* -j：能够以bzip2格式压缩文件，以节约空间，后缀一般为.tar.bz2
+
+
+
+==== chmod, chown, chgrp ====
+
+==== ps, pstree, ====
+
+==== xargs ====
+
+==== sed ====
+
+==== seq ====
+
+==== find ====
+
+==== select ====
+
+==== awk ====
+
+==== wc ====
+
+==== sort ====
+
+==== bc ====
+* An arbitrary precision calculator language
+
+==== dc ====
+
+
+==== tput ====
+
+==== shift ====
+
+==== rename ====

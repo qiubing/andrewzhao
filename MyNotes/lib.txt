@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-02-27T21:20:01+08:00
+
+====== lib ======
+Created Monday 27 February 2012
+
+==== libncurses ====
+* man ncurses

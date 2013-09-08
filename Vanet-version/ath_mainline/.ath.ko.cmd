@@ -1,0 +1,1 @@
+cmd_/home/andrewzhao/kernel/ath_mainline/ath.ko := ld -r -m elf_i386 -T /usr/src/linux-3.2.4-1-ARCH/scripts/module-common.lds --build-id  -o /home/andrewzhao/kernel/ath_mainline/ath.ko /home/andrewzhao/kernel/ath_mainline/ath.o /home/andrewzhao/kernel/ath_mainline/ath.mod.o

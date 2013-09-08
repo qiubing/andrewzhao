@@ -1,0 +1,145 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARRAY_ELEMENTS	mclab.h	89;"	d
+GOT_SIGHUP	smcroute.c	81;"	d	file:
+GOT_SIGINT	smcroute.c	80;"	d	file:
+IN6_IS_ADDR_MULTICAST	mclab.h	217;"	d
+IPV6_ALL_MC_FORWARD	mroute-api.c	258;"	d	file:
+LOG_INIT	mclab.h	204;"	d
+MAX	mclab.h	83;"	d
+MAX_IF	mclab.h	106;"	d
+MAX_LINE_LEN	parse-conf.c	26;"	d	file:
+MAX_MC_MIFS	mclab.h	92;"	d
+MAX_MC_VIFS	mclab.h	91;"	d
+MIN	mclab.h	80;"	d
+MX_CMDPKT_SZ	mclab.h	190;"	d
+McMsg	mcsender.c	/^const char McMsg[] = "this is the test message from mclab\/mcsender\\n";$/;"	v
+SA	mclab.h	75;"	d
+SIN4	mclab.h	76;"	d
+SIN6	mclab.h	77;"	d
+SMCROUTE_SYSTEM_CONF	mclab.h	221;"	d
+SOCKET_PATH	ipc.c	35;"	d	file:
+SetOif4	mcsender.c	/^static void SetOif4(int Sock, char *ifname)$/;"	f	file:
+SetOif6	mcsender.c	/^static void SetOif6(int Sock, char *ifname)$/;"	f	file:
+SetTtl4	mcsender.c	/^static void SetTtl4(int Sock, unsigned Ttl)$/;"	f	file:
+SetTtl6	mcsender.c	/^static void SetTtl6(int Sock, unsigned Ttl)$/;"	f	file:
+Usage	mcsender.c	/^const char Usage[] = "mcsender [-t<n>] [-i<ifname>] <ip-address:port>\\n";$/;"	v
+add_mroute	parse-conf.c	/^static int add_mroute (int lineno, char *ifname, char *group, char *source, char *outbound[], int num)$/;"	f	file:
+clean	smcroute.c	/^static void clean(void)$/;"	f	file:
+client_sd	ipc.c	/^static int client_sd = -1;$/;"	v	file:
+cmd	mclab.h	/^	uint16   cmd;		\/* 'a'=Add,'r'=Remove,'j'=Join,'l'=Leave,'k'=Kill *\/$/;"	m	struct:cmd
+cmd	mclab.h	/^struct cmd {$/;"	s
+cmd_build	cmdpkt.c	/^void *cmd_build(char cmd, const char *argv[], int count)$/;"	f
+cmd_convert_to_mroute	cmdpkt.c	/^const char *cmd_convert_to_mroute(struct mroute *mroute, const struct cmd *packet)$/;"	f
+cmd_convert_to_mroute4	cmdpkt.c	/^const char *cmd_convert_to_mroute4(struct mroute4 *mroute, const struct cmd *packet)$/;"	f
+cmd_convert_to_mroute6	cmdpkt.c	/^const char *cmd_convert_to_mroute6(struct mroute6 *mroute, const struct cmd *packet)$/;"	f
+count	mclab.h	/^	uint16   count;		\/* command argument count *\/$/;"	m	struct:cmd
+daemonize	smcroute.c	/^static int daemonize(void)$/;"	f	file:
+do_debug_logging	mcsender.c	/^int do_debug_logging = 0;$/;"	v
+do_debug_logging	smcroute.c	/^int do_debug_logging = 0;$/;"	v
+flags	mclab.h	/^	short flags;$/;"	m	struct:iface
+getSockAdr	mcsender.c	/^static void getSockAdr(struct sockaddr *SaPt, socklen_t * SaLenPt, char *AddrSt, char *PortSt)$/;"	f	file:
+group	mclab.h	/^	struct in_addr group;           \/* multicast group *\/$/;"	m	struct:mroute4	typeref:struct:mroute4::in_addr
+group	mclab.h	/^	struct sockaddr_in6 group;      \/* multicast group *\/$/;"	m	struct:mroute6	typeref:struct:mroute6::sockaddr_in6
+handler	smcroute.c	/^static void handler(int sig)$/;"	f	file:
+iface	mclab.h	/^struct iface {$/;"	s
+iface	mroute-api.c	/^	struct iface *iface;$/;"	m	struct:mif	typeref:struct:mif::iface	file:
+iface	mroute-api.c	/^	struct iface *iface;$/;"	m	struct:vif	typeref:struct:vif::iface	file:
+iface_find_by_index	ifvc.c	/^struct iface *iface_find_by_index(unsigned int ifindex)$/;"	f
+iface_find_by_name	ifvc.c	/^struct iface *iface_find_by_name(const char *ifname)$/;"	f
+iface_get_mif	ifvc.c	/^int iface_get_mif(struct iface *iface __attribute__ ((unused)))$/;"	f
+iface_get_mif_by_name	ifvc.c	/^int iface_get_mif_by_name(const char *ifname)$/;"	f
+iface_get_vif	ifvc.c	/^int iface_get_vif(struct iface *iface)$/;"	f
+iface_get_vif_by_name	ifvc.c	/^int iface_get_vif_by_name(const char *ifname)$/;"	f
+iface_init	ifvc.c	/^void iface_init(void)$/;"	f
+iface_list	ifvc.c	/^static struct iface iface_list[MAX_IF];$/;"	v	typeref:struct:iface	file:
+ifindex	mclab.h	/^	u_short ifindex;	\/* Physical interface index   *\/$/;"	m	struct:iface
+inaddr	mclab.h	/^	struct in_addr inaddr;	\/* == 0 for non IP interfaces *\/$/;"	m	struct:iface	typeref:struct:iface::in_addr
+inbound	mclab.h	/^	short inbound;                  \/* incoming VIF    *\/$/;"	m	struct:mroute4
+inbound	mclab.h	/^	short inbound;                  \/* incoming VIF    *\/$/;"	m	struct:mroute6
+ipc_client_init	ipc.c	/^int ipc_client_init(void)$/;"	f
+ipc_exit	ipc.c	/^void ipc_exit(void)$/;"	f
+ipc_receive	ipc.c	/^int ipc_receive(uint8 buf[], int len)$/;"	f
+ipc_send	ipc.c	/^int ipc_send(const void *buf, int len)$/;"	f
+ipc_server_init	ipc.c	/^int ipc_server_init(void)$/;"	f
+ipc_server_read	ipc.c	/^struct cmd *ipc_server_read(uint8 buf[], int len)$/;"	f
+join_mgroup	parse-conf.c	/^static int join_mgroup (int lineno, char *ifname, char *group)$/;"	f	file:
+len	mclab.h	/^	unsigned len;		\/* total size of packet including cmd header *\/$/;"	m	struct:cmd
+log_last_error	syslog.c	/^int  log_last_error;$/;"	v
+log_last_message	syslog.c	/^char log_last_message[128];$/;"	v
+log_last_severity	syslog.c	/^int  log_last_severity;$/;"	v
+log_stderr	syslog.c	/^int  log_stderr = LOG_WARNING;$/;"	v
+main	_mcclient.c	/^int main(void)$/;"	f
+main	mcsender.c	/^int main(int ArgCn, char *ArgVc[])$/;"	f
+main	parse-conf.c	/^int main (int argc, char *argv[])$/;"	f
+main	smcroute.c	/^int main(int argc, const char *argv[])$/;"	f
+match	parse-conf.c	/^static int match(char *keyword, char *token)$/;"	f	file:
+mcgroup4_init	mcgroup.c	/^static void mcgroup4_init(void)$/;"	f	file:
+mcgroup4_join	mcgroup.c	/^int mcgroup4_join(const char *ifname, struct in_addr group)$/;"	f
+mcgroup4_leave	mcgroup.c	/^int mcgroup4_leave(const char *ifname, struct in_addr group)$/;"	f
+mcgroup4_socket	mcgroup.c	/^static int mcgroup4_socket = -1;$/;"	v	file:
+mcgroup6_init	mcgroup.c	/^static void mcgroup6_init(void)$/;"	f	file:
+mcgroup6_join	mcgroup.c	/^int mcgroup6_join(const char *ifname, struct in6_addr group)$/;"	f
+mcgroup6_leave	mcgroup.c	/^int mcgroup6_leave(const char *ifname, struct in6_addr group)$/;"	f
+mcgroup6_socket	mcgroup.c	/^static int mcgroup6_socket = -1;$/;"	v	file:
+mcgroup_join_leave_ipv4	mcgroup.c	/^static int mcgroup_join_leave_ipv4(int sd, int cmd, const char *ifname, struct in_addr group)$/;"	f	file:
+mcgroup_join_leave_ipv6	mcgroup.c	/^static int mcgroup_join_leave_ipv6(int sd, int cmd, const char *ifname, struct in6_addr group)$/;"	f	file:
+mif	mclab.h	/^	short mif;$/;"	m	struct:iface
+mif	mroute-api.c	/^static struct mif {$/;"	s	file:
+mif_list	mroute-api.c	/^} mif_list[MAXMIFS];$/;"	v	typeref:struct:mif	file:
+mroute	mclab.h	/^struct mroute {$/;"	s
+mroute4	mclab.h	/^		struct mroute4 mroute4;$/;"	m	union:mroute::__anon1	typeref:struct:mroute::__anon1::mroute4
+mroute4	mclab.h	/^struct mroute4 {$/;"	s
+mroute4_add	mroute-api.c	/^int mroute4_add(struct mroute4 *ptr)$/;"	f
+mroute4_add_vif	mroute-api.c	/^static void mroute4_add_vif(struct iface *iface)$/;"	f	file:
+mroute4_del	mroute-api.c	/^int mroute4_del(struct mroute4 *ptr)$/;"	f
+mroute4_disable	mroute-api.c	/^void mroute4_disable(void)$/;"	f
+mroute4_enable	mroute-api.c	/^int mroute4_enable(void)$/;"	f
+mroute4_socket	mroute-api.c	/^int mroute4_socket = -1;$/;"	v
+mroute6	mclab.h	/^		struct mroute6 mroute6;$/;"	m	union:mroute::__anon1	typeref:struct:mroute::__anon1::mroute6
+mroute6	mclab.h	/^struct mroute6 {$/;"	s
+mroute6_add	mroute-api.c	/^int mroute6_add(struct mroute6 *ptr)$/;"	f
+mroute6_add_mif	mroute-api.c	/^static void mroute6_add_mif(struct iface *iface)$/;"	f	file:
+mroute6_del	mroute-api.c	/^int mroute6_del(struct mroute6 *ptr)$/;"	f
+mroute6_disable	mroute-api.c	/^void mroute6_disable(void)$/;"	f
+mroute6_enable	mroute-api.c	/^int mroute6_enable(void)$/;"	f
+mroute6_socket	mroute-api.c	/^int mroute6_socket = -1;$/;"	v
+name	mclab.h	/^	char name[IFNAMSIZ];$/;"	m	struct:iface
+num_ifaces	ifvc.c	/^static unsigned int num_ifaces = 0;$/;"	v	file:
+num_option_arguments	smcroute.c	/^static int num_option_arguments(const char *argv[])$/;"	f	file:
+parse_conf_file	parse-conf.c	/^int parse_conf_file(const char *file)$/;"	f
+pidfile	pidfile.c	/^pidfile(const char *basename)$/;"	f
+pidfile_cleanup	pidfile.c	/^pidfile_cleanup(void)$/;"	f	file:
+pidfile_path	pidfile.c	/^static char *pidfile_path;$/;"	v	file:
+pidfile_pid	pidfile.c	/^static pid_t pidfile_pid;$/;"	v	file:
+pop_token	parse-conf.c	/^static char *pop_token(char **line)$/;"	f	file:
+proc_set_val	mroute-api.c	/^static int proc_set_val(char *file, int val)$/;"	f	file:
+read_conf_file	smcroute.c	/^static void read_conf_file(const char *conf_file)$/;"	f	file:
+restart	smcroute.c	/^static void restart(void)$/;"	f	file:
+sender	mclab.h	/^	struct in_addr sender;$/;"	m	struct:mroute4	typeref:struct:mroute4::in_addr
+sender	mclab.h	/^	struct sockaddr_in6 sender;$/;"	m	struct:mroute6	typeref:struct:mroute6::sockaddr_in6
+server_loop	smcroute.c	/^static void server_loop(int sd, const char *conf_file)$/;"	f	file:
+server_sd	ipc.c	/^static int server_sd;$/;"	v	file:
+sighandled	smcroute.c	/^static int sighandled = 0;$/;"	v	file:
+signal_init	smcroute.c	/^static void signal_init(void)$/;"	f	file:
+smclog	syslog.c	/^void smclog(int severity, int code, const char *fmt, ...)$/;"	f
+start_server	smcroute.c	/^static void start_server(int background, const char *conf_file)$/;"	f	file:
+ttl	mclab.h	/^	uint8 ttl[MAX_MC_MIFS];         \/* outgoing VIFs   *\/$/;"	m	struct:mroute6
+ttl	mclab.h	/^	uint8 ttl[MAX_MC_VIFS];         \/* outgoing VIFs   *\/$/;"	m	struct:mroute4
+u	mclab.h	/^	} u;$/;"	m	struct:mroute	typeref:union:mroute::__anon1
+udp_socket_open	udpsock.c	/^int udp_socket_open(uint32 inaddr, uint16 port)$/;"	f
+uint16	mclab.h	/^typedef u_int16_t uint16;$/;"	t
+uint32	mclab.h	/^typedef u_int32_t uint32;$/;"	t
+uint8	mclab.h	/^typedef u_int8_t uint8;$/;"	t
+usage	mcsender.c	/^static void usage(void)$/;"	f	file:
+usage	smcroute.c	/^static int usage(void)$/;"	f	file:
+usage_info	smcroute.c	/^static const char usage_info[] =$/;"	v	file:
+version	mclab.h	/^	int version;		\/* 4 or 6 *\/$/;"	m	struct:mroute
+version_info	smcroute.c	/^static const char version_info[] =$/;"	v	file:
+vif	mclab.h	/^	short vif;$/;"	m	struct:iface
+vif	mroute-api.c	/^static struct vif {$/;"	s	file:
+vif_list	mroute-api.c	/^} vif_list[MAXVIFS];$/;"	v	typeref:struct:vif	file:

@@ -1,0 +1,73 @@
+#!/bin/bash
+#
+# My own workbook achieve utility based on vvmanage
+# powered by ZHAO Yao <soarsky@foxmail.com>
+# 
+# 2012-01-11
+# add simple pre-process of backup directory and some display
+#
+# 2012-01-05
+# init
+
+# nonsense files extend name
+
+ROOTID=0
+
+CLEANTAG=".o .ko .o.cmd .out tags .ko.cmd .mod.c .order .symvers .swp"
+VERSION="Workbook_Backup_"
+
+BACKUPDIR="~/code ~/utils ~/shell"
+
+if [ "$UID" = $ROOTID ]; then
+	echo "I can only work correctly in non-root mode"
+	exit
+fi
+
+if [ "$1" = "-h" -o "$1" = "--help" ]; then
+	echo wbbackup [brief specification]
+	echo function: \"Workbook code, utils and other things BackUp, through Github\"
+	exit
+fi
+
+echo backup all files and directories in $BACKUPDIR
+
+cd ~/backup
+echo "Backup path:" `pwd`...
+
+# temporary directroy
+mkdir -p .tmp
+cd .tmp
+
+# copy all staff to .tmp
+for i in $BACKUPDIR; do
+# get rid of ~, and replace it with $HOME
+	if [ ${i:0:1} = "~" ]; then
+		j=$HOME${i:1}
+	fi
+	echo "Directory to backup: $j"
+	cp -r $j ./
+done
+
+# remove all .tmp_versions directory
+rm -r `find . -name .tmp_versions -type d -print` &> /dev/null
+
+# remove all nonsense files, then archive must be slim
+for i in $CLEANTAG; do
+	rm `find . -name *$i -type f -print` &> /dev/null
+done
+
+
+VERSION=$VERSION`date +%Y-%m-%d_%H%M%S`
+
+tar -cjf ../$VERSION.tar.bz2 ./*
+cd ../
+rm -r .tmp
+
+function getsize
+{
+	echo $5
+}
+
+echo -e "Backup succeed.\n"
+echo -e "backup dir: $PWD\nfile name: $VERSION\nsize: "$(getsize `ls -hl ./$VERSION.tar.bz2`)"\n"
+

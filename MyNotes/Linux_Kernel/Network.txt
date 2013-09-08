@@ -1,0 +1,80 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-19T15:05:45+08:00
+
+====== Network ======
+Created Wednesday 19 October 2011
+(From Linux Network Architecture)
+
+===== 1 Net Device =====
+
+* net_device: logical layer between hardware (driver) and OS.
+* One of the reasons why network devices are so special is that the actions of a network adapter cannot be bound to a unique process; instead, they run in the kernel and independently of user processes.
+	{{~/Misc/net_device.gif}}
+							net_device
+* Hiding specific functions (i.e., abstracting from the driver used) is achieved by using function pointers in the net_device structure. The function pointer can be used to abstract from the hardware actually used and its particularities.
+* A network adapter is an interface adapter that automatically transmits and receives network packets according to a defined MAC protocol (Ethernet, token ring, etc.). This means that a network adapter has an independent logic that works in parallel to the regular central processor(s). The network adapter and a system processor interact over I/O ports (hardware registers) and interrupts.
+* The init() function of the network driver is responsible for searching for an adapter and initializing its net_device structure with patching driver information. Including I/O registers' addresses, IRQ num, DMA channel, private data structure dev->priv (struct net_local), references to driver-specific methods.
+    __Methods specific to the MAC protocol used__ (e.g., Ethernet) can be set by special methods (e.g., ether_setup()).
+* ioctl() calls invoke the methods dev_open() or dev_close(), where the general steps to activate and deactivate a network device are executed. The open() method is responsible for initializing and activating the network adapter. System resources are reserved in the open() method for modern adapters, which do not have fixed values for IRQ and DMA lines. For older cards, the resources are searched for and reserved in the init() method. The transmission of packets over the network device is started by netif_start_queue(dev). During deactivation of a network adapter, all operations done when the adapter was opened should be undone. This concerns mainly allocated system resources (interrupts, DMA channels, etc.), which should now be freed.
+* Each data transmission in the Linux network architecture occurs over a network device, more specifically by use of the method hard_start_xmit() (start hardware transmission). Of course, this is a function pointer, pointing to a driver-specific transmission function, ..._start_xmit(). This method is responsible for forwarding the packet in the form of a socket buffer and starting the transmission. The dev->hard_start_xmit(skb, dev) is responsible for forwarding a data packet to the network adapter so that the latter can transmit it.
+* A network adapter uses interrupts and its driver-specific interrupt-handling routine to communicate with the operating system. The net_interrupt() can figure out three different events, tx completed, rx an packet, error situation occured. 
+	static void net_interrupt(int irq, void *dev_id, struct pt_regs * regs) {
+	    struct net_device *dev = dev_id;
+	    struct net_local *np;
+	    int ioaddr, status;
+	
+	    ioaddr = dev->base_addr;
+	
+	    np = (struct net_local *)dev->priv;
+	    status = inw(ioaddr + 0);
+	
+	    if (status & RX_INTR) {
+	        /* Got a packet(s). */
+	        net_rx(dev);
+	    }
+	#if TX_RING
+	    if (status & TX_INTR) {
+	        /* Transmit complete.    */
+	        net_tx(dev);
+	        np->stats.tx_packets++;
+	        netif_wake_queue(dev);
+	    }
+	#endif
+	    if (status & COUNTERS_INTR) {
+	        /* Increment the appropriate 'localstats' field. */
+	        np->stats.tx_window_errors++;
+	    }
+	}
+* net_tx(), 
+* net_rx(), there are two methods to inform the kernel that a packet has arrived: First the system could periodically ask the network adapter whether data has been received; this is the so-called polling principle, the second and better method uses an interrupt and an appropriate interrupt-handling routine to inform the operation system about an incoming packet. Occasionally, more than one packet arrives. The netif_rx(skb) can place the socket buffers in the input queue. 
+* Once a packet has been received correctly and the packet data has been transferred to the packet data range of the socket buffer, the receiving network device dev is registered in the sk_buff structure, and the protocol type present in the packet is learned. Notice that this information cannot be carried out from the payload of the MAC packet, so it has to be learned here, before the packet is forwarded to the higher layers. For Ethernet packets, the method eth_type_trans() handles this task and extracts this information from the protocol field of the Ethernet frame. __skb->protocol = eth_type_trans(skb, dev);__
+
+===== 2 Data Link Layer (L. I + L. II) =====
+
+* Structure of the Data-Link Layer
+	{{~/Misc/layerI_and_layerII.gif}}
+	Standardization of layers 1 and 2 in IEEE 802 and their implementation in the Linux network architecture.
+
+The __LLC layer__ hides all media-specific differences and should provide a uniform interface for protocols to the higher layers; the __MAC layer__ reflects the differences between different transmission technologies.
+* Processes on the Data-Link Layer
+
+===== 3 mac80211 =====
+
+* is a subsystem to Linux kernel, and implements shared code for softMAC/halfMAC wireless devices, and contains MLME and other code despite the name.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

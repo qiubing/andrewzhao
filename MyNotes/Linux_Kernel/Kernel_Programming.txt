@@ -1,0 +1,44 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-31T20:09:31+08:00
+
+====== Kernel Programming ======
+Created Monday 31 October 2011
+
+
+=== 查看obj信息 ===
+* **nm**
+* **gcc -v**
+* **readelf**: Display information about the contents of ELF format files
+* objdump -d -M i8086 arch/x86/boot/setup.elf: 反汇编分析setup.elf
+
+=== Modules ===
+* **mknod** 创建/dev/目录下的节点。
+* user与kernel之间传数据：The reason for copy_from_user or get_user is that Linux memory (on Intel architecture, it may be different under some other processors) is segmented. This means that a pointer, by itself, does not reference a unique location in memory, only a location in a memory segment, and you need to know which memory segment it is to be able to use it. There is one memory segment for the kernel, and one for each of the processes.
+* **modinfo**: see what kind of information it is.
+* Modules can take command line arguments, but not with the argc/argv you might be used to. To allow arguments to be passed to your module, declare the variables that will take the values of the command line arguments as global and then use the module_param() macro, (defined in linux/moduleparam.h) to set the mechanism up. At runtime, insmod will fill the variables with any command line arguments that are given, like **./insmod mymodule.ko myvariable=5**.
+* Kernel modules are different here, too. In the hello world example, you might have noticed that we used a function, printk() but didn't include a standard I/O library. That's because modules are object files whose symbols get resolved upon insmod'ing. The definition for the symbols comes from the kernel itself; the only external functions you can use are the ones provided by the kernel. If you're curious about what symbols have been exported by your kernel, take a look at **/proc/kallsyms**.
+
+===== strace =====
+with gcc -Wall -o hello hello.c. Run the exectable with strace ./hello. Are you impressed? Every line you see corresponds to a system call. strace[4] is a handy program that gives you details about what system calls a program is making, including which call is made, what its arguments are what it returns. It's an invaluable tool for figuring out things like what files a program is trying to access.
+use eg: //strace -f -o vi.strace vi test//  to find the system call stack of vi
+
+===== printk and dmesg =====
+* printk与<stdio.h>中printf很相似。
+* 健壮性是printk函数最容易让人接受的特质，任何时候任何地方都能调用它。它可以在中断上下文和进程上下文中调用，可以在持有锁时调用，可以在多处理器上同时调用，而且调用者连锁都不必使用。
+* 在系统启动过程中，终端还没初始化前，某些地方是不能用printk的，比如在负责执行硬件体系结构相关的初始化动作的setup_arch()函数中。
+* 内核消息都被保存在一个LOG_BUF_LEN大小的环形队列中，它的大小可以通过CONFIG_LOG_BUF_SHIFT进行调整。
+* 在标准的Linux系统上，用户空间的守护进程klogd从记录缓冲区中获取内核消息，再通过syslogd守护进程将它们保存在系统日志文件中。
+* klogd程序既可以从/proc/kmsg文件（默认情况），也可通过syslog()系统调用读取这些信息。
+* syslogd守护进程把它接收到的所有信息加进一个文件中，该文件默认是/var/log/messages。可以通过/etc/syslog.conf配置文件重新指定。
+
+===== 数据对齐 =====
+以下代码就存在数据对齐问题：
+	char dog[10];
+	char *p = &dog[1];
+	unsigned long l = *(unsigned long *)p;
+
+
+=== MISC ===
+* 最新的内核中，uid被移到了struct cred里面；
+* **indent**: 用于调整代码的风格；

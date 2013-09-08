@@ -1,0 +1,47 @@
+#!/bin/bash
+#
+# version 0.1: roughly achieve VANET version publication
+# powered by ZHAO Yao <soarsky@foxmail.com>
+# 2012-01-04
+
+# nonsense files extend name
+CLEANTAG=".o .ko .o.cmd .out tags .ko.cmd .mod.c .order .symvers .swp"
+VERSION="vanet_"
+
+if [ "$1" = "-h" -o "$1" = "--help" ]; then
+	echo vvmange [brief specification]
+	echo function: \"Vanet Version Manage\"
+	exit
+fi
+
+cd ~/Vanet-version
+echo entered in `pwd`...
+
+# temporary directroy
+mkdir -p .tmp
+cd .tmp
+
+# copy all staff to .tmp and remove suffix '_mainline'
+cp -r ~/kernel/*_mainline ./
+rename _mainline '' *_mainline
+cp ~/kernel/README ./
+
+# remove all .tmp_versions directory
+rm -r `find . -name .tmp_versions -type d -print`
+
+# remove all nonsense files, then archive must be slim
+for i in $CLEANTAG; do
+	rm `find . -name *$i -type f -print`
+done
+
+
+if [ "$1" = "" ]; then
+	VERSION=$VERSION`date +%Y-%m-%d_%H%M%S`
+else
+	VERSION=$VERSION`date +%Y-%m-%d_%H%M%S`_$1
+fi
+
+tar -cjf ../$VERSION.tar.bz2 ./*
+cd ../
+rm -r .tmp
+

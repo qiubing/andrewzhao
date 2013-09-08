@@ -1,0 +1,87 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-14T09:24:09+08:00
+
+====== Archlinux ======
+Created Friday 14 October 2011
+
+===== 1 使用技巧 =====
+* 系统启动所使用的配置文件流程：
+* 利用/etc/fstab管理fs的挂载
+* ntfs类型的fs需用ntfs-3g类新挂载，否则不能添加和删除文件
+* x60的参考安装过程：http://archlinux.atspace.com/
+* 在加载vfat（fat32）文件系统时，需要显示设置utf8，那样在windows下查看才不会有乱码，iocharset的功能呢？
+* 在git commit时，会弹出输入更新信息的编辑窗口，编辑器利用“系统默认”的即vi，我感觉vi用着不爽，于是google下如何修改默认的编辑器。在网上找到修改的方法，即在.bashrc中添加环境变量EDITOR=vim，便可将默认编辑器修改为vim。这是什么原理呢？之前的默认编辑器又是在哪儿指定的呢？
+* 修改X11下面键盘按键的映射，可以利用xmodmap和xmodmaprc。
+* tty的字体可以通过/etc/rc.conf中CONSOLEFONT加以设置，而X下的virtual-terminal则是通过terminal自身配置的。
+* 如何格式化优盘？
+* 关闭烦人的terminal声音：修改/etc/inputrc中的内容，添加set bell-style none就能关闭terminal声音。
+
+===== 2 基本知识 =====
+
+===== 3 /etc/* =====
+* 包括了系统绝大部分的配置文件
+* cron用于周期性的完成job，例如log(logrotate)操作
+* bash.bashrc是系统总的bash配置文件
+* bash_completion.d是啥子东东哦？难道是类似于terminal里completion?
+* ca-certificates管理认证
+* fstab管理系统文件系统挂载
+* inittab是最初最初的系统配置文件?
+* ld.so.conf是什么东东啊？
+* pam.d权限配置文件，需要深入了解
+* rc.xxx是系统启动和运行最初的配置文件，关于它们，还需要深入学习
+
+===== 4 xdg是什么东西？ =====
+
+===== 5 ACPI? =====
+* 要挂起系统（go to ram），可以echo "mem" > /sys/power/state，当然必须以root权限执行操作。
+
+===== 6 udev - Linux dynamic device management =====
+udev supplies the system software with device events, manages permissions of device nodes and may create additional symlinks in the /dev directory, or renames network interfaces.
+The udev daemon, udevd(8), receives device uevents directly from the kernel whenever a device is added or removed from the system, or it changes its state. When udev receives a device event, it matches its configured set of rules against various device attributes to identify the device. Rules that match may provide additional device information to be stored in the udev database or to be used to create meaningful symlink names.
+Primarily, it manages device nodes in [[/dev.]] It is the successor of devfs and hotplug, which means that it handles the [[/dev]] directory and all user space actions when adding/removing devices, including firmware load.
+HOWTO WRITE RULES: http://www.reactivated.net/writing_udev_rules.html
+The previous /dev implementation, devfs, is now deprecated, and udev is seen as the successor.  udev relies on matching information provided by sysfs with rules provided by the user. This documentation aims to detail the process of rule-writing, one of the only udev-related tasks that must (optionally) be performed by the user.
+
+网上一个参考代码：
+KERNEL=="sd[b-z]", NAME="%k", SYMLINK+="usbhd-%k", GROUP="users", OPTIONS="last_rule" 
+ACTION=="add", KERNEL=="sd[b-z][0-9]", SYMLINK+="usbhd-%k", GROUP="users", NAME="%k" 
+ACTION=="add", KERNEL=="sd[b-z][0-9]", RUN+="/bin/mkdir -p /media/usbhd-%k" 
+ACTION=="add", KERNEL=="sd[b-z][0-9]", PROGRAM=="/lib/udev/vol_id -t %N", RESULT=="vfat", RUN+="/bin/mount -t vfat -o rw,utf8=true,codepage=936,noauto,flush,quiet,nodev,nosuid,noexec,noatime,dmask=000,fmask=111 /dev/%k /media/usbhd-%k", OPTIONS="last_rule" 
+ACTION=="add", KERNEL=="sd[b-z][0-9]", RUN+="/bin/mount -t auto -o rw,locale=zh_CN.UTF-8,noauto,sync,dirsync,noexec,nodev,noatime /dev/%k /media/usbhd-%k", OPTIONS="last_rule" 
+ACTION=="remove", KERNEL=="sd[b-z][0-9]", RUN+="/bin/umount -l /media/usbhd-%k" 
+ACTION=="remove", KERNEL=="sd[b-z][0-9]", RUN+="/bin/rm -rf /media/usbhd-%k", OPTIONS="last_rule"
+
+我的代码：
+ACTION=="add", KERNEL=="sd[b-z]", RUN+="/bin/mkdir -p /media/usb-%k"
+ACTION=="add", KERNEL=="sd[b-z]", RUN+="/bin/mount -o utf8,uid=1000,gid=100 /dev/%k /media/usb-%k", OPTIONS="last_rule"
+ACTION=="remove", KERNEL=="sd[b-z]", RUN+="/bin/umount /media/usb-%k"
+ACTION=="remove", KERNEL=="sd[b-z]", RUN+="/bin/rmdir /media/usb-%k", OPTIONS="last_rule"
+
+最后执行：udevadm control --reload_rules   更新udev的配置。
+
+由于fdisk -l后，我的u盘是/dev/sdb，如果我将KERNEL改为"sd[b-z][0-9]"，结果就不行了，udev支持的String matching有如下：
+* - match any character, zero or more times
+? - match any character exactly once
+[] - match any single character specified in the brackets, ranges are also permitted。
+
+最终我的配置代码为：
+ACTION=="add", KERNEL=="sd[b-z][0-9]", RUN+="/bin/mkdir -p /media/usb-%k"
+ACTION=="add", KERNEL=="sd[b-z][0-9]", RUN+="/bin/mount -o utf8,uid=1000,gid=100 /dev/%k /media/usb-%k", OPTIONS="last_rule" 
+ACTION=="remove", KERNEL=="sd[b-z][0-9]", RUN+="/bin/umount -l /media/usb-%k" 
+ACTION=="remove", KERNEL=="sd[b-z][0-9]", RUN+="/bin/rm -rf /media/usb-%k", OPTIONS="last_rule"
+
+===== 7 Archlinux的启动过程 =====
+* init
+
+
+
+
+
+
+
+
+
+
+
+

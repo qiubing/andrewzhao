@@ -1,0 +1,1053 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABORT	wildmat.c	68;"	d	file:
+AC	window.c	/^static char *CM, *IS, *RS, *AC, *EA;$/;"	v	file:
+ACK	keyboard.h	33;"	d
+ADM_CHANGE	rwconf.c	44;"	d	file:
+AE	window.c	/^static char *ME, *SE, *UE, *AE;$/;"	v	file:
+AL	window.c	/^static char *CE, *Al, *Dl, *AL, *DL;$/;"	v	file:
+ANSI	vt100.h	21;"	d
+APPL	vt100.h	17;"	d
+AS	window.c	/^static char *AS, *MB, *MD, *MR, *SO, *US;$/;"	v	file:
+Al	window.c	/^static char *CE, *Al, *Dl, *AL, *DL;$/;"	v	file:
+BC	window.c	/^static char *BC, *CR, *NL;$/;"	v	file:
+BDOUBLE	window.h	110;"	d
+BITS8	sysdep.h	118;"	d
+BL	window.c	/^static char *CS, *SF, *SR, *VB, *BL;$/;"	v	file:
+BLACK	window.h	92;"	d
+BLUE	window.h	96;"	d
+BNONE	window.h	108;"	d
+BREAK	script.c	38;"	d	file:
+BSINGLE	window.h	109;"	d
+BUFFERSIZE	window.c	53;"	d	file:
+BUFLEN	window.c	1662;"	d	file:
+BUFLEN	window.c	1664;"	d	file:
+CD	window.c	/^static char *CD, *CL, *IC, *DC;$/;"	v	file:
+CE	window.c	/^static char *CE, *Al, *Dl, *AL, *DL;$/;"	v	file:
+CHANGED	configsym.h	59;"	d
+CL	window.c	/^static char *CD, *CL, *IC, *DC;$/;"	v	file:
+CM	window.c	/^static char *CM, *IS, *RS, *AC, *EA;$/;"	v	file:
+CNONE	window.h	121;"	d
+CNORMAL	window.h	122;"	d
+CNULL	script.c	60;"	d	file:
+CNULL	window.h	138;"	d
+COLATTR	window.h	101;"	d
+COLBG	window.h	103;"	d
+COLFG	window.h	102;"	d
+COLS	minicom.h	/^EXTERN int COLS;$/;"	v
+CR	window.c	/^static char *BC, *CR, *NL;$/;"	v	file:
+CRTSCTS	sysdep.h	128;"	d
+CR_OPTION1	minicom.h	33;"	d
+CR_OPTION1	minicom.h	35;"	d
+CR_OPTION2	minicom.h	38;"	d
+CR_OPTION2	minicom.h	40;"	d
+CR_OPTION3	minicom.h	43;"	d
+CR_OPTION3	minicom.h	45;"	d
+CR_OPTION4	minicom.h	48;"	d
+CR_OPTION4	minicom.h	50;"	d
+CR_OPTION5	minicom.h	53;"	d
+CR_OPTION5	minicom.h	55;"	d
+CS	window.c	/^static char *CS, *SF, *SR, *VB, *BL;$/;"	v	file:
+CYAN	window.h	98;"	d
+DAT_BUF	getsdir.c	/^} DAT_BUF;$/;"	t	typeref:struct:dat_buf	file:
+DC	window.c	/^static char *CD, *CL, *IC, *DC;$/;"	v	file:
+DIALMAGIC	dial.c	112;"	d	file:
+DIALOPTS	dial.c	1137;"	d	file:
+DL	window.c	/^static char *CE, *Al, *Dl, *AL, *DL;$/;"	v	file:
+DS	window.c	/^static char *TS, *FS, *DS;$/;"	v	file:
+D_HOR	window.c	/^static char D_HOR;$/;"	v	file:
+D_LL	window.c	/^static char D_LL;$/;"	v	file:
+D_LR	window.c	/^static char D_LR;$/;"	v	file:
+D_UL	window.c	/^static char D_UL;$/;"	v	file:
+D_UR	window.c	/^static char D_UR;$/;"	v	file:
+D_VER	window.c	/^static char D_VER;$/;"	v	file:
+Dl	window.c	/^static char *CE, *Al, *Dl, *AL, *DL;$/;"	v	file:
+DoMatch	wildmat.c	/^DoMatch(s, p)			\/* match string "s" to pattern "p" *\/$/;"	f	file:
+EA	window.c	/^static char *CM, *IS, *RS, *AC, *EA;$/;"	v	file:
+EANSI	keyserv.c	27;"	d	file:
+ELM	window.h	/^} ELM;$/;"	t	typeref:struct:_elm
+EOF	window.h	266;"	d
+ERR	script.c	36;"	d	file:
+ESC	vt100.c	49;"	d	file:
+EVT100	keyserv.c	26;"	d	file:
+EXTERN	minicom.c	31;"	d	file:
+EXTERN	minicom.h	68;"	d
+FALSE	wildmat.c	66;"	d	file:
+FILE_MWTR	file.c	49;"	d	file:
+FL_ANSI	dial.c	56;"	d	file:
+FL_ANSI	file.c	45;"	d	file:
+FL_DEL	dial.c	54;"	d	file:
+FL_DEL	file.c	43;"	d	file:
+FL_ECHO	dial.c	53;"	d	file:
+FL_ECHO	file.c	42;"	d	file:
+FL_SAVE	dial.c	58;"	d	file:
+FL_SAVE	file.c	47;"	d	file:
+FL_TAG	dial.c	57;"	d	file:
+FL_TAG	file.c	46;"	d	file:
+FL_WRAP	dial.c	55;"	d	file:
+FL_WRAP	file.c	44;"	d	file:
+FS	window.c	/^static char *TS, *FS, *DS;$/;"	v	file:
+GETSDIR_DIRSF	getsdir.h	36;"	d
+GETSDIR_DIRSL	getsdir.h	37;"	d
+GETSDIR_ENTRY	getsdir.h	/^} GETSDIR_ENTRY;$/;"	t	typeref:struct:dirEntry
+GETSDIR_NSORT	getsdir.h	31;"	d
+GETSDIR_PARNT	getsdir.h	30;"	d
+GETSDIR_RSORT	getsdir.h	38;"	d
+GETSDIR_TSORT	getsdir.h	32;"	d
+GREEN	window.h	94;"	d
+HAS_FCHOWN	port.h	115;"	d
+HAS_REUID	port.h	109;"	d
+HELLO	keyboard.h	32;"	d
+IC	window.c	/^static char *CD, *CL, *IC, *DC;$/;"	v	file:
+IS	window.c	/^static char *CM, *IS, *RS, *AC, *EA;$/;"	v	file:
+IUCLC	sysdep.h	80;"	d
+IXANY	sysdep.h	83;"	d
+J_col	config.c	/^char *J_col[] =$/;"	v
+Jcolor	config.c	/^int Jcolor(s)$/;"	f
+KANSI	keyboard.h	17;"	d
+KCURAPP	keyboard.h	22;"	d
+KCURST	keyboard.h	21;"	d
+KE	window.c	/^static char *VE, *VI, *KS, *KE;$/;"	v	file:
+KEY_OFFS	window.h	260;"	d
+KGETKEY	keyboard.h	26;"	d
+KINSTALL	keyboard.h	35;"	d
+KKPAPP	keyboard.h	20;"	d
+KKPST	keyboard.h	15;"	d
+KMINIX	keyboard.h	18;"	d
+KS	window.c	/^static char *VE, *VI, *KS, *KE;$/;"	v	file:
+KSETBS	keyboard.h	25;"	d
+KSETESC	keyboard.h	24;"	d
+KSIGIO	keyboard.h	23;"	d
+KSTART	keyboard.h	19;"	d
+KSTOP	keyboard.h	14;"	d
+KUNINSTALL	keyboard.h	36;"	d
+KVT100	keyboard.h	16;"	d
+K_BS	window.h	217;"	d
+K_DEL	window.h	257;"	d
+K_DN	window.h	253;"	d
+K_END	window.h	254;"	d
+K_ERA	window.h	268;"	d
+K_ESC	window.h	218;"	d
+K_F1	window.h	221;"	d
+K_F1	window.h	234;"	d
+K_F10	window.h	230;"	d
+K_F10	window.h	243;"	d
+K_F11	window.h	231;"	d
+K_F11	window.h	244;"	d
+K_F12	window.h	232;"	d
+K_F12	window.h	245;"	d
+K_F2	window.h	222;"	d
+K_F2	window.h	235;"	d
+K_F3	window.h	223;"	d
+K_F3	window.h	236;"	d
+K_F4	window.h	224;"	d
+K_F4	window.h	237;"	d
+K_F5	window.h	225;"	d
+K_F5	window.h	238;"	d
+K_F6	window.h	226;"	d
+K_F6	window.h	239;"	d
+K_F7	window.h	227;"	d
+K_F7	window.h	240;"	d
+K_F8	window.h	228;"	d
+K_F8	window.h	241;"	d
+K_F9	window.h	229;"	d
+K_F9	window.h	242;"	d
+K_HOME	window.h	248;"	d
+K_INS	window.h	256;"	d
+K_KILL	window.h	269;"	d
+K_LT	window.h	251;"	d
+K_META	window.h	263;"	d
+K_PGDN	window.h	255;"	d
+K_PGUP	window.h	249;"	d
+K_RT	window.h	252;"	d
+K_STOP	window.h	219;"	d
+K_UP	window.h	250;"	d
+LINES	minicom.h	/^EXTERN int LINES;$/;"	v
+LNULL	script.c	57;"	d	file:
+MAC_LEN	configsym.h	48;"	d
+MAC_LEN	window.c	35;"	d	file:
+MAGENTA	window.h	97;"	d
+MAXCOLS	minicom.h	62;"	d
+MAXNAMLEN	port.h	38;"	d
+MAXPROTO	configsym.h	64;"	d
+MAX_CNT	getsdir.c	39;"	d	file:
+MAX_MACS	rwconf.c	49;"	d	file:
+MAX_SEARCH	minicom.h	130;"	d
+MB	window.c	/^static char *AS, *MB, *MD, *MR, *SO, *US;$/;"	v	file:
+MD	window.c	/^static char *AS, *MB, *MD, *MR, *SO, *US;$/;"	v	file:
+ME	window.c	/^static char *ME, *SE, *UE, *AE;$/;"	v	file:
+MENU_END	window.h	136;"	d
+MR	window.c	/^static char *AS, *MB, *MD, *MR, *SO, *US;$/;"	v	file:
+NIL_FUN	window.h	135;"	d
+NIL_FUNLIST	window.h	134;"	d
+NIL_WIN	window.h	139;"	d
+NL	window.c	/^static char *BC, *CR, *NL;$/;"	v	file:
+NORESET	minicom.c	38;"	d	file:
+NORMAL	vt100.h	16;"	d
+NOSTREAMS	port.h	56;"	d
+NUM_KEYS	window.h	259;"	d
+N_	intl.h	10;"	d
+OK	script.c	35;"	d	file:
+OLD	vt100.c	34;"	d	file:
+PARS_VAL_LEN	configsym.h	34;"	d
+PASS8	sysdep.h	122;"	d
+PASS8	sysdep.h	124;"	d
+PKG_VER	rcsid.h	4;"	d
+PRIVATE	configsym.h	60;"	d
+PROG_BASE	configsym.h	65;"	d
+PROTO_BASE	configsym.h	63;"	d
+PUBLIC	configsym.h	61;"	d
+P_ASKDNDIR	configsym.h	145;"	d
+P_BACKSPACE	configsym.h	115;"	d
+P_BAUDRATE	configsym.h	79;"	d
+P_BITS	configsym.h	80;"	d
+P_CALLIN	configsym.h	76;"	d
+P_CALLOUT	configsym.h	77;"	d
+P_COLUSAGE	configsym.h	86;"	d
+P_CONVCAP	configsym.h	142;"	d
+P_CONVF	configsym.h	141;"	d
+P_DOWNDIR	configsym.h	112;"	d
+P_ESCAPE	configsym.h	114;"	d
+P_FSELW	configsym.h	144;"	d
+P_HASDCD	configsym.h	117;"	d
+P_HASRTS	configsym.h	118;"	d
+P_HASXON	configsym.h	119;"	d
+P_HISTSIZE	configsym.h	139;"	d
+P_KERMALLOW	configsym.h	84;"	d
+P_KERMIT	configsym.h	83;"	d
+P_KERMREAL	configsym.h	85;"	d
+P_LOCK	configsym.h	78;"	d
+P_LOGCONN	configsym.h	149;"	d
+P_LOGFNAME	configsym.h	148;"	d
+P_LOGXFER	configsym.h	150;"	d
+P_MAC1	configsym.h	156;"	d
+P_MAC10	configsym.h	165;"	d
+P_MAC2	configsym.h	157;"	d
+P_MAC3	configsym.h	158;"	d
+P_MAC4	configsym.h	159;"	d
+P_MAC5	configsym.h	160;"	d
+P_MAC6	configsym.h	161;"	d
+P_MAC7	configsym.h	162;"	d
+P_MAC8	configsym.h	163;"	d
+P_MAC9	configsym.h	164;"	d
+P_MACCHG	configsym.h	135;"	d
+P_MACENAB	configsym.h	136;"	d
+P_MACROS	configsym.h	134;"	d
+P_MAUTOBAUD	configsym.h	109;"	d
+P_MBG	configsym.h	126;"	d
+P_MCONNECT	configsym.h	97;"	d
+P_MDIALCAN	configsym.h	103;"	d
+P_MDIALPRE	configsym.h	91;"	d
+P_MDIALPRE2	configsym.h	93;"	d
+P_MDIALPRE3	configsym.h	95;"	d
+P_MDIALSUF	configsym.h	92;"	d
+P_MDIALSUF2	configsym.h	94;"	d
+P_MDIALSUF3	configsym.h	96;"	d
+P_MDIALTIME	configsym.h	104;"	d
+P_MDROPDTR	configsym.h	108;"	d
+P_MFG	configsym.h	125;"	d
+P_MHANGUP	configsym.h	102;"	d
+P_MINIT	configsym.h	89;"	d
+P_MNOCON1	configsym.h	98;"	d
+P_MNOCON2	configsym.h	99;"	d
+P_MNOCON3	configsym.h	100;"	d
+P_MNOCON4	configsym.h	101;"	d
+P_MRDELAY	configsym.h	105;"	d
+P_MRESET	configsym.h	90;"	d
+P_MRETRIES	configsym.h	106;"	d
+P_MUL	configsym.h	71;"	d
+P_MULTILINE	configsym.h	152;"	d
+P_PARITY	configsym.h	81;"	d
+P_PAUTO	configsym.h	120;"	d
+P_PFULL	configsym.h	69;"	d
+P_PIORED	configsym.h	70;"	d
+P_PNAME	configsym.h	72;"	d
+P_PNN	configsym.h	67;"	d
+P_PORT	configsym.h	75;"	d
+P_PPROG	configsym.h	73;"	d
+P_PUD	configsym.h	68;"	d
+P_SBG	configsym.h	130;"	d
+P_SCRIPTDIR	configsym.h	113;"	d
+P_SCRIPTPROG	configsym.h	87;"	d
+P_SFG	configsym.h	129;"	d
+P_SHOWSPD	configsym.h	110;"	d
+P_SOUND	configsym.h	138;"	d
+P_STATLINE	configsym.h	116;"	d
+P_STOPB	configsym.h	82;"	d
+P_TBG	configsym.h	128;"	d
+P_TFG	configsym.h	127;"	d
+P_UPDIR	configsym.h	111;"	d
+RCSID	rcsid.h	14;"	d
+RCSID	rcsid.h	18;"	d
+RCSID	rcsid.h	6;"	d
+RED	window.h	93;"	d
+RESET	minicom.c	37;"	d	file:
+RETURN	script.c	37;"	d	file:
+RS	window.c	/^static char *CM, *IS, *RS, *AC, *EA;$/;"	v	file:
+R_OK	port.h	67;"	d
+R_OK	port.h	73;"	d
+SE	window.c	/^static char *ME, *SE, *UE, *AE;$/;"	v	file:
+SEEK_END	port.h	77;"	d
+SEEK_SET	port.h	76;"	d
+SF	window.c	/^static char *CS, *SF, *SR, *VB, *BL;$/;"	v	file:
+SIGUSR1	keyboard.h	29;"	d
+SIGUSR2	keyboard.h	30;"	d
+SO	window.c	/^static char *AS, *MB, *MD, *MR, *SO, *US;$/;"	v	file:
+SR	window.c	/^static char *CS, *SF, *SR, *VB, *BL;$/;"	v	file:
+ST_LINE	window.c	30;"	d	file:
+SUBM_OKAY	file.c	50;"	d	file:
+S_DOWN	window.h	116;"	d
+S_HOR	window.c	/^static char S_HOR;$/;"	v	file:
+S_LL	window.c	/^static char S_LL;$/;"	v	file:
+S_LR	window.c	/^static char S_LR;$/;"	v	file:
+S_UL	window.c	/^static char S_UL;$/;"	v	file:
+S_UP	window.h	115;"	d
+S_UR	window.c	/^static char S_UR;$/;"	v	file:
+S_VER	window.c	/^static char S_VER;$/;"	v	file:
+Star	wildmat.c	/^Star(s, p)$/;"	f	file:
+StrStr	minicom.c	/^char *StrStr(str1, str2, case_matters)$/;"	f
+TANDEM	sysdep.h	115;"	d
+TCSANOW	sysdep.h	136;"	d
+TIOCMODG	sysdep.h	89;"	d
+TIOCMODG	sysdep.h	92;"	d
+TIOCMODS	sysdep.h	102;"	d
+TIOCMODS	sysdep.h	99;"	d
+TIOCM_CAR	sysdep.h	109;"	d
+TLEFT	window.h	127;"	d
+TMID	window.h	128;"	d
+TRIGHT	window.h	129;"	d
+TRUE	wildmat.c	63;"	d	file:
+TS	window.c	/^static char *TS, *FS, *DS;$/;"	v	file:
+UE	window.c	/^static char *ME, *SE, *UE, *AE;$/;"	v	file:
+US	window.c	/^static char *AS, *MB, *MD, *MR, *SO, *US;$/;"	v	file:
+USR_CHANGE	rwconf.c	45;"	d	file:
+VB	window.c	/^static char *CS, *SF, *SR, *VB, *BL;$/;"	v	file:
+VC_MUSIC	port.h	103;"	d
+VE	window.c	/^static char *VE, *VI, *KS, *KE;$/;"	v	file:
+VI	window.c	/^static char *VE, *VI, *KS, *KE;$/;"	v	file:
+VMIN	sysdep.h	74;"	d
+VNULL	script.c	58;"	d	file:
+VT100	vt100.h	20;"	d
+VTIME	sysdep.h	77;"	d
+VT_KLUDGE	wkeys.c	34;"	d	file:
+Version	main.c	/^char *Version = VERSION;$/;"	v
+Version	script.c	/^char *Version = "@(#)runscript 1.23 31-May-1999 JL";$/;"	v
+WEXITSTATUS	sysdep.h	65;"	d
+WHAT_NR_OPTIONS	file.c	72;"	d	file:
+WHITE	window.h	99;"	d
+WIN	window.h	/^} WIN;$/;"	t	typeref:struct:_win
+WTERMSIG	sysdep.h	68;"	d
+W_OK	port.h	66;"	d
+W_OK	port.h	72;"	d
+XA_ALTCHARSET	window.h	86;"	d
+XA_BLANK	window.h	87;"	d
+XA_BLINK	window.h	81;"	d
+XA_BOLD	window.h	82;"	d
+XA_NORMAL	window.h	80;"	d
+XA_OK_EXIST	minicom.h	64;"	d
+XA_OK_NOTEXIST	minicom.h	65;"	d
+XA_REVERSE	window.h	83;"	d
+XA_STANDOUT	window.h	84;"	d
+XA_UNDERLINE	window.h	85;"	d
+XCASE	sysdep2.c	90;"	d	file:
+YELLOW	window.h	95;"	d
+_	intl.h	14;"	d
+_	intl.h	20;"	d
+_IBCS2	sysdep.h	33;"	d
+_NSIG	port.h	81;"	d
+_NSIG	port.h	83;"	d
+_PROTO	port.h	90;"	d
+_PROTO	port.h	92;"	d
+_PROTO	window.h	147;"	d
+_PROTO	window.h	149;"	d
+_V7	sysdep.h	41;"	d
+_attroff	window.c	/^static void _attroff()$/;"	f	file:
+_attron	window.c	/^static void _attron(attr)$/;"	f	file:
+_buffend	window.c	/^static char *_buffend;$/;"	v	file:
+_bufpos	window.c	/^static char *_bufpos = _bufstart;$/;"	v	file:
+_bufstart	window.c	/^static char _bufstart[BUFFERSIZE];$/;"	v	file:
+_colson	window.c	/^static void _colson(color)$/;"	f	file:
+_cursor	window.c	/^static void _cursor(type)$/;"	f	file:
+_curstype	window.c	/^static int _curstype = CNORMAL;$/;"	v	file:
+_elm	window.h	/^typedef struct _elm {$/;"	s
+_gotoxy	window.c	/^static void _gotoxy(x, y)$/;"	f	file:
+_has_am	window.c	/^static int _has_am = 0;$/;"	v	file:
+_initkeys	wkeys.c	/^static void _initkeys()$/;"	f	file:
+_intern	window.c	/^static int _intern = 0;$/;"	v	file:
+_keys	wkeys.c	/^static struct key _keys[NUM_KEYS];$/;"	v	typeref:struct:key	file:
+_mv_standout	window.c	/^static int _mv_standout = 0;$/;"	v	file:
+_setattr	window.c	/^static void _setattr(attr, color)$/;"	f	file:
+_tptr	keyserv.c	/^char *_tptr = (char *)NULL;	\/* Pointer to termcap information *\/$/;"	v
+_tptr	window.c	/^char *_tptr = CNULL;$/;"	v
+_wclreol	window.c	/^static int _wclreol(w)$/;"	f	file:
+_win	window.h	/^typedef struct _win {$/;"	s
+_write	window.c	/^static void _write(c, doit, x, y,attr, color)$/;"	f	file:
+ackjmp	ipc.c	/^static jmp_buf ackjmp;			\/* To jump to after ACK signal  *\/$/;"	v	file:
+acmap	window.c	/^static int acmap(c)$/;"	f	file:
+addlf	minicom.h	/^EXTERN int addlf;	\/* Add LF after CR *\/$/;"	v
+albuf	main.c	/^static jmp_buf albuf;$/;"	v	file:
+alt_override	minicom.h	/^EXTERN int alt_override;\/* -m option *\/$/;"	v
+ansi	vt100.c	/^  char *ansi;$/;"	m	struct:escseq	file:
+ansi_mode	vt100.c	/^static void ansi_mode(on_off)$/;"	f	file:
+ansiesc	keyserv.c	/^char *ansiesc[] = {$/;"	v
+anys	util.c	/^static int anys(s1, s2)$/;"	f	file:
+app_vtesc	keyserv.c	/^char *app_vtesc[] = {$/;"	v
+arecv	ascii-xfr.c	/^int arecv(file)$/;"	f
+argument	keyserv.c	/^static int argument;		\/* Argument to 'HELLO' command *\/$/;"	v	file:
+asend	ascii-xfr.c	/^int asend(file)$/;"	f
+ask	windiv.c	/^int ask(what, s)$/;"	f
+attr	window.h	/^  char attr;		\/* Current attribute of window *\/$/;"	m	struct:_win
+attr	window.h	/^  char attr;$/;"	m	struct:_elm
+autocr	window.h	/^  char autocr;		\/* With '\\n', do an automatic '\\r' *\/$/;"	m	struct:_win
+baud	dial.c	/^  char baud[8];$/;"	m	struct:dialent	file:
+baud	dial.c	/^  char baud[8];$/;"	m	struct:v1_dialent	file:
+baud	dial.c	/^  char baud[8];$/;"	m	struct:v3_dialent	file:
+bdone	ascii-xfr.c	/^unsigned long bdone = 0;$/;"	v
+bindtextdomain	intl.h	16;"	d
+bindtextdomain	intl.h	17;"	d
+bits	dial.c	/^  char bits[2];$/;"	m	struct:dialent	file:
+bits	dial.c	/^  char bits[2];$/;"	m	struct:v1_dialent	file:
+bits	dial.c	/^  char bits[2];$/;"	m	struct:v3_dialent	file:
+bogus_dcd	minicom.h	/^EXTERN int bogus_dcd;	\/* This indicates the dcd status if no 'real' dcd *\/$/;"	v
+border	window.h	/^  char border;		\/* type of border *\/$/;"	m	struct:_win
+bs_code	keyserv.c	/^static int bs_code = 8;		\/* Code that backspace key sends *\/$/;"	v	file:
+buildexpect	script.c	/^struct line **buildexpect()$/;"	f
+c	file.c	/^static int c = 0;$/;"	v	file:
+c1	minicom.c	/^static char *c1[] = { N_("   Yes  "), N_("   No   "), CNULL };$/;"	v	file:
+c2	minicom.c	/^static char *c2[] = { N_("  Close "), N_(" Pause  "), N_("  Exit  "), CNULL };$/;"	v	file:
+c3	minicom.c	/^static char *c3[] = { N_("  Close "), N_(" Unpause"), N_("  Exit  "), CNULL };$/;"	v	file:
+c7	minicom.c	/^static char *c7[] = { N_("   Yes  "), N_("   No   "), CNULL };$/;"	v	file:
+cap	window.h	/^	char *cap;$/;"	m	struct:key
+capfp	minicom.h	/^EXTERN FILE *capfp;	\/* File to capture to *\/$/;"	v
+cbuf	window.c	/^static char cbuf[2048];$/;"	v	file:
+cdelay	ascii-xfr.c	/^int cdelay = 0;$/;"	v
+cflags	getsdir.h	/^   ushort cflags;			\/* caller field for convenience *\/$/;"	m	struct:dirEntry
+cfsetispeed	sysdep.h	142;"	d
+cfsetispeed	sysdep.h	150;"	d
+cfsetispeed	sysdep.h	152;"	d
+cfsetospeed	sysdep.h	144;"	d
+cfsetospeed	sysdep.h	151;"	d
+cfsetospeed	sysdep.h	154;"	d
+change_size	minicom.c	/^static void change_size(sig)$/;"	f	file:
+check_answer	ascii-xfr.c	/^void check_answer()$/;"	f
+check_io	ipc.c	/^int check_io(fd1, fd2, tmout, buf, buflen)$/;"	f
+cnt	getsdir.c	/^    unsigned cnt;			\/* data count in present buffer *\/$/;"	m	struct:dat_buf	file:
+code	vt100.c	/^  int code;$/;"	m	struct:escseq	file:
+color	window.h	/^  char color;		\/* Current color of window *\/$/;"	m	struct:_win
+color	window.h	/^  char color;$/;"	m	struct:_elm
+cols	minicom.h	/^EXTERN short cols;	\/* Nr. of cols of the screen *\/$/;"	v
+command	script.c	/^  char *command;$/;"	m	struct:kw	file:
+concat_list	file.c	/^concat_list(d)$/;"	f	file:
+config	config.c	/^int config(setup)$/;"	f
+convfile	dial.c	/^  char convfile[16];	\/* jl 21.09.97 *\/$/;"	m	struct:dialent	file:
+count	dial.c	/^  int  count;		\/* jl 22.06.97 *\/$/;"	m	struct:dialent	file:
+cread	wkeys.c	/^static int cread(c)$/;"	f	file:
+cur	file.c	/^static int cur = 0;$/;"	v	file:
+curattr	window.c	/^static char curattr = -1;$/;"	v	file:
+curcolor	window.c	/^static char curcolor = -1;$/;"	v	file:
+curenv	script.c	/^struct env *curenv;		\/* Execution environment *\/  $/;"	v	typeref:struct:env
+curs_status	main.c	/^void curs_status()$/;"	f
+cursor	window.h	/^  char cursor;		\/* Does it have a cursor *\/$/;"	m	struct:_win
+cursormode	keyserv.c	/^int cursormode = NORMAL;$/;"	v
+cursormode	minicom.h	/^EXTERN int cursormode;	\/* Mode of cursor (arrow) keys *\/$/;"	v
+curwin	window.c	/^static WIN *curwin = NIL_WIN;$/;"	v	file:
+curx	window.c	/^static int curx = -1;$/;"	v	file:
+curx	window.h	/^  short curx, cury;	\/* current x and y *\/$/;"	m	struct:_win
+cury	window.c	/^static int cury = -1;$/;"	v	file:
+cury	window.h	/^  short curx, cury;	\/* current x and y *\/$/;"	m	struct:_win
+cwd_str	file.c	/^static char cwd_str[BUFSIZ];$/;"	v	file:
+d	file.c	/^static GETSDIR_ENTRY *dirdat, *d;$/;"	v	file:
+d_man	dial.c	/^static struct dialent *d_man;$/;"	v	typeref:struct:dialent	file:
+d_work_dir	file.c	/^static char *d_work_dir = NULL;$/;"	v	file:
+d_yesno	dial.c	/^static char *d_yesno[] = { N_("   Yes  "), N_("   No   "), CNULL };$/;"	v	file:
+d_yesno	file.c	/^static char *d_yesno[] = { N_("   Yes  "), N_("   No   "), CNULL };$/;"	v	file:
+dat_buf	getsdir.c	/^typedef struct dat_buf {		\/* structure of input buffers *\/$/;"	s	file:
+data	getsdir.c	/^    GETSDIR_ENTRY data[MAX_CNT];	\/* data in present buffer *\/$/;"	m	struct:dat_buf	file:
+datb_cur	getsdir.c	/^static DAT_BUF *datb_cur;		\/* pointer to current data buffer *\/$/;"	v	file:
+datb_frst	getsdir.c	/^static DAT_BUF *datb_frst;		\/* pointer to first data buffer *\/$/;"	v	file:
+debug	window.c	/^int debug(s, a1, a2, a3, a4)$/;"	f
+dec_mode	vt100.c	/^static void dec_mode(on_off)$/;"	f	file:
+dedit	dial.c	/^static void dedit(d)$/;"	f	file:
+def_ac	window.c	/^static char *def_ac = "+\\273,\\253aaffggjjkkllmmnnooqqssttuuvvwwxx";$/;"	v	file:
+dendd	dial.c	/^static int dendd = 0;$/;"	v	file:
+desc	configsym.h	/^  char *desc;$/;"	m	struct:macs
+desc	configsym.h	/^  char *desc;$/;"	m	struct:pars
+dhili	dial.c	/^static void dhili(position_dialing_directory, k)$/;"	f	file:
+dhili	file.c	/^dhili(k)$/;"	f	file:
+dial	dial.c	/^long dial(d, d2)$/;"	f
+dial_entry	dial.c	/^static void dial_entry(d)$/;"	f	file:
+dial_name	minicom.h	/^EXTERN char *dial_name;	    \/* System we're conneced to *\/$/;"	v
+dial_number	minicom.h	/^EXTERN char *dial_number;   \/* Number we've dialed. *\/$/;"	v
+dial_pass	dial.c	/^char *dial_pass;$/;"	v
+dial_pass	minicom.h	/^EXTERN char *dial_pass;     \/* Our password *\/$/;"	v
+dial_tty	minicom.h	/^EXTERN char *dial_tty;     \/* tty to use. *\/$/;"	v
+dial_user	dial.c	/^char *dial_user;$/;"	v
+dial_user	minicom.h	/^EXTERN char *dial_user;     \/* Our username there *\/$/;"	v
+dialdir	dial.c	/^void dialdir()$/;"	f
+dialent	dial.c	/^struct dialent {$/;"	s	file:
+dialentno	dial.c	126;"	d	file:
+dialents	dial.c	/^static struct dialent *dialents;$/;"	v	typeref:struct:dialent	file:
+dialfailed	dial.c	/^static int dialfailed(s, rtime)$/;"	f	file:
+dialone	dial.c	/^void dialone(entry)$/;"	f
+dialtime	dial.c	/^int dialtime;$/;"	v
+dialtype	dial.c	/^  char dialtype;$/;"	m	struct:dialent	file:
+dialtype	dial.c	/^  char dialtype;$/;"	m	struct:v1_dialent	file:
+dialtype	dial.c	/^  char dialtype;$/;"	m	struct:v3_dialent	file:
+dialwin	dial.c	/^WIN *dialwin;$/;"	v
+dirEntry	getsdir.h	/^typedef struct dirEntry {		\/* structure of data item *\/$/;"	s
+dirdat	file.c	/^static GETSDIR_ENTRY *dirdat, *d;$/;"	v	file:
+direct	window.h	/^  char direct;		\/* Direct write to screen ? *\/$/;"	m	struct:_win
+dirflush	window.c	/^int dirflush = 1;$/;"	v
+do_cite	minicom.c	/^static void do_cite(w, start, end)$/;"	f	file:
+do_hang	minicom.c	/^static void do_hang(askit)$/;"	f	file:
+do_log	common.c	/^void do_log(char *line, ...)$/;"	f
+do_output	main.c	/^static void do_output(s, len)$/;"	f	file:
+do_terminal	main.c	/^int do_terminal()$/;"	f
+dobreak	script.c	/^int dobreak()$/;"	f
+docall	script.c	/^int docall(text)$/;"	f
+docap	minicom.h	/^EXTERN int docap;	\/* Capture data to capture file *\/$/;"	v
+doconv	config.c	/^void doconv()$/;"	f
+dodec	script.c	/^int dodec(text)$/;"	f
+dodflsave	config.c	/^int dodflsave()$/;"	f
+doexit	script.c	/^int doexit(text)$/;"	f
+dogosub	script.c	/^int dogosub(text)$/;"	f
+dogoto	script.c	/^int dogoto(text)$/;"	f
+doif	script.c	/^int doif(text)$/;"	f
+doinc	script.c	/^int doinc(text)$/;"	f
+dologopt	config.c	/^static void dologopt()$/;"	f	file:
+domacros	config.c	/^void domacros()$/;"	f
+domacsave	config.c	/^int domacsave()$/;"	f
+domodem	config.c	/^static void domodem()$/;"	f	file:
+donamsave	config.c	/^static void donamsave()$/;"	f	file:
+dopath	config.c	/^static void dopath()$/;"	f	file:
+doproto	config.c	/^static void doproto()$/;"	f	file:
+doreturn	script.c	/^int doreturn(text)$/;"	f
+doscrkeyb	config.c	/^static void doscrkeyb()$/;"	f	file:
+doscroll	window.h	/^  char doscroll;	\/* Automatically scroll up *\/$/;"	m	struct:_win
+dosend	script.c	/^int dosend(text)$/;"	f
+doserial	config.c	/^static void doserial()$/;"	f	file:
+doset	script.c	/^int doset(text)$/;"	f
+dosleep	script.c	/^int dosleep(text)$/;"	f
+dotermmenu	config.c	/^int dotermmenu()$/;"	f
+dotimeout	script.c	/^int dotimeout(text)$/;"	f
+dotrans	ascii-xfr.c	/^int dotrans = 1;$/;"	v
+doverbose	script.c	/^int doverbose(text)$/;"	f
+down_loading	file.c	/^static int down_loading = 0;$/;"	v	file:
+dprev	dial.c	/^static int dprev;$/;"	v	file:
+dprev	file.c	/^static int dprev;$/;"	v	file:
+drawcite	minicom.c	/^static void drawcite(w, y, citey, start, end)$/;"	f	file:
+drawcite_whole	minicom.c	/^static void drawcite_whole(w, y, start, end)$/;"	f	file:
+drawhist	minicom.c	/^static void drawhist(w, y, r)$/;"	f	file:
+drawhist_look	minicom.c	/^void drawhist_look(w, y, r, look, case_matters)$/;"	f
+drop_all_privs	util.c	/^void drop_all_privs()$/;"	f
+drop_privs	util.c	/^void drop_privs()$/;"	f
+dsub	dial.c	/^static WIN *dsub;$/;"	v	file:
+dsub	file.c	/^static WIN *dsub;$/;"	v	file:
+dummy	ipc.c	/^static void dummy()$/;"	f	file:
+dummy	wkeys.c	/^static void dummy()$/;"	f	file:
+dup2	sysdep2.c	/^int dup2(from, to)$/;"	f
+dver	dial.c	/^struct dver {$/;"	s	file:
+ebuf	script.c	/^  jmp_buf ebuf;			\/* For exit *\/$/;"	m	struct:env	file:
+eff_gid	minicom.h	/^EXTERN int eff_gid;	\/* Effective gid *\/$/;"	v
+eff_uid	minicom.h	/^EXTERN int eff_uid;	\/* Effective uid *\/$/;"	v
+ejmp	script.c	/^jmp_buf ejmp;			\/* To jump to if expect times out *\/$/;"	v
+enab_sig	sysdep2.c	/^void enab_sig(onoff, intchar)$/;"	f
+env	script.c	/^struct env {$/;"	s	file:
+eofchar	ascii-xfr.c	/^int eofchar = 26;$/;"	v
+erasechar	wkeys.c	/^static char erasechar;$/;"	v	file:
+esc_char	keyserv.c	/^static int esc_char = 1;	\/* Escape character (initially ^A) *\/$/;"	v	file:
+esc_key	main.c	/^char *esc_key()$/;"	f
+esc_s	vt100.c	/^static int esc_s = 0;$/;"	v	file:
+escape	minicom.h	/^EXTERN int escape;	\/* Escape code. *\/$/;"	v
+escparms	vt100.c	/^static int escparms[8];		\/* Cumulated escape sequence. *\/$/;"	v	file:
+escseq	keyserv.c	/^char **escseq;			\/* Translation table to use *\/$/;"	v
+escseq	vt100.c	/^struct escseq {$/;"	s	file:
+etimeout	script.c	/^int etimeout = 0;		\/* Timeout in expect routine *\/$/;"	v
+execscript	script.c	/^int execscript(s)$/;"	f
+expect	script.c	/^int expect(text)$/;"	f
+expfound	script.c	/^int expfound(word)$/;"	f
+exstat	script.c	/^  int exstat;			\/* For exit *\/$/;"	m	struct:env	file:
+fastexec	util.c	/^int fastexec(cmd)$/;"	f
+fastsystem	util.c	/^int fastsystem(cmd, in, out, err)$/;"	f
+file_tell	file.c	/^file_tell(s)$/;"	f	file:
+file_title	file.c	/^static char file_title[BUFSIZ];$/;"	v	file:
+filedir	file.c	/^filedir(howmany, downloading)$/;"	f
+find_next	minicom.c	/^int find_next(w, w_hist, hit_line, look, case_matters)$/;"	f
+findcmd	xminicom	/^findcmd()$/;"	f
+first	file.c	/^static int first = 1;$/;"	v	file:
+flags	configsym.h	/^  int flags;$/;"	m	struct:macs
+flags	configsym.h	/^  int flags;$/;"	m	struct:pars
+flags	dial.c	/^  char flags; \/* Localecho in v0 *\/$/;"	m	struct:v1_dialent	file:
+flags	dial.c	/^  char flags;$/;"	m	struct:dialent	file:
+flags	dial.c	/^  char flags;$/;"	m	struct:v3_dialent	file:
+fmt	dial.c	/^static char *fmt = "\\r %2d %c%-16.16s%-16.16s%8.8s %5.5s %4d %-15.15s\\n";$/;"	v	file:
+fn	script.c	/^  int (*fn)();$/;"	m	struct:kw	file:
+fname	getsdir.h	/^   char fname[MAXNAMLEN + 1];		\/* filename + terminating null *\/$/;"	m	struct:dirEntry
+free_up	getsdir.c	/^free_up()$/;"	f	file:
+freemem	script.c	/^void freemem()$/;"	f
+from_minicom	keyserv.c	30;"	d	file:
+fromkeyserv	ipc.c	/^static int tokeyserv, fromkeyserv;	\/* File desciptors of ipc pipes *\/$/;"	v	file:
+func_key	wkeys.c	/^static char *func_key[] = { $/;"	v	file:
+funcs1	config.c	/^static void (*funcs1[])() = {$/;"	v	file:
+g_sortflags	getsdir.c	/^static int g_sortflags;			\/* sort flags *\/$/;"	v	file:
+get_alrm	main.c	/^static void get_alrm(dummy)$/;"	f	file:
+get_bbp	config.c	/^void get_bbp(ba, bi, pa, stopb, curr_ok)$/;"	f
+get_port	util.c	/^get_port(char *port_list)$/;"	f
+getargs	util.c	/^static int getargs(s, arps, maxargs)$/;"	f	file:
+getline	minicom.c	/^static ELM *getline(w, no)$/;"	f	file:
+getno	dial.c	/^static struct dialent *getno(no)$/;"	f	file:
+getno	file.c	134;"	d	file:
+getnum	script.c	/^int getnum(text)$/;"	f
+getrowcols	sysdep2.c	/^void getrowcols(rows, cols)$/;"	f
+getsdir	getsdir.c	/^getsdir(dirpath, pattern, sortflags, modemask, datptr, len)$/;"	f
+getvar	script.c	/^struct var *getvar(name, cr)$/;"	f
+getword	minicom.c	/^static char *getword(s)$/;"	f	file:
+getword	script.c	/^char *getword(s)$/;"	f
+gmap	window.c	/^static ELM *gmap;$/;"	v	file:
+gotalrm	wkeys.c	/^static int gotalrm;$/;"	v	file:
+goto_filedir	file.c	/^goto_filedir(new_dir, absolut)$/;"	f	file:
+gtimeout	script.c	/^int gtimeout = 120;		\/* Global Timeout *\/$/;"	v
+handler	keyserv.c	/^void handler(dummy)$/;"	f
+hangsig	minicom.c	/^static void hangsig(sig)$/;"	f	file:
+hangup	dial.c	/^void hangup()$/;"	f
+help	help.c	/^int help()$/;"	f
+helpthem	minicom.c	/^static void helpthem()$/;"	f	file:
+histbuf	window.h	/^  ELM *histbuf;		\/* History buffer. *\/$/;"	m	struct:_win
+histline	window.h	/^  int histline;		\/* Current line in the history buffer. *\/$/;"	m	struct:_win
+histlines	window.h	/^  int histlines;	\/* How many lines we keep in the history buffer *\/$/;"	m	struct:_win
+homedir	minicom.h	/^EXTERN char homedir[256];  \/* Home directory of user *\/$/;"	v
+homedir	script.c	/^char homedir[256];		\/* Home directory *\/$/;"	v
+how_many	file.c	/^static int how_many = 0;$/;"	v	file:
+inbuf	script.c	/^static char inbuf[65];		\/* Input buffer. *\/$/;"	v	file:
+inexpect	script.c	/^int inexpect = 0;		\/* Are we in the expect routine *\/$/;"	v
+init_dir	file.c	/^void init_dir(char dir)$/;"	f
+init_emul	main.c	/^void init_emul(type, do_init)$/;"	f
+init_env	script.c	/^void init_env()$/;"	f
+init_filedir	file.c	/^init_filedir()$/;"	f	file:
+input	windiv.c	/^char *input(s, buf)$/;"	f
+inputproto	config.c	/^static void inputproto(w, n)$/;"	f	file:
+io_pending	wkeys.c	/^int io_pending = 0;$/;"	v
+isconsole	wkeys.c	/^static int isconsole;$/;"	v	file:
+kb_handler	main.c	/^static void kb_handler(a, b)$/;"	f	file:
+kermit	updown.c	/^void kermit()$/;"	f
+key	window.h	/^struct key {$/;"	s
+keyboard	ipc.c	/^int keyboard(cmd, arg)$/;"	f
+keypadmode	keyserv.c	/^int keypadmode = NORMAL;$/;"	v
+keypadmode	minicom.h	/^EXTERN int keypadmode;	\/* Mode of keypad *\/$/;"	v
+keypid	ipc.c	/^static int keypid;			\/* pid of keyserv  		*\/$/;"	v	file:
+keypress	ipc.c	/^static int keypress = -1;		\/* A key was pressed.		*\/$/;"	v	file:
+keys_in_buf	wkeys.c	/^static int keys_in_buf;$/;"	v	file:
+keywords	script.c	/^} keywords[] = {$/;"	v	typeref:struct:kw
+kinstall	ipc.c	/^static void kinstall()$/;"	f	file:
+ksigio	ipc.c	/^static void ksigio(dummy)$/;"	f	file:
+kw	script.c	/^struct kw {$/;"	s	file:
+labelcount	script.c	/^  int labelcount;$/;"	m	struct:line	file:
+last	ascii-xfr.c	/^time_t last;$/;"	v
+lastdate	dial.c	/^  char lastdate[9];	\/* jl 22.06.97 *\/$/;"	m	struct:dialent	file:
+laststatus	script.c	/^int laststatus = 0;		\/* Status of last command *\/$/;"	v
+lasttime	dial.c	/^  char lasttime[9];	\/* jl 22.06.97 *\/$/;"	m	struct:dialent	file:
+ldelay	ascii-xfr.c	/^int ldelay = 0;$/;"	v
+leave	main.c	/^void leave(s)$/;"	f
+len	window.h	/^	char len;$/;"	m	struct:key
+line	script.c	/^  char *line;$/;"	m	struct:line	file:
+line	script.c	/^struct line {$/;"	s	file:
+lineno	script.c	/^  int lineno;$/;"	m	struct:line	file:
+lineout	ascii-xfr.c	/^void lineout(line)$/;"	f
+lines	minicom.h	/^EXTERN short lines;	\/* Nr. of lines on the screen *\/$/;"	v
+lines	script.c	/^  struct line *lines;		\/* Start of all lines *\/$/;"	m	struct:env	typeref:struct:env::line	file:
+linespd	minicom.h	/^EXTERN long linespd;	\/* Line speed *\/$/;"	v
+loadconv	config.c	/^int loadconv(char *buf)$/;"	f
+local_echo	minicom.h	/^EXTERN int local_echo;      \/* Local echo on\/off. *\/$/;"	v
+lockfile	minicom.h	/^EXTERN char lockfile[128]; \/* UUCP lock file of terminal *\/$/;"	v
+logfname	minicom.h	/^EXTERN char logfname[PARS_VAL_LEN]; \/* Name of the logfile *\/$/;"	v
+logfname	script.c	/^char logfname[PARS_VAL_LEN];	\/* Name of logfile *\/$/;"	v
+longest	file.c	/^static int longest;$/;"	v	file:
+lredraw	window.c	/^static void lredraw(w, x, y, s, len)$/;"	f	file:
+lsw	sysdep1.c	/^static int lsw;$/;"	v	file:
+m_break	sysdep1.c	/^void m_break(fd)$/;"	f
+m_dtrtoggle	sysdep1.c	/^void m_dtrtoggle(fd,sec) $/;"	f
+m_flush	sysdep1.c	/^void m_flush(fd)$/;"	f
+m_getdcd	sysdep1.c	/^int m_getdcd(fd)$/;"	f
+m_getmaxspd	sysdep1.c	/^int m_getmaxspd()$/;"	f
+m_hangup	functions.c	/^void m_hangup()$/;"	f
+m_hupcl	sysdep1.c	/^void m_hupcl(fd, on)$/;"	f
+m_nohang	sysdep1.c	/^void m_nohang(fd)$/;"	f
+m_puts	functions.c	/^void m_puts(s)$/;"	f
+m_readchk	sysdep1.c	/^int m_readchk(fd)$/;"	f
+m_restorestate	sysdep1.c	/^void m_restorestate(fd)$/;"	f
+m_savestate	sysdep1.c	/^void m_savestate(fd)$/;"	f
+m_sethwf	sysdep1.c	/^void m_sethwf(fd, on)$/;"	f
+m_setparms	sysdep1.c	/^void m_setparms(fd, baudr, par, bits, stopb, hwf, swf)$/;"	f
+m_setrts	sysdep1.c	/^void m_setrts(fd)$/;"	f
+m_wait	sysdep1.c	/^int m_wait(stt)$/;"	f
+m_word	sysdep1.c	/^static int m_word;$/;"	v	file:
+macs	configsym.h	/^struct macs {$/;"	s
+magic	dial.c	/^  short magic;$/;"	m	struct:dver	file:
+main	ascii-xfr.c	/^int main(argc, argv)$/;"	f
+main	getsdir.c	/^main(argc, argv)$/;"	f
+main	keyserv.c	/^int main(argc, argv)$/;"	f
+main	minicom.c	/^int main(argc, argv)$/;"	f
+main	script.c	/^int main(argc, argv)$/;"	f
+main	wildmat.c	/^main(argc, argv)$/;"	f
+main_w	file.c	/^static WIN *main_w;$/;"	v	file:
+mainloop	keyserv.c	/^jmp_buf mainloop;		\/* To jump to after a 'HELLO' signal *\/$/;"	v
+makenv	updown.c	/^static char *makenv(name, value)$/;"	f	file:
+map	window.h	/^  ELM *map;		\/* Map of contents *\/$/;"	m	struct:_win
+markch	config.c	/^static void markch(s)$/;"	f	file:
+max	windiv.c	29;"	d	file:
+mbasename	main.c	/^char *mbasename(s)$/;"	f
+mbcolor	minicom.h	/^EXTERN int mbcolor;     \/* Menu Background Color *\/$/;"	v
+mc_setenv	updown.c	/^int mc_setenv(name, value)$/;"	f
+mc_tell	windiv.c	/^WIN *mc_tell(s, a1, a2, a3, a4)$/;"	f
+mcd	updown.c	/^static int mcd(dir)$/;"	f	file:
+menu1	config.c	/^static char *menu1[] = {$/;"	v	file:
+mfcolor	minicom.h	/^EXTERN int mfcolor;     \/* Menu Foreground Color *\/$/;"	v
+mgets	config.c	/^static void mgets(w, x, y, s, len, maxl)$/;"	f	file:
+min	windiv.c	33;"	d	file:
+min_len	file.c	/^static int min_len = 1;$/;"	v	file:
+mkstdent	dial.c	/^static struct dialent *mkstdent()$/;"	f	file:
+mmacs	rwconf.c	/^struct macs mmacs[] = {$/;"	v	typeref:struct:macs
+mode	getsdir.h	/^   mode_t mode;				\/* file mode (dir? etc.) *\/$/;"	m	struct:dirEntry
+mode	keyserv.c	/^int mode = EVT100;		\/* Emulation mode selector *\/$/;"	v
+mode_status	main.c	/^void mode_status()$/;"	f
+modeminit	dial.c	/^void modeminit()$/;"	f
+modemreset	dial.c	/^void modemreset()$/;"	f
+move_entry	dial.c	/^int move_entry(WIN *dialw, struct dialent *d, int cur, int *top)$/;"	f
+mpars	rwconf.c	/^struct pars mpars[] = {$/;"	v	typeref:struct:pars
+mputs	dial.c	/^void mputs(s, how)$/;"	f
+ms_delay	ascii-xfr.c	/^void ms_delay(ms)$/;"	f
+music	dial.c	/^void music()$/;"	f
+myclock	script.c	/^void myclock(dummy)$/;"	f
+mygetenv	script.c	/^char *mygetenv(env)$/;"	f
+name	dial.c	/^  char name[32];$/;"	m	struct:dialent	file:
+name	dial.c	/^  char name[32];$/;"	m	struct:v1_dialent	file:
+name	dial.c	/^  char name[32];$/;"	m	struct:v3_dialent	file:
+name	script.c	/^  char *name;$/;"	m	struct:var	file:
+namecmpr	getsdir.c	/^namecmpr(d1, d2)$/;"	f	file:
+new_filedir	file.c	/^new_filedir(o_dirdat, flushit)$/;"	f	file:
+newline	script.c	/^char *newline;			\/* What to print for '\\n'. *\/$/;"	v
+newtype	dial.c	/^static int newtype;$/;"	v	file:
+newy1	vt100.c	/^short newy1 = 0;		\/* Current size of scrolling region. *\/$/;"	v
+newy2	vt100.c	/^short newy2 = 23;$/;"	v
+next	dial.c	/^  struct dialent *next;$/;"	m	struct:dialent	typeref:struct:dialent::dialent	file:
+next	dial.c	/^  struct dialent *next;$/;"	m	struct:v1_dialent	typeref:struct:v1_dialent::dialent	file:
+next	dial.c	/^  struct dialent *next;$/;"	m	struct:v3_dialent	typeref:struct:v3_dialent::dialent	file:
+next	script.c	/^  struct line *next;$/;"	m	struct:line	typeref:struct:line::line	file:
+next	script.c	/^  struct var *next;$/;"	m	struct:var	typeref:struct:var::var	file:
+not_suid	util.c	/^static int not_suid = -1;$/;"	v	file:
+nrents	dial.c	/^static int nrents = 1;$/;"	v	file:
+nrents	file.c	/^static int nrents = 1;$/;"	v	file:
+num_hist_lines	minicom.h	/^EXTERN int num_hist_lines;  \/* History buffer size *\/$/;"	v
+number	dial.c	/^  char number[16];$/;"	m	struct:v1_dialent	file:
+number	dial.c	/^  char number[32];$/;"	m	struct:dialent	file:
+number	dial.c	/^  char number[32];$/;"	m	struct:v3_dialent	file:
+nxt	getsdir.c	/^    struct dat_buf *nxt;		\/* pointer to next buffer *\/$/;"	m	struct:dat_buf	typeref:struct:dat_buf::dat_buf	file:
+o_attr	window.h	/^  char o_attr;$/;"	m	struct:_win
+o_color	window.h	/^  char o_color;		\/* Position & attributes before window was opened *\/$/;"	m	struct:_win
+o_cursor	window.h	/^  char o_cursor;$/;"	m	struct:_win
+o_curx	window.h	/^  short o_curx;$/;"	m	struct:_win
+o_cury	window.h	/^  short o_cury;$/;"	m	struct:_win
+ocur	file.c	/^static int ocur = 0;$/;"	v	file:
+ocursor	window.c	/^static int ocursor;$/;"	v	file:
+offsetof	dial.c	49;"	d	file:
+offsetof	file.c	38;"	d	file:
+old_online	main.c	/^time_t old_online = -1;$/;"	v
+oldc	window.c	/^static ELM oldc;$/;"	v	file:
+oldx	window.c	/^static int oldx, oldy;$/;"	v	file:
+oldy	window.c	/^static int oldx, oldy;$/;"	v	file:
+online	minicom.h	/^EXTERN time_t online;	\/* Time online in minutes *\/$/;"	v
+open_term	main.c	/^int open_term(doinit)$/;"	f
+out_mac	config.c	/^static void out_mac(w, s, n)$/;"	f	file:
+outchar	window.c	/^static int outchar(c)$/;"	f	file:
+output	script.c	/^int output(text, fp)$/;"	f
+outstr	window.c	/^static void outstr(s)$/;"	f	file:
+parent	keyserv.c	/^int parent;			\/* Process ID of minicom *\/$/;"	v
+parfile	minicom.h	/^EXTERN char parfile[256]; \/* Global parameter file *\/$/;"	v
+parity	dial.c	/^  char parity[2];$/;"	m	struct:dialent	file:
+parity	dial.c	/^  char parity[2];$/;"	m	struct:v1_dialent	file:
+parity	dial.c	/^  char parity[2];$/;"	m	struct:v3_dialent	file:
+pars	configsym.h	/^struct pars {$/;"	s
+password	dial.c	/^  char password[32];$/;"	m	struct:dialent	file:
+password	dial.c	/^  char password[32];$/;"	m	struct:v1_dialent	file:
+password	dial.c	/^  char password[32];$/;"	m	struct:v3_dialent	file:
+pendingkeys	wkeys.c	/^int pendingkeys = 0;$/;"	v
+pfix_home	common.c	/^char *pfix_home(s)$/;"	f
+pgets	config.c	/^static void pgets(w, x, y, s, len, maxl)$/;"	f	file:
+pgud	file.c	/^static int pgud = 0;$/;"	v	file:
+port_init	minicom.c	/^void port_init()$/;"	f
+portfd	minicom.h	/^EXTERN short portfd;	\/* File descriptor of the serial port. *\/$/;"	v
+portgid	minicom.h	/^EXTERN int portuid, portgid; \/* Uid and Gid of \/dev\/ttyS... *\/$/;"	v
+portuid	minicom.h	/^EXTERN int portuid, portgid; \/* Uid and Gid of \/dev\/ttyS... *\/$/;"	v
+pparfile	minicom.h	/^EXTERN char pparfile[256]; \/* Personal parameter file *\/$/;"	v
+prch	config.c	/^int prch(int c)$/;"	f
+prdir	dial.c	/^static void prdir(dialw, top, cur)$/;"	f	file:
+prdir	file.c	/^prdir(dirw, top, cur, dirdat, longest)$/;"	f	file:
+prev_dir	file.c	/^static char *prev_dir = NULL;$/;"	v	file:
+print	script.c	/^int print(text)$/;"	f
+prone	file.c	/^prone(dirw, top, cur, dirdat, longest, inverse)$/;"	f	file:
+psets	config.c	/^static void psets(s, w)$/;"	f	file:
+ptr	vt100.c	/^static int ptr = -2;		\/* Index into escparms array. *\/$/;"	v	file:
+ptr	vt100.c	/^static int ptr = 0;		\/* Index into escparms array. *\/$/;"	v	file:
+quit	file.c	/^static int quit = 0;$/;"	v	file:
+read_parms	config.c	/^void read_parms()$/;"	f
+readchar	script.c	/^void readchar()$/;"	f
+readdialdir	dial.c	/^int readdialdir()$/;"	f
+readmacs	rwconf.c	/^int readmacs(fp, init)$/;"	f
+readpars	rwconf.c	/^int readpars(fp, init)$/;"	f
+readscript	script.c	/^int readscript(s)$/;"	f
+real_gid	minicom.h	/^EXTERN int real_gid;	\/* Real gid *\/$/;"	v
+real_uid	minicom.h	/^EXTERN int real_uid;	\/* Real uid *\/$/;"	v
+res1	dial.c	/^  short res1;$/;"	m	struct:dver	file:
+res2	dial.c	/^  short res2;$/;"	m	struct:dver	file:
+res3	dial.c	/^  short res3;$/;"	m	struct:dver	file:
+res4	dial.c	/^  short res4;$/;"	m	struct:dver	file:
+ret_buf	file.c	/^static char *ret_buf = NULL;$/;"	v	file:
+ret_csr	main.c	/^static void ret_csr()$/;"	f	file:
+runscript	updown.c	/^void runscript(ask, s, l, p)$/;"	f
+rwxgetch	config.c	/^static int rwxgetch()$/;"	f	file:
+s	file.c	/^static char *s;$/;"	v	file:
+s_error	script.c	/^void s_error(fmt, a1, a2, a3, a4)$/;"	f
+s_exec	script.c	/^int s_exec(text)$/;"	f
+s_login	script.c	/^char *s_login = "name";		\/* User's login name *\/$/;"	v
+s_pass	script.c	/^char *s_pass = "password";	\/* User's password *\/$/;"	v
+saveattr	vt100.c	/^static short savex = 0, savey = 0, saveattr = XA_NORMAL, savecol = 112;$/;"	v	file:
+savecharset	vt100.c	/^static short savecharset;$/;"	v	file:
+savecol	vt100.c	/^static short savex = 0, savey = 0, saveattr = XA_NORMAL, savecol = 112;$/;"	v	file:
+saveconv	config.c	/^int saveconv(char *buf)$/;"	f
+savetrans	vt100.c	/^static char *savetrans[2];$/;"	v	file:
+savetty	sysdep1.c	/^static struct termios savetty;$/;"	v	typeref:struct:termios	file:
+savetty	sysdep2.c	/^static struct termios savetty;$/;"	v	typeref:struct:termios	file:
+savex	vt100.c	/^static short savex = 0, savey = 0, saveattr = XA_NORMAL, savecol = 112;$/;"	v	file:
+savey	vt100.c	/^static short savex = 0, savey = 0, saveattr = XA_NORMAL, savecol = 112;$/;"	v	file:
+sbcolor	minicom.h	/^EXTERN int sbcolor;     \/* Status Bar Background Color *\/$/;"	v
+scr_name	minicom.h	/^EXTERN char scr_name[33];   \/* Name of last script *\/$/;"	v
+scr_passwd	minicom.h	/^EXTERN char scr_passwd[33]; \/* Password to use with script *\/$/;"	v
+scr_user	minicom.h	/^EXTERN char scr_user[33];   \/* Login name to use with script *\/$/;"	v
+screen_ibmpc	window.c	/^int screen_ibmpc = 0;$/;"	v
+screen_iso	window.c	/^int screen_iso = 0;$/;"	v
+script	dial.c	/^  char script[16];$/;"	m	struct:v1_dialent	file:
+script	dial.c	/^  char script[32];$/;"	m	struct:dialent	file:
+script	dial.c	/^  char script[32];$/;"	m	struct:v3_dialent	file:
+scriptname	main.c	/^void scriptname(s)$/;"	f
+scriptname	script.c	/^  char *scriptname;		\/* Name of this script *\/$/;"	m	struct:env	file:
+scrollback	minicom.c	/^static void scrollback()$/;"	f	file:
+searchhist	minicom.c	/^void searchhist(w_orig, w_hist, r, str)$/;"	f
+sendbreak	dial.c	/^void sendbreak()$/;"	f
+sendstr	keyserv.c	/^void sendstr(s)$/;"	f
+set_privs	util.c	/^void set_privs()$/;"	f
+set_work_dir	file.c	/^set_work_dir(existing, min_len)$/;"	f	file:
+setcbreak	sysdep2.c	/^int setcbreak(mode)$/;"	f
+setlocale	intl.h	7;"	d
+sfcolor	minicom.h	/^EXTERN int sfcolor;     \/* Status Bar Foreground Color *\/$/;"	v
+sflag	window.c	/^static int sflag = 0;$/;"	v	file:
+sfopen	util.c	/^FILE *sfopen(file, mode)$/;"	f
+sg	sysdep1.c	/^static struct sgttyb sg;$/;"	v	typeref:struct:sgttyb	file:
+shell	script.c	/^int shell(text)$/;"	f
+shjump	minicom.c	/^static void shjump(dummy)$/;"	f	file:
+shjump	minicom.c	/^static void shjump(sig)$/;"	f	file:
+show_status	main.c	/^void show_status()$/;"	f
+showtemp	main.c	/^static void showtemp()$/;"	f	file:
+sigack	ipc.c	/^static void sigack(dummy)$/;"	f	file:
+signore	minicom.c	/^static void signore(sig)$/;"	f	file:
+size	dial.c	/^  short size;$/;"	m	struct:dver	file:
+size_changed	minicom.h	/^EXTERN int size_changed;    \/* Window size has changed *\/$/;"	v
+skipspace	script.c	/^void skipspace(s)$/;"	f
+some_string	config.c	/^char some_string[32];$/;"	v
+speed_t	sysdep.h	141;"	d
+speeds	config.c	/^static char *speeds[] =$/;"	v	file:
+sspd	config.c	/^char * sspd(char *sptyp)$/;"	f
+st	minicom.h	/^EXTERN WIN *st;		\/* Status Line *\/$/;"	v
+st_attr	minicom.h	/^EXTERN int st_attr;	\/* Status Bar attributes. *\/$/;"	v
+st_vtesc	keyserv.c	/^char *st_vtesc[] = {$/;"	v
+start	ascii-xfr.c	/^time_t start;$/;"	v
+state1	vt100.c	/^static void state1(c)$/;"	f	file:
+state2	vt100.c	/^static void state2(c)$/;"	f	file:
+state3	vt100.c	/^static void state3(c)$/;"	f	file:
+state4	vt100.c	/^static void state4(c)$/;"	f	file:
+state5	vt100.c	/^static void state5(c)$/;"	f	file:
+state6	vt100.c	/^static void state6(c)$/;"	f	file:
+state7	vt100.c	/^static void state7(c)$/;"	f	file:
+stats	ascii-xfr.c	/^void stats(force)$/;"	f
+stdattr	minicom.h	/^EXTERN char stdattr;	\/* Standard attribute *\/$/;"	v
+stdwin	window.c	/^WIN *stdwin;$/;"	v
+stopb	dial.c	/^  char stopb[2]; 	\/* jl 10.02.2000 *\/$/;"	m	struct:dialent	file:
+strsave	script.c	/^char *strsave(s)$/;"	f
+subm	file.c	/^static int subm = SUBM_OKAY;$/;"	v	file:
+swap	window.c	55;"	d	file:
+sy1	window.h	/^  int sy1, sy2;		\/* Scrolling region *\/$/;"	m	struct:_win
+sy2	window.h	/^  int sy1, sy2;		\/* Scrolling region *\/$/;"	m	struct:_win
+syntaxerr	script.c	/^void syntaxerr(s)$/;"	f
+tag_cnt	file.c	/^static int tag_cnt = 0;$/;"	v	file:
+tag_untag	file.c	/^tag_untag(pat, tag)$/;"	f	file:
+tagged	dial.c	/^static char *tagged;$/;"	v	file:
+tbcolor	minicom.h	/^EXTERN int tbcolor;     \/* Terminal Background Color *\/$/;"	v
+tbuf	window.c	/^static char tbuf[1024];$/;"	v	file:
+tcgetattr	sysdep.h	138;"	d
+tch	sysdep1.c	/^static struct tchars tch;$/;"	v	typeref:struct:tchars	file:
+tcsendbreak	sysdep.h	140;"	d
+tcsetattr	sysdep.h	139;"	d
+te	dial.c	/^static char *te[] = { "VT102", "MINIX", "ANSI " };$/;"	v	file:
+tempst	minicom.h	/^EXTERN int tempst;	\/* Status line is temporary *\/$/;"	v
+term	dial.c	/^  char term;$/;"	m	struct:dialent	file:
+term	dial.c	/^  char term;$/;"	m	struct:v1_dialent	file:
+term	dial.c	/^  char term;$/;"	m	struct:v3_dialent	file:
+terminal	minicom.h	/^EXTERN short terminal;	\/* terminal type *\/$/;"	v
+termios	sysdep.h	134;"	d
+termout	vt100.c	/^static void (*termout)();	\/* Gets called to output a string. *\/$/;"	v	file:
+termtype	minicom.h	/^EXTERN char termtype[32];  \/* Value of getenv("TERM"); *\/$/;"	v
+testconsole	wkeys.c	/^static int testconsole()$/;"	f	file:
+textdomain	intl.h	18;"	d
+textdomain	intl.h	19;"	d
+tfcolor	minicom.h	/^EXTERN int tfcolor;     \/* Terminal Foreground Color *\/$/;"	v
+thisline	script.c	/^struct line *thisline;		\/* Line to be executed *\/ $/;"	v	typeref:struct:line
+time	getsdir.h	/^   time_t time;				\/* last modification date *\/$/;"	m	struct:dirEntry
+time_status	main.c	/^void time_status()$/;"	f
+time_t	port.h	97;"	d
+timecmpr	getsdir.c	/^timecmpr(d1, d2)$/;"	f	file:
+timer_update	main.c	/^void timer_update()$/;"	f
+to_minicom	keyserv.c	31;"	d	file:
+tokeyserv	ipc.c	/^static int tokeyserv, fromkeyserv;	\/* File desciptors of ipc pipes *\/$/;"	v	file:
+top	file.c	/^static int top = 0;$/;"	v	file:
+translate	updown.c	/^static char *translate(s)$/;"	f	file:
+trim	updown.c	/^char *trim(char *outstring, char *instring, int n)$/;"	f
+u_work_dir	file.c	/^static char *u_work_dir = NULL;$/;"	v	file:
+udcatch	updown.c	/^static void udcatch(dummy)$/;"	f	file:
+udpid	updown.c	/^static int udpid;$/;"	v	file:
+upcase	minicom.c	/^const char *upcase(dest, src)$/;"	f
+updown	updown.c	/^void updown(what, nr)$/;"	f
+updtime	main.c	/^static void updtime()$/;"	f	file:
+us	minicom.h	/^EXTERN WIN *us;		\/* User screen *\/$/;"	v
+usage	ascii-xfr.c	/^void usage()$/;"	f
+usage	minicom.c	/^static void usage(env_args, optind, mc)$/;"	f	file:
+use_status	window.c	/^int use_status = 0; \/* Turned on in main() *\/$/;"	v
+use_status	window.c	/^int use_status = 0;$/;"	v
+useattr	window.c	/^int useattr = 1;$/;"	v
+usecolor	window.c	/^int usecolor = 0;$/;"	v
+useeof	ascii-xfr.c	/^int useeof = 0;$/;"	v
+username	dial.c	/^  char username[32];$/;"	m	struct:dialent	file:
+username	dial.c	/^  char username[32];$/;"	m	struct:v1_dialent	file:
+username	dial.c	/^  char username[32];$/;"	m	struct:v3_dialent	file:
+username	minicom.h	/^EXTERN char username[16];  \/* Who is using minicom? *\/$/;"	v
+v0_read	dial.c	/^void v0_read(fp, d)$/;"	f
+v1_dialent	dial.c	/^struct v1_dialent {$/;"	s	file:
+v1_read	dial.c	/^void v1_read(fp, d)$/;"	f
+v2_read	dial.c	/^void v2_read(fp, d)$/;"	f
+v3_dialent	dial.c	/^struct v3_dialent {$/;"	s	file:
+v3_read	dial.c	/^void v3_read(fp, d)$/;"	f
+v4_read	dial.c	/^void v4_read(fp, d, dv)$/;"	f
+v_termout	vt100.c	/^static void v_termout(s, len)$/;"	f	file:
+value	configsym.h	/^  char value[MAC_LEN];$/;"	m	struct:macs
+value	configsym.h	/^  char value[PARS_VAL_LEN];$/;"	m	struct:pars
+value	script.c	/^  int value;$/;"	m	struct:var	file:
+value	window.h	/^  char value;$/;"	m	struct:_elm
+var	script.c	/^struct var {$/;"	s	file:
+varcmp	updown.c	/^static int varcmp(s1, s2)$/;"	f	file:
+vars	script.c	/^  struct var *vars;		\/* Start of all variables *\/$/;"	m	struct:env	typeref:struct:env::var	file:
+vdodflsave	config.c	/^void vdodflsave()$/;"	f
+verbose	ascii-xfr.c	/^int verbose = 0;$/;"	v
+verbose	script.c	/^  int verbose;			\/* Are we verbose? *\/$/;"	m	struct:env	file:
+version	dial.c	/^  short version;$/;"	m	struct:dver	file:
+vt100_app	vt100.c	/^  char *vt100_app;$/;"	m	struct:escseq	file:
+vt100_st	vt100.c	/^  char *vt100_st;$/;"	m	struct:escseq	file:
+vt_addlf	vt100.c	/^static int vt_addlf  = 0;	\/* Add linefeed on\/off *\/$/;"	v	file:
+vt_asis	vt100.c	/^static int vt_asis = 0;		\/* 8bit clean mode. *\/$/;"	v	file:
+vt_bg	vt100.c	/^static int vt_bg;		\/* Standard background color. *\/$/;"	v	file:
+vt_bs	vt100.c	/^static int vt_bs = 8;		\/* Code that backspace key sends. *\/$/;"	v	file:
+vt_capfp	vt100.c	/^static FILE *vt_capfp;		\/* Capture file. *\/$/;"	v	file:
+vt_charset	vt100.c	/^static int vt_charset = 0;	\/* Character set. *\/$/;"	v	file:
+vt_crlf	vt100.c	/^static int vt_crlf = 0;		\/* Return sends CR\/LF *\/$/;"	v	file:
+vt_cursor	vt100.c	/^static int vt_cursor;		\/* cursor key mode. *\/$/;"	v	file:
+vt_docap	vt100.c	/^static int vt_docap;		\/* Capture on\/off. *\/$/;"	v	file:
+vt_echo	vt100.c	/^static int vt_echo;		\/* Local echo on\/off. *\/$/;"	v	file:
+vt_fg	vt100.c	/^static int vt_fg;		\/* Standard foreground color. *\/$/;"	v	file:
+vt_init	vt100.c	/^void vt_init(type, fg, bg, wrap, add)$/;"	f
+vt_inmap	minicom.h	/^EXTERN unsigned char vt_outmap[256], vt_inmap[256];$/;"	v
+vt_inmap	vt100.c	/^unsigned char vt_inmap[256] = {$/;"	v
+vt_insert	vt100.c	/^static int vt_insert = 0;	\/* Insert mode *\/$/;"	v	file:
+vt_install	vt100.c	/^void vt_install(fun1, fun2, win)$/;"	f
+vt_keyb	vt100.c	/^static void (*vt_keyb)();	\/* Gets called for NORMAL\/APPL switch. *\/$/;"	v	file:
+vt_keypad	vt100.c	/^static int vt_keypad;		\/* Keypad mode. *\/$/;"	v	file:
+vt_keys	vt100.c	/^static struct escseq vt_keys[] = {$/;"	v	typeref:struct:escseq	file:
+vt_map	vt100.c	/^static unsigned char * vt_map[] = {$/;"	v	file:
+vt_nl_delay	vt100.c	/^int vt_nl_delay;		\/* Delay after CR key *\/$/;"	v
+vt_om	vt100.c	/^static int vt_om;		\/* Origin mode. *\/$/;"	v	file:
+vt_out	vt100.c	/^void vt_out(ch)$/;"	f
+vt_outmap	minicom.h	/^EXTERN unsigned char vt_outmap[256], vt_inmap[256];$/;"	v
+vt_outmap	vt100.c	/^unsigned char vt_outmap[256] = {$/;"	v
+vt_pinit	vt100.c	/^void vt_pinit(win, fg, bg)$/;"	f
+vt_send	vt100.c	/^void vt_send(c)$/;"	f
+vt_set	vt100.c	/^void vt_set(addlf, wrap, capfp, docap, bscode, echo, cursor, asis)$/;"	f
+vt_tabs	vt100.c	/^static long vt_tabs[5];		\/* Tab stops for max. 32*5 = 160 columns. *\/$/;"	v	file:
+vt_trans	vt100.c	/^static char *vt_trans[2];$/;"	v	file:
+vt_type	vt100.c	/^static int vt_type   = ANSI;	\/* Terminal type. *\/$/;"	v	file:
+vt_win	vt100.c	/^WIN *vt_win          = NIL_WIN;	\/* Output window. *\/$/;"	v
+vt_wrap	vt100.c	/^static int vt_wrap   = 0;	\/* Line wrap on\/off *\/$/;"	v	file:
+w_init	window.c	/^int w_init = 0;$/;"	v
+waccess	config.c	/^int waccess(s)$/;"	f
+waiting	ipc.c	/^static int waiting = 0;			\/* Do we expect an ACK signal?	*\/$/;"	v	file:
+wbell	window.c	/^void wbell()$/;"	f
+wc_mem	file.c	/^static char wc_mem[128] = "";$/;"	v	file:
+wc_str	file.c	/^static char wc_str[128] = "";$/;"	v	file:
+wcharmap	charmap.h	/^char wcharmap[256] = {$/;"	v
+wclose	window.c	/^void wclose(win, replace)$/;"	f
+wclrbol	window.c	/^void wclrbol(w)$/;"	f
+wclrbos	window.c	/^void wclrbos(w)$/;"	f
+wclrel	window.c	/^void wclrel(w)$/;"	f
+wclreol	window.c	/^void wclreol(w)$/;"	f
+wclreos	window.c	/^void wclreos(w)$/;"	f
+wcurbar	window.c	/^void wcurbar(w, y, attr)$/;"	f
+wcursor	window.c	/^void wcursor(win, type)$/;"	f
+wdelchar	window.c	/^void wdelchar(w)$/;"	f
+wdelline	window.c	/^void wdelline(w)$/;"	f
+wdrawelm	window.c	/^void wdrawelm(w, y, e)$/;"	f
+wdrawelm_inverse	window.c	/^void wdrawelm_inverse(w, y, e)$/;"	f
+wdrawelm_var	window.c	/^void wdrawelm_var(w, y, e, buf)$/;"	f
+werror	windiv.c	/^void werror(s, a1, a2, a3, a4)$/;"	f
+wflush	window.c	/^void wflush()$/;"	f
+wgetattr	window.h	206;"	d
+wgets	window.c	/^int wgets(w, s, linelen, maxlen)$/;"	f
+what	dial.c	/^static char *what =  $/;"	v	file:
+what	file.c	/^static char *what =  N_(" [Goto]  [Prev]  [Show]  [Tag]  [Untag]  [Okay] ");$/;"	v	file:
+wildmat	wildmat.c	/^wildmat(s, p)$/;"	f
+win_end	window.c	/^void win_end()$/;"	f
+win_init	window.c	/^int win_init(term, lines)$/;"	f
+winclr	window.c	/^void winclr(w)$/;"	f
+winschar	window.c	/^void winschar(w)$/;"	f
+winschar2	window.c	/^void winschar2(w, c, move)$/;"	f
+winsline	window.c	/^void winsline(w)$/;"	f
+wleave	window.c	/^void wleave()$/;"	f
+wlocate	window.c	/^void wlocate(win, x, y)$/;"	f
+wopen	window.c	/^WIN *wopen(x1, y1, x2, y2, border, attr, fg, bg, direct, histlines, doclr)$/;"	f
+work_dir	file.c	/^static char *work_dir = NULL;$/;"	v	file:
+wprintf	window.c	/^int wprintf(win, s, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10)$/;"	f
+wputc	window.c	/^void wputc(win, c)$/;"	f
+wputs	window.c	/^void wputs(win, s)$/;"	f
+wrap	window.h	/^  char wrap;		\/* Wrap around edge *\/$/;"	m	struct:_win
+wrapln	minicom.h	/^EXTERN int wrapln;	\/* Linewrap default *\/$/;"	v
+wredraw	window.c	/^void wredraw(w, newdirect)$/;"	f
+wresetam	window.h	211;"	d
+wresetregion	window.h	205;"	d
+wreturn	window.c	/^void wreturn()$/;"	f
+writedialdir	dial.c	/^static void writedialdir()$/;"	f	file:
+writemacs	rwconf.c	/^int writemacs(fp, all)$/;"	f
+writepars	rwconf.c	/^int writepars(fp, all)$/;"	f
+wscroll	window.c	/^void wscroll(win, dir)$/;"	f
+wselect	window.c	/^int wselect(x, y, choices, funlist, title, attr, fg, bg)$/;"	f
+wsetam	window.h	210;"	d
+wsetattr	window.h	207;"	d
+wsetbgcol	window.h	209;"	d
+wsetfgcol	window.h	208;"	d
+wsetregion	window.h	204;"	d
+wtitle	window.c	/^void wtitle(w, pos, s)$/;"	f
+wxgetch	wkeys.c	/^int wxgetch()$/;"	f
+x1	window.h	/^  int x1, y1, x2, y2;	\/* Coordinates *\/$/;"	m	struct:_win
+x2	window.h	/^  int x1, y1, x2, y2;	\/* Coordinates *\/$/;"	m	struct:_win
+xs	window.h	/^  int xs, ys;		\/* x and y size *\/$/;"	m	struct:_win
+y1	window.h	/^  int x1, y1, x2, y2;	\/* Coordinates *\/$/;"	m	struct:_win
+y2	window.h	/^  int x1, y1, x2, y2;	\/* Coordinates *\/$/;"	m	struct:_win
+yesno	config.c	/^char *yesno(k)$/;"	f
+ys	window.h	/^  int xs, ys;		\/* x and y size *\/$/;"	m	struct:_win

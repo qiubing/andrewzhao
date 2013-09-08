@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ifconfig eth0 up
+wpa_supplicant -i eth0 -d -B -Dwired -c /etc/wpa_supplicant.conf.az
+dhcpcd eth0

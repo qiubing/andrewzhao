@@ -1,0 +1,61 @@
+##  smcroute - static multicast routing control 
+
+EXECS         = smcroute mcsender
+MCSENDER_OBJS = mcsender.o syslog.o
+SMCROUTE_OBJS = smcroute.o mroute-api.o ifvc.o cmdpkt.o ipc.o syslog.o \
+                udpsock.o mcgroup.o parse-conf.o pidfile.o
+OBJS          = $(MCSENDER_OBJS) $(SMCROUTE_OBJS)
+SRCS          = $(OBJS:.o=.c)
+DEPS          = $(addprefix .,$(SRCS:.c=.d))
+
+# Smart autodependecy generation via GCC -M.
+.%.d: %.c
+	@$(SHELL) -ec "$(CC) -MM $(CFLAGS) $(CPPFLAGS) $< 2>/dev/null \
+		| sed 's,.*: ,$*.o $@ : ,g' > $@; \
+                [ -s $@ ] || rm -f $@"
+
+.c.o:
+	@printf "  CC      $@\n"
+	@$(CC) $(CFLAGS) $(CPPFLAGS) -c -o $@ $<
+
+all: $(EXECS)
+
+install: all
+	@install -d $(DESTDIR)$(sbindir)
+	@for file in $(EXECS); do \
+		install -m 0755 $$file $(DESTDIR)$(sbindir)/$$file; \
+	done
+
+uninstall:
+	-@for file in $(EXECS); do \
+		$(RM) $(DESTDIR)$(sbindir)/$$file; \
+	done
+
+build.h:  
+	@echo '#define BUILD "' `date +%y%m%d` '"' >build.h
+
+config.h:
+	@echo "Please run ./configure first"
+
+mcsender:  $(MCSENDER_OBJS) config.h
+	@printf "  LINK    $@\n"
+	@$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $(MCSENDER_OBJS) $(LDLIBS)
+
+smcroute: build.h config.h $(SMCROUTE_OBJS)
+	@printf "  LINK    $@\n"
+	@$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $(SMCROUTE_OBJS) $(LDLIBS)
+
+clean:
+	-@$(RM) build.h $(SMCROUTE_OBJS) $(MCSENDER_OBJS) $(EXECS)
+
+distclean: clean
+	-@$(RM) $(DEPS) *~ .bak DEADJOE semantic.cache *.gdb *.elf core core.*
+	-@$(RM) config.h Makefile
+
+
+# Include automatically generated rules
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(MAKECMDGOALS),distclean)
+-include $(DEPS)
+endif
+endif
